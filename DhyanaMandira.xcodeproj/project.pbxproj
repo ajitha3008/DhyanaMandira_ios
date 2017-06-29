@@ -14,6 +14,12 @@
 		CBF20FA81F04BBC2006A1E4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FA61F04BBC2006A1E4D /* LaunchScreen.storyboard */; };
 		CBF20FB31F04BBC3006A1E4D /* DhyanaMandiraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF20FB21F04BBC3006A1E4D /* DhyanaMandiraTests.swift */; };
 		CBF20FBE1F04BBC3006A1E4D /* DhyanaMandiraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF20FBD1F04BBC3006A1E4D /* DhyanaMandiraUITests.swift */; };
+		CBF20FD21F05193B006A1E4D /* LeftSideNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF20FD11F05193B006A1E4D /* LeftSideNavViewController.swift */; };
+		CBF20FDD1F051AC9006A1E4D /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF20FD51F051AC9006A1E4D /* MMDrawerBarButtonItem.m */; };
+		CBF20FDE1F051AC9006A1E4D /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF20FD71F051AC9006A1E4D /* MMDrawerController.m */; };
+		CBF20FDF1F051AC9006A1E4D /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF20FDA1F051AC9006A1E4D /* MMDrawerVisualState.m */; };
+		CBF20FE01F051AC9006A1E4D /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF20FDC1F051AC9006A1E4D /* UIViewController+MMDrawerController.m */; };
+		CBF20FE41F05296D006A1E4D /* header_om.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FE31F05296D006A1E4D /* header_om.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,18 @@
 		CBF20FB91F04BBC3006A1E4D /* DhyanaMandiraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DhyanaMandiraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF20FBD1F04BBC3006A1E4D /* DhyanaMandiraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhyanaMandiraUITests.swift; sourceTree = "<group>"; };
 		CBF20FBF1F04BBC3006A1E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF20FD11F05193B006A1E4D /* LeftSideNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideNavViewController.swift; sourceTree = "<group>"; };
+		CBF20FD41F051AC9006A1E4D /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		CBF20FD51F051AC9006A1E4D /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		CBF20FD61F051AC9006A1E4D /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		CBF20FD71F051AC9006A1E4D /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		CBF20FD81F051AC9006A1E4D /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		CBF20FD91F051AC9006A1E4D /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		CBF20FDA1F051AC9006A1E4D /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		CBF20FDB1F051AC9006A1E4D /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		CBF20FDC1F051AC9006A1E4D /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		CBF20FE11F051C79006A1E4D /* DhyanaMandira-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DhyanaMandira-Bridging-Header.h"; sourceTree = "<group>"; };
+		CBF20FE31F05296D006A1E4D /* header_om.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_om.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +115,16 @@
 		CBF20F9C1F04BBC2006A1E4D /* DhyanaMandira */ = {
 			isa = PBXGroup;
 			children = (
+				CBF20FE21F052943006A1E4D /* images */,
+				CBF20FD31F051A64006A1E4D /* MySideMenu */,
 				CBF20F9D1F04BBC2006A1E4D /* AppDelegate.swift */,
 				CBF20F9F1F04BBC2006A1E4D /* ViewController.swift */,
 				CBF20FA11F04BBC2006A1E4D /* Main.storyboard */,
 				CBF20FA41F04BBC2006A1E4D /* Assets.xcassets */,
 				CBF20FA61F04BBC2006A1E4D /* LaunchScreen.storyboard */,
 				CBF20FA91F04BBC2006A1E4D /* Info.plist */,
+				CBF20FD11F05193B006A1E4D /* LeftSideNavViewController.swift */,
+				CBF20FE11F051C79006A1E4D /* DhyanaMandira-Bridging-Header.h */,
 			);
 			path = DhyanaMandira;
 			sourceTree = "<group>";
@@ -123,6 +145,30 @@
 				CBF20FBF1F04BBC3006A1E4D /* Info.plist */,
 			);
 			path = DhyanaMandiraUITests;
+			sourceTree = "<group>";
+		};
+		CBF20FD31F051A64006A1E4D /* MySideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				CBF20FD41F051AC9006A1E4D /* MMDrawerBarButtonItem.h */,
+				CBF20FD51F051AC9006A1E4D /* MMDrawerBarButtonItem.m */,
+				CBF20FD61F051AC9006A1E4D /* MMDrawerController.h */,
+				CBF20FD71F051AC9006A1E4D /* MMDrawerController.m */,
+				CBF20FD81F051AC9006A1E4D /* MMDrawerController+Subclass.h */,
+				CBF20FD91F051AC9006A1E4D /* MMDrawerVisualState.h */,
+				CBF20FDA1F051AC9006A1E4D /* MMDrawerVisualState.m */,
+				CBF20FDB1F051AC9006A1E4D /* UIViewController+MMDrawerController.h */,
+				CBF20FDC1F051AC9006A1E4D /* UIViewController+MMDrawerController.m */,
+			);
+			name = MySideMenu;
+			sourceTree = "<group>";
+		};
+		CBF20FE21F052943006A1E4D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CBF20FE31F05296D006A1E4D /* header_om.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +240,7 @@
 					CBF20F991F04BBC2006A1E4D = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = HY9VKUPG9A;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					CBF20FAD1F04BBC3006A1E4D = {
@@ -235,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF20FE41F05296D006A1E4D /* header_om.png in Resources */,
 				CBF20FA81F04BBC2006A1E4D /* LaunchScreen.storyboard in Resources */,
 				CBF20FA51F04BBC2006A1E4D /* Assets.xcassets in Resources */,
 				CBF20FA31F04BBC2006A1E4D /* Main.storyboard in Resources */,
@@ -262,8 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF20FDF1F051AC9006A1E4D /* MMDrawerVisualState.m in Sources */,
 				CBF20FA01F04BBC2006A1E4D /* ViewController.swift in Sources */,
+				CBF20FE01F051AC9006A1E4D /* UIViewController+MMDrawerController.m in Sources */,
+				CBF20FDE1F051AC9006A1E4D /* MMDrawerController.m in Sources */,
+				CBF20FDD1F051AC9006A1E4D /* MMDrawerBarButtonItem.m in Sources */,
 				CBF20F9E1F04BBC2006A1E4D /* AppDelegate.swift in Sources */,
+				CBF20FD21F05193B006A1E4D /* LeftSideNavViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,11 +470,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = HY9VKUPG9A;
 				INFOPLIST_FILE = DhyanaMandira/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.DhyanaMandira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DhyanaMandira/DhyanaMandira-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -430,11 +486,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = HY9VKUPG9A;
 				INFOPLIST_FILE = DhyanaMandira/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.DhyanaMandira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DhyanaMandira/DhyanaMandira-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -516,6 +574,7 @@
 				CBF20FC41F04BBC3006A1E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBF20FC51F04BBC3006A1E4D /* Build configuration list for PBXNativeTarget "DhyanaMandiraTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +583,7 @@
 				CBF20FC71F04BBC3006A1E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBF20FC81F04BBC3006A1E4D /* Build configuration list for PBXNativeTarget "DhyanaMandiraUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +592,7 @@
 				CBF20FCA1F04BBC3006A1E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

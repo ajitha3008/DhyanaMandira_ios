@@ -3,7 +3,7 @@
 //  DhyanaMandira
 //
 //  Created by AjithaYasmin on 29/06/17.
-//  Copyright © 2017 AjithaYasmin. All rights reserved.
+//  Copyright © 2/Users/ajithayasmin/Desktop/iOS/DhyanaMandira/DhyanaMandira/LeftSideNavViewController.swift017 AjithaYasmin. All rights reserved.
 //
 
 import UIKit
@@ -19,7 +19,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func LeftSideButtonTapped(_ sender: Any) {
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+    }
 
 }
 
