@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBF20F9E1F04BBC2006A1E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF20F9D1F04BBC2006A1E4D /* AppDelegate.swift */; };
+		CBF20FA01F04BBC2006A1E4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF20F9F1F04BBC2006A1E4D /* ViewController.swift */; };
+		CBF20FA31F04BBC2006A1E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FA11F04BBC2006A1E4D /* Main.storyboard */; };
+		CBF20FA51F04BBC2006A1E4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FA41F04BBC2006A1E4D /* Assets.xcassets */; };
+		CBF20FA81F04BBC2006A1E4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FA61F04BBC2006A1E4D /* LaunchScreen.storyboard */; };
+		CBF20FB31F04BBC3006A1E4D /* DhyanaMandiraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF20FB21F04BBC3006A1E4D /* DhyanaMandiraTests.swift */; };
+		CBF20FBE1F04BBC3006A1E4D /* DhyanaMandiraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF20FBD1F04BBC3006A1E4D /* DhyanaMandiraUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBF20FAF1F04BBC3006A1E4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBF20F921F04BBC2006A1E4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBF20F991F04BBC2006A1E4D;
+			remoteInfo = DhyanaMandira;
+		};
+		CBF20FBA1F04BBC3006A1E4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBF20F921F04BBC2006A1E4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBF20F991F04BBC2006A1E4D;
+			remoteInfo = DhyanaMandira;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBF20F9A1F04BBC2006A1E4D /* DhyanaMandira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DhyanaMandira.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF20F9D1F04BBC2006A1E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBF20F9F1F04BBC2006A1E4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBF20FA21F04BBC2006A1E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBF20FA41F04BBC2006A1E4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBF20FA71F04BBC2006A1E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBF20FA91F04BBC2006A1E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF20FAE1F04BBC3006A1E4D /* DhyanaMandiraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DhyanaMandiraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF20FB21F04BBC3006A1E4D /* DhyanaMandiraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhyanaMandiraTests.swift; sourceTree = "<group>"; };
+		CBF20FB41F04BBC3006A1E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF20FB91F04BBC3006A1E4D /* DhyanaMandiraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DhyanaMandiraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF20FBD1F04BBC3006A1E4D /* DhyanaMandiraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhyanaMandiraUITests.swift; sourceTree = "<group>"; };
+		CBF20FBF1F04BBC3006A1E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBF20F971F04BBC2006A1E4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF20FAB1F04BBC3006A1E4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF20FB61F04BBC3006A1E4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBF20F911F04BBC2006A1E4D = {
+			isa = PBXGroup;
+			children = (
+				CBF20F9C1F04BBC2006A1E4D /* DhyanaMandira */,
+				CBF20FB11F04BBC3006A1E4D /* DhyanaMandiraTests */,
+				CBF20FBC1F04BBC3006A1E4D /* DhyanaMandiraUITests */,
+				CBF20F9B1F04BBC2006A1E4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBF20F9B1F04BBC2006A1E4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBF20F9A1F04BBC2006A1E4D /* DhyanaMandira.app */,
+				CBF20FAE1F04BBC3006A1E4D /* DhyanaMandiraTests.xctest */,
+				CBF20FB91F04BBC3006A1E4D /* DhyanaMandiraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBF20F9C1F04BBC2006A1E4D /* DhyanaMandira */ = {
+			isa = PBXGroup;
+			children = (
+				CBF20F9D1F04BBC2006A1E4D /* AppDelegate.swift */,
+				CBF20F9F1F04BBC2006A1E4D /* ViewController.swift */,
+				CBF20FA11F04BBC2006A1E4D /* Main.storyboard */,
+				CBF20FA41F04BBC2006A1E4D /* Assets.xcassets */,
+				CBF20FA61F04BBC2006A1E4D /* LaunchScreen.storyboard */,
+				CBF20FA91F04BBC2006A1E4D /* Info.plist */,
+			);
+			path = DhyanaMandira;
+			sourceTree = "<group>";
+		};
+		CBF20FB11F04BBC3006A1E4D /* DhyanaMandiraTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBF20FB21F04BBC3006A1E4D /* DhyanaMandiraTests.swift */,
+				CBF20FB41F04BBC3006A1E4D /* Info.plist */,
+			);
+			path = DhyanaMandiraTests;
+			sourceTree = "<group>";
+		};
+		CBF20FBC1F04BBC3006A1E4D /* DhyanaMandiraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBF20FBD1F04BBC3006A1E4D /* DhyanaMandiraUITests.swift */,
+				CBF20FBF1F04BBC3006A1E4D /* Info.plist */,
+			);
+			path = DhyanaMandiraUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBF20F991F04BBC2006A1E4D /* DhyanaMandira */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF20FC21F04BBC3006A1E4D /* Build configuration list for PBXNativeTarget "DhyanaMandira" */;
+			buildPhases = (
+				CBF20F961F04BBC2006A1E4D /* Sources */,
+				CBF20F971F04BBC2006A1E4D /* Frameworks */,
+				CBF20F981F04BBC2006A1E4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DhyanaMandira;
+			productName = DhyanaMandira;
+			productReference = CBF20F9A1F04BBC2006A1E4D /* DhyanaMandira.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBF20FAD1F04BBC3006A1E4D /* DhyanaMandiraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF20FC51F04BBC3006A1E4D /* Build configuration list for PBXNativeTarget "DhyanaMandiraTests" */;
+			buildPhases = (
+				CBF20FAA1F04BBC3006A1E4D /* Sources */,
+				CBF20FAB1F04BBC3006A1E4D /* Frameworks */,
+				CBF20FAC1F04BBC3006A1E4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBF20FB01F04BBC3006A1E4D /* PBXTargetDependency */,
+			);
+			name = DhyanaMandiraTests;
+			productName = DhyanaMandiraTests;
+			productReference = CBF20FAE1F04BBC3006A1E4D /* DhyanaMandiraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBF20FB81F04BBC3006A1E4D /* DhyanaMandiraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF20FC81F04BBC3006A1E4D /* Build configuration list for PBXNativeTarget "DhyanaMandiraUITests" */;
+			buildPhases = (
+				CBF20FB51F04BBC3006A1E4D /* Sources */,
+				CBF20FB61F04BBC3006A1E4D /* Frameworks */,
+				CBF20FB71F04BBC3006A1E4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBF20FBB1F04BBC3006A1E4D /* PBXTargetDependency */,
+			);
+			name = DhyanaMandiraUITests;
+			productName = DhyanaMandiraUITests;
+			productReference = CBF20FB91F04BBC3006A1E4D /* DhyanaMandiraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBF20F921F04BBC2006A1E4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = AjithaYasmin;
+				TargetAttributes = {
+					CBF20F991F04BBC2006A1E4D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = HY9VKUPG9A;
+						ProvisioningStyle = Automatic;
+					};
+					CBF20FAD1F04BBC3006A1E4D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = HY9VKUPG9A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CBF20F991F04BBC2006A1E4D;
+					};
+					CBF20FB81F04BBC3006A1E4D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = HY9VKUPG9A;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CBF20F991F04BBC2006A1E4D;
+					};
+				};
+			};
+			buildConfigurationList = CBF20F951F04BBC2006A1E4D /* Build configuration list for PBXProject "DhyanaMandira" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBF20F911F04BBC2006A1E4D;
+			productRefGroup = CBF20F9B1F04BBC2006A1E4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBF20F991F04BBC2006A1E4D /* DhyanaMandira */,
+				CBF20FAD1F04BBC3006A1E4D /* DhyanaMandiraTests */,
+				CBF20FB81F04BBC3006A1E4D /* DhyanaMandiraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBF20F981F04BBC2006A1E4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF20FA81F04BBC2006A1E4D /* LaunchScreen.storyboard in Resources */,
+				CBF20FA51F04BBC2006A1E4D /* Assets.xcassets in Resources */,
+				CBF20FA31F04BBC2006A1E4D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF20FAC1F04BBC3006A1E4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF20FB71F04BBC3006A1E4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBF20F961F04BBC2006A1E4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF20FA01F04BBC2006A1E4D /* ViewController.swift in Sources */,
+				CBF20F9E1F04BBC2006A1E4D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF20FAA1F04BBC3006A1E4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF20FB31F04BBC3006A1E4D /* DhyanaMandiraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF20FB51F04BBC3006A1E4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF20FBE1F04BBC3006A1E4D /* DhyanaMandiraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBF20FB01F04BBC3006A1E4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBF20F991F04BBC2006A1E4D /* DhyanaMandira */;
+			targetProxy = CBF20FAF1F04BBC3006A1E4D /* PBXContainerItemProxy */;
+		};
+		CBF20FBB1F04BBC3006A1E4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBF20F991F04BBC2006A1E4D /* DhyanaMandira */;
+			targetProxy = CBF20FBA1F04BBC3006A1E4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBF20FA11F04BBC2006A1E4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBF20FA21F04BBC2006A1E4D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBF20FA61F04BBC2006A1E4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBF20FA71F04BBC2006A1E4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBF20FC01F04BBC3006A1E4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBF20FC11F04BBC3006A1E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBF20FC31F04BBC3006A1E4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HY9VKUPG9A;
+				INFOPLIST_FILE = DhyanaMandira/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braingalore.DhyanaMandira;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CBF20FC41F04BBC3006A1E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HY9VKUPG9A;
+				INFOPLIST_FILE = DhyanaMandira/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braingalore.DhyanaMandira;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CBF20FC61F04BBC3006A1E4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HY9VKUPG9A;
+				INFOPLIST_FILE = DhyanaMandiraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braingalore.DhyanaMandiraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DhyanaMandira.app/DhyanaMandira";
+			};
+			name = Debug;
+		};
+		CBF20FC71F04BBC3006A1E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HY9VKUPG9A;
+				INFOPLIST_FILE = DhyanaMandiraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braingalore.DhyanaMandiraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DhyanaMandira.app/DhyanaMandira";
+			};
+			name = Release;
+		};
+		CBF20FC91F04BBC3006A1E4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HY9VKUPG9A;
+				INFOPLIST_FILE = DhyanaMandiraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braingalore.DhyanaMandiraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DhyanaMandira;
+			};
+			name = Debug;
+		};
+		CBF20FCA1F04BBC3006A1E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HY9VKUPG9A;
+				INFOPLIST_FILE = DhyanaMandiraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braingalore.DhyanaMandiraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DhyanaMandira;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBF20F951F04BBC2006A1E4D /* Build configuration list for PBXProject "DhyanaMandira" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF20FC01F04BBC3006A1E4D /* Debug */,
+				CBF20FC11F04BBC3006A1E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBF20FC21F04BBC3006A1E4D /* Build configuration list for PBXNativeTarget "DhyanaMandira" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF20FC31F04BBC3006A1E4D /* Debug */,
+				CBF20FC41F04BBC3006A1E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CBF20FC51F04BBC3006A1E4D /* Build configuration list for PBXNativeTarget "DhyanaMandiraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF20FC61F04BBC3006A1E4D /* Debug */,
+				CBF20FC71F04BBC3006A1E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CBF20FC81F04BBC3006A1E4D /* Build configuration list for PBXNativeTarget "DhyanaMandiraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF20FC91F04BBC3006A1E4D /* Debug */,
+				CBF20FCA1F04BBC3006A1E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBF20F921F04BBC2006A1E4D /* Project object */;
+}
