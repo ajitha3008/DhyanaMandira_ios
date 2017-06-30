@@ -8,12 +8,37 @@
 
 import UIKit
 
+extension UIColor {
+    convenience init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+        
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+    }
+    
+    convenience init(rgb: Int) {
+        self.init(
+            red: (rgb >> 16) & 0xFF,
+            green: (rgb >> 8) & 0xFF,
+            blue: rgb & 0xFF
+        )
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
     var centerContainer: MMDrawerController?
+    
+    var navigationBar = UINavigationBar.appearance()
+    
+    //let color = UIColor(red: 0xFF, green: 0xFF, blue: 0xFF)
+    
+    let navBarColour = UIColor(rgb: 0xa55200)
+    let whiteColour = UIColor(rgb: 0xffffff)
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         //Override point for customization after application launch.
@@ -30,9 +55,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.panningCenterView;
         window!.rootViewController = centerContainer
         window!.makeKeyAndVisible()
+        
+        navigationBar.backgroundColor = navBarColour
+        //navigationBar.tintColor = whiteColour
+        navigationBar.titleTextAttributes=[NSForegroundColorAttributeName:UIColor.black]
+        //navigationBar.backgroundColor = navBarColour
+        
         return true
     }
-
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

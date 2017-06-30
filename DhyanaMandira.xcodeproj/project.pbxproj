@@ -20,6 +20,28 @@
 		CBF20FDF1F051AC9006A1E4D /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF20FDA1F051AC9006A1E4D /* MMDrawerVisualState.m */; };
 		CBF20FE01F051AC9006A1E4D /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF20FDC1F051AC9006A1E4D /* UIViewController+MMDrawerController.m */; };
 		CBF20FE41F05296D006A1E4D /* header_om.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FE31F05296D006A1E4D /* header_om.png */; };
+		CBF20FE61F06156C006A1E4D /* NavigationDrawerMenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF20FE51F06156C006A1E4D /* NavigationDrawerMenuItemTableViewCell.swift */; };
+		CBF20FE81F061E15006A1E4D /* dhyana_mandira_about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FE71F061E15006A1E4D /* dhyana_mandira_about.jpg */; };
+		CBF20FFD1F061E95006A1E4D /* ic_action_abhyasas.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FE91F061E95006A1E4D /* ic_action_abhyasas.png */; };
+		CBF20FFE1F061E95006A1E4D /* ic_action_ashtanga_yoga.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FEA1F061E95006A1E4D /* ic_action_ashtanga_yoga.png */; };
+		CBF20FFF1F061E95006A1E4D /* ic_action_attach_money.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FEB1F061E95006A1E4D /* ic_action_attach_money.png */; };
+		CBF210001F061E95006A1E4D /* ic_action_aum_mantra_symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FEC1F061E95006A1E4D /* ic_action_aum_mantra_symbol.png */; };
+		CBF210011F061E95006A1E4D /* ic_action_call.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FED1F061E95006A1E4D /* ic_action_call.png */; };
+		CBF210021F061E95006A1E4D /* ic_action_collections.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FEE1F061E95006A1E4D /* ic_action_collections.png */; };
+		CBF210031F061E95006A1E4D /* ic_action_contact_mail.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FEF1F061E95006A1E4D /* ic_action_contact_mail.png */; };
+		CBF210041F061E95006A1E4D /* ic_action_contact_phone.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FF01F061E95006A1E4D /* ic_action_contact_phone.png */; };
+		CBF210051F061E95006A1E4D /* ic_action_dhyana.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FF11F061E95006A1E4D /* ic_action_dhyana.png */; };
+		CBF210061F061E95006A1E4D /* ic_action_directions_walk.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FF21F061E95006A1E4D /* ic_action_directions_walk.png */; };
+		CBF210071F061E95006A1E4D /* ic_action_event_note.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FF31F061E95006A1E4D /* ic_action_event_note.png */; };
+		CBF210081F061E95006A1E4D /* ic_action_info_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FF41F061E95006A1E4D /* ic_action_info_outline.png */; };
+		CBF210091F061E95006A1E4D /* ic_action_insert_comment.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FF51F061E95006A1E4D /* ic_action_insert_comment.png */; };
+		CBF2100A1F061E95006A1E4D /* ic_action_notifications.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FF61F061E95006A1E4D /* ic_action_notifications.png */; };
+		CBF2100B1F061E95006A1E4D /* ic_action_ondemand_video.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FF71F061E95006A1E4D /* ic_action_ondemand_video.png */; };
+		CBF2100C1F061E95006A1E4D /* ic_action_person_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FF81F061E95006A1E4D /* ic_action_person_outline.png */; };
+		CBF2100D1F061E95006A1E4D /* ic_action_share.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FF91F061E95006A1E4D /* ic_action_share.png */; };
+		CBF2100E1F061E95006A1E4D /* ic_action_thumb_up.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FFA1F061E95006A1E4D /* ic_action_thumb_up.png */; };
+		CBF2100F1F061E95006A1E4D /* ic_stat_notif_icon_firebase_om.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FFB1F061E95006A1E4D /* ic_stat_notif_icon_firebase_om.png */; };
+		CBF210101F061E95006A1E4D /* sir.9.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FFC1F061E95006A1E4D /* sir.9.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +87,28 @@
 		CBF20FDC1F051AC9006A1E4D /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		CBF20FE11F051C79006A1E4D /* DhyanaMandira-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DhyanaMandira-Bridging-Header.h"; sourceTree = "<group>"; };
 		CBF20FE31F05296D006A1E4D /* header_om.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_om.png; sourceTree = "<group>"; };
+		CBF20FE51F06156C006A1E4D /* NavigationDrawerMenuItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDrawerMenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		CBF20FE71F061E15006A1E4D /* dhyana_mandira_about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dhyana_mandira_about.jpg; sourceTree = "<group>"; };
+		CBF20FE91F061E95006A1E4D /* ic_action_abhyasas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_abhyasas.png; sourceTree = "<group>"; };
+		CBF20FEA1F061E95006A1E4D /* ic_action_ashtanga_yoga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_ashtanga_yoga.png; sourceTree = "<group>"; };
+		CBF20FEB1F061E95006A1E4D /* ic_action_attach_money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_attach_money.png; sourceTree = "<group>"; };
+		CBF20FEC1F061E95006A1E4D /* ic_action_aum_mantra_symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_aum_mantra_symbol.png; sourceTree = "<group>"; };
+		CBF20FED1F061E95006A1E4D /* ic_action_call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_call.png; sourceTree = "<group>"; };
+		CBF20FEE1F061E95006A1E4D /* ic_action_collections.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_collections.png; sourceTree = "<group>"; };
+		CBF20FEF1F061E95006A1E4D /* ic_action_contact_mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_contact_mail.png; sourceTree = "<group>"; };
+		CBF20FF01F061E95006A1E4D /* ic_action_contact_phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_contact_phone.png; sourceTree = "<group>"; };
+		CBF20FF11F061E95006A1E4D /* ic_action_dhyana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_dhyana.png; sourceTree = "<group>"; };
+		CBF20FF21F061E95006A1E4D /* ic_action_directions_walk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_directions_walk.png; sourceTree = "<group>"; };
+		CBF20FF31F061E95006A1E4D /* ic_action_event_note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_event_note.png; sourceTree = "<group>"; };
+		CBF20FF41F061E95006A1E4D /* ic_action_info_outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_info_outline.png; sourceTree = "<group>"; };
+		CBF20FF51F061E95006A1E4D /* ic_action_insert_comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_insert_comment.png; sourceTree = "<group>"; };
+		CBF20FF61F061E95006A1E4D /* ic_action_notifications.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_notifications.png; sourceTree = "<group>"; };
+		CBF20FF71F061E95006A1E4D /* ic_action_ondemand_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_ondemand_video.png; sourceTree = "<group>"; };
+		CBF20FF81F061E95006A1E4D /* ic_action_person_outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_person_outline.png; sourceTree = "<group>"; };
+		CBF20FF91F061E95006A1E4D /* ic_action_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_share.png; sourceTree = "<group>"; };
+		CBF20FFA1F061E95006A1E4D /* ic_action_thumb_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_thumb_up.png; sourceTree = "<group>"; };
+		CBF20FFB1F061E95006A1E4D /* ic_stat_notif_icon_firebase_om.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_stat_notif_icon_firebase_om.png; sourceTree = "<group>"; };
+		CBF20FFC1F061E95006A1E4D /* sir.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sir.9.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +169,7 @@
 				CBF20FA91F04BBC2006A1E4D /* Info.plist */,
 				CBF20FD11F05193B006A1E4D /* LeftSideNavViewController.swift */,
 				CBF20FE11F051C79006A1E4D /* DhyanaMandira-Bridging-Header.h */,
+				CBF20FE51F06156C006A1E4D /* NavigationDrawerMenuItemTableViewCell.swift */,
 			);
 			path = DhyanaMandira;
 			sourceTree = "<group>";
@@ -166,6 +211,27 @@
 		CBF20FE21F052943006A1E4D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CBF20FE91F061E95006A1E4D /* ic_action_abhyasas.png */,
+				CBF20FEA1F061E95006A1E4D /* ic_action_ashtanga_yoga.png */,
+				CBF20FEB1F061E95006A1E4D /* ic_action_attach_money.png */,
+				CBF20FEC1F061E95006A1E4D /* ic_action_aum_mantra_symbol.png */,
+				CBF20FED1F061E95006A1E4D /* ic_action_call.png */,
+				CBF20FEE1F061E95006A1E4D /* ic_action_collections.png */,
+				CBF20FEF1F061E95006A1E4D /* ic_action_contact_mail.png */,
+				CBF20FF01F061E95006A1E4D /* ic_action_contact_phone.png */,
+				CBF20FF11F061E95006A1E4D /* ic_action_dhyana.png */,
+				CBF20FF21F061E95006A1E4D /* ic_action_directions_walk.png */,
+				CBF20FF31F061E95006A1E4D /* ic_action_event_note.png */,
+				CBF20FF41F061E95006A1E4D /* ic_action_info_outline.png */,
+				CBF20FF51F061E95006A1E4D /* ic_action_insert_comment.png */,
+				CBF20FF61F061E95006A1E4D /* ic_action_notifications.png */,
+				CBF20FF71F061E95006A1E4D /* ic_action_ondemand_video.png */,
+				CBF20FF81F061E95006A1E4D /* ic_action_person_outline.png */,
+				CBF20FF91F061E95006A1E4D /* ic_action_share.png */,
+				CBF20FFA1F061E95006A1E4D /* ic_action_thumb_up.png */,
+				CBF20FFB1F061E95006A1E4D /* ic_stat_notif_icon_firebase_om.png */,
+				CBF20FFC1F061E95006A1E4D /* sir.9.png */,
+				CBF20FE71F061E15006A1E4D /* dhyana_mandira_about.jpg */,
 				CBF20FE31F05296D006A1E4D /* header_om.png */,
 			);
 			name = images;
@@ -282,10 +348,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF20FE81F061E15006A1E4D /* dhyana_mandira_about.jpg in Resources */,
+				CBF20FFF1F061E95006A1E4D /* ic_action_attach_money.png in Resources */,
 				CBF20FE41F05296D006A1E4D /* header_om.png in Resources */,
+				CBF210041F061E95006A1E4D /* ic_action_contact_phone.png in Resources */,
+				CBF210061F061E95006A1E4D /* ic_action_directions_walk.png in Resources */,
 				CBF20FA81F04BBC2006A1E4D /* LaunchScreen.storyboard in Resources */,
+				CBF2100F1F061E95006A1E4D /* ic_stat_notif_icon_firebase_om.png in Resources */,
+				CBF210021F061E95006A1E4D /* ic_action_collections.png in Resources */,
+				CBF20FFD1F061E95006A1E4D /* ic_action_abhyasas.png in Resources */,
+				CBF210091F061E95006A1E4D /* ic_action_insert_comment.png in Resources */,
+				CBF210101F061E95006A1E4D /* sir.9.png in Resources */,
 				CBF20FA51F04BBC2006A1E4D /* Assets.xcassets in Resources */,
+				CBF2100A1F061E95006A1E4D /* ic_action_notifications.png in Resources */,
+				CBF210031F061E95006A1E4D /* ic_action_contact_mail.png in Resources */,
+				CBF210071F061E95006A1E4D /* ic_action_event_note.png in Resources */,
+				CBF20FFE1F061E95006A1E4D /* ic_action_ashtanga_yoga.png in Resources */,
+				CBF210081F061E95006A1E4D /* ic_action_info_outline.png in Resources */,
+				CBF2100C1F061E95006A1E4D /* ic_action_person_outline.png in Resources */,
+				CBF210051F061E95006A1E4D /* ic_action_dhyana.png in Resources */,
+				CBF210011F061E95006A1E4D /* ic_action_call.png in Resources */,
+				CBF210001F061E95006A1E4D /* ic_action_aum_mantra_symbol.png in Resources */,
+				CBF2100E1F061E95006A1E4D /* ic_action_thumb_up.png in Resources */,
+				CBF2100D1F061E95006A1E4D /* ic_action_share.png in Resources */,
 				CBF20FA31F04BBC2006A1E4D /* Main.storyboard in Resources */,
+				CBF2100B1F061E95006A1E4D /* ic_action_ondemand_video.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +399,7 @@
 			files = (
 				CBF20FDF1F051AC9006A1E4D /* MMDrawerVisualState.m in Sources */,
 				CBF20FA01F04BBC2006A1E4D /* ViewController.swift in Sources */,
+				CBF20FE61F06156C006A1E4D /* NavigationDrawerMenuItemTableViewCell.swift in Sources */,
 				CBF20FE01F051AC9006A1E4D /* UIViewController+MMDrawerController.m in Sources */,
 				CBF20FDE1F051AC9006A1E4D /* MMDrawerController.m in Sources */,
 				CBF20FDD1F051AC9006A1E4D /* MMDrawerBarButtonItem.m in Sources */,
