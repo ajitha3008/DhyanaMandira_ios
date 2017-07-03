@@ -141,9 +141,18 @@ class LeftSideNavViewController: UIViewController,UITableViewDelegate,UITableVie
             appDelegate.centerContainer!.centerViewController = centerNavController
             appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
                 }
+                if(indexPath.row == 1) {
+                    var centerViewController = self.storyboard?.instantiateViewController(withIdentifier: "RegistrationViewController") as! RegistrationViewController
+                    var centerNavController = UINavigationController(rootViewController: centerViewController)
+                    var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+                    appDelegate.centerContainer!.centerViewController = centerNavController
+                    appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+
+                }
             break;
             /*case 1:
-            var aboutViewController = self.storyboard?.instantiateViewControllerWithIdentifier("AboutViewController") as AboutViewController
+                
+            var aboutViewController = self.storyboard?.instantiateViewControllerWithIdentifier("RegistrationViewController") as RegistrationViewController
             var aboutNavController = UINavigationController(rootViewController: aboutViewController)
             var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
             appDelegate.centerContainer!.centerViewController = aboutNavController

@@ -42,6 +42,7 @@
 		CBF2100E1F061E95006A1E4D /* ic_action_thumb_up.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FFA1F061E95006A1E4D /* ic_action_thumb_up.png */; };
 		CBF2100F1F061E95006A1E4D /* ic_stat_notif_icon_firebase_om.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FFB1F061E95006A1E4D /* ic_stat_notif_icon_firebase_om.png */; };
 		CBF210101F061E95006A1E4D /* sir.9.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FFC1F061E95006A1E4D /* sir.9.png */; };
+		CBF210151F0A06BA006A1E4D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210141F0A06BA006A1E4D /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		CBF20FFA1F061E95006A1E4D /* ic_action_thumb_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_thumb_up.png; sourceTree = "<group>"; };
 		CBF20FFB1F061E95006A1E4D /* ic_stat_notif_icon_firebase_om.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_stat_notif_icon_firebase_om.png; sourceTree = "<group>"; };
 		CBF20FFC1F061E95006A1E4D /* sir.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sir.9.png; sourceTree = "<group>"; };
+		CBF210141F0A06BA006A1E4D /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		CBF20F9C1F04BBC2006A1E4D /* DhyanaMandira */ = {
 			isa = PBXGroup;
 			children = (
+				CBF210111F0A001A006A1E4D /* MenuViewControllers */,
 				CBF20FE21F052943006A1E4D /* images */,
 				CBF20FD31F051A64006A1E4D /* MySideMenu */,
 				CBF20F9D1F04BBC2006A1E4D /* AppDelegate.swift */,
@@ -235,6 +238,14 @@
 				CBF20FE31F05296D006A1E4D /* header_om.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		CBF210111F0A001A006A1E4D /* MenuViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBF210141F0A06BA006A1E4D /* RegistrationViewController.swift */,
+			);
+			name = MenuViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +411,7 @@
 				CBF20FDF1F051AC9006A1E4D /* MMDrawerVisualState.m in Sources */,
 				CBF20FA01F04BBC2006A1E4D /* ViewController.swift in Sources */,
 				CBF20FE61F06156C006A1E4D /* NavigationDrawerMenuItemTableViewCell.swift in Sources */,
+				CBF210151F0A06BA006A1E4D /* RegistrationViewController.swift in Sources */,
 				CBF20FE01F051AC9006A1E4D /* UIViewController+MMDrawerController.m in Sources */,
 				CBF20FDE1F051AC9006A1E4D /* MMDrawerController.m in Sources */,
 				CBF20FDD1F051AC9006A1E4D /* MMDrawerBarButtonItem.m in Sources */,

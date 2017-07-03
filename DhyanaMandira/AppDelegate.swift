@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //let color = UIColor(red: 0xFF, green: 0xFF, blue: 0xFF)
     
-    let navBarColour = UIColor(rgb: 0xa55200)
+    let navBarColour = UIColor(rgb: 0xcc6600)
     let whiteColour = UIColor(rgb: 0xffffff)
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -57,10 +57,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.makeKeyAndVisible()
         
         navigationBar.backgroundColor = navBarColour
-        //navigationBar.tintColor = whiteColour
-        navigationBar.titleTextAttributes=[NSForegroundColorAttributeName:UIColor.black]
-        //navigationBar.backgroundColor = navBarColour
-        
+        navigationBar.barTintColor = navBarColour
+        navigationBar.tintColor = whiteColour
+        navigationBar.titleTextAttributes=[NSForegroundColorAttributeName:UIColor.white]
         return true
     }
     
