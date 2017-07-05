@@ -93,6 +93,7 @@
 		CBF210741F0CF5F1006A1E4D /* image_42.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF2104A1F0CF5F1006A1E4D /* image_42.jpg */; };
 		CBF210761F0CF6CA006A1E4D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210751F0CF6CA006A1E4D /* GalleryViewController.swift */; };
 		CBF210781F0CF91E006A1E4D /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210771F0CF91E006A1E4D /* GalleryCollectionViewCell.swift */; };
+		CBF2107A1F0D11A5006A1E4D /* VisitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210791F0D11A5006A1E4D /* VisitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -216,6 +217,7 @@
 		CBF2104A1F0CF5F1006A1E4D /* image_42.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_42.jpg; sourceTree = "<group>"; };
 		CBF210751F0CF6CA006A1E4D /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		CBF210771F0CF91E006A1E4D /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBF210791F0D11A5006A1E4D /* VisitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitViewController.swift; sourceTree = "<group>"; };
 		FE2605940C96C93F50AC9017 /* Pods-DhyanaMandiraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandiraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandiraUITests/Pods-DhyanaMandiraUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -361,6 +363,7 @@
 				CBF2101A1F0A522E006A1E4D /* FounderViewController.swift */,
 				CBF210751F0CF6CA006A1E4D /* GalleryViewController.swift */,
 				CBF210771F0CF91E006A1E4D /* GalleryCollectionViewCell.swift */,
+				CBF210791F0D11A5006A1E4D /* VisitViewController.swift */,
 			);
 			name = MenuViewControllers;
 			sourceTree = "<group>";
@@ -796,6 +799,7 @@
 				CBF20FE61F06156C006A1E4D /* NavigationDrawerMenuItemTableViewCell.swift in Sources */,
 				CBF210151F0A06BA006A1E4D /* RegistrationViewController.swift in Sources */,
 				CBF20FE01F051AC9006A1E4D /* UIViewController+MMDrawerController.m in Sources */,
+				CBF2107A1F0D11A5006A1E4D /* VisitViewController.swift in Sources */,
 				CBF20FDE1F051AC9006A1E4D /* MMDrawerController.m in Sources */,
 				CBF20FDD1F051AC9006A1E4D /* MMDrawerBarButtonItem.m in Sources */,
 				CBF20F9E1F04BBC2006A1E4D /* AppDelegate.swift in Sources */,

@@ -491,6 +491,66 @@ Mantras  Refer next page for the Abhyasas (activities) for daily practice.</
             </objects>
             <point key="canvasLocation" x="365.60000000000002" y="3536.5817091454273"/>
         </scene>
+        <!--Visit View Controller-->
+        <scene sceneID="aCE-lf-ETL">
+            <objects>
+                <viewController storyboardIdentifier="VisitViewController" id="GGB-Vn-vU2" customClass="VisitViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zcj-Z1-wH6"/>
+                        <viewControllerLayoutGuide type="bottom" id="0F1-ve-ipw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GDM-Xc-cnt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jCT-GC-BlZ">
+                                <rect key="frame" x="16" y="82" width="343" height="286"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvQ-bI-XYB">
+                                <rect key="frame" x="16" y="390" width="343" height="257"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Postal Address: Rajkumar G Mukhya Shikshaka Dhyana Mandira Yoga Kendra Shri Someshwara(Shiva) Temple, Madiwala, BTM 1st Stage, Bangalore, 560068</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4pv-u1-LiN">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="FcZ-tJ-qR2">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="GGB-Vn-vU2" id="s7E-yy-7D5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="MapView" destination="jCT-GC-BlZ" id="mNV-nV-fNi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6G-2a-Y0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1292" y="4251.7241379310344"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tiS-3S-0MU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="De9-a5-Kns" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fiR-tG-UnC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GGB-Vn-vU2" kind="relationship" relationship="rootViewController" id="tB1-t8-b5W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TCT-yg-TWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352.80000000000001" y="4251.7241379310344"/>
+        </scene>
     </scenes>
     <resources>
         <image name="dhyana_mandira_about.jpg" width="750" height="563"/>
