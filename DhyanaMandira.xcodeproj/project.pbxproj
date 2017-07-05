@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BAF780F2E5A529E54DEB0A2 /* Pods_DhyanaMandiraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B018C040A9EAA244ED866877 /* Pods_DhyanaMandiraTests.framework */; };
+		643AF723BDA75A2160E662CE /* Pods_DhyanaMandira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A18E866B817193E3FB73EFF /* Pods_DhyanaMandira.framework */; };
+		B780CDBB182613AD0FF952CD /* Pods_DhyanaMandiraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B81C3226A3932520F23FA91 /* Pods_DhyanaMandiraUITests.framework */; };
 		CBF20F9E1F04BBC2006A1E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF20F9D1F04BBC2006A1E4D /* AppDelegate.swift */; };
 		CBF20FA01F04BBC2006A1E4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF20F9F1F04BBC2006A1E4D /* ViewController.swift */; };
 		CBF20FA31F04BBC2006A1E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FA11F04BBC2006A1E4D /* Main.storyboard */; };
@@ -43,6 +46,53 @@
 		CBF2100F1F061E95006A1E4D /* ic_stat_notif_icon_firebase_om.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FFB1F061E95006A1E4D /* ic_stat_notif_icon_firebase_om.png */; };
 		CBF210101F061E95006A1E4D /* sir.9.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FFC1F061E95006A1E4D /* sir.9.png */; };
 		CBF210151F0A06BA006A1E4D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210141F0A06BA006A1E4D /* RegistrationViewController.swift */; };
+		CBF210171F0A4C26006A1E4D /* AshtangaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210161F0A4C26006A1E4D /* AshtangaViewController.swift */; };
+		CBF210191F0A4DF7006A1E4D /* DhyanaMandiraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210181F0A4DF7006A1E4D /* DhyanaMandiraViewController.swift */; };
+		CBF2101B1F0A522E006A1E4D /* FounderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2101A1F0A522E006A1E4D /* FounderViewController.swift */; };
+		CBF2104B1F0CF5F1006A1E4D /* image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210211F0CF5F1006A1E4D /* image_1.jpg */; };
+		CBF2104C1F0CF5F1006A1E4D /* image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210221F0CF5F1006A1E4D /* image_2.jpg */; };
+		CBF2104D1F0CF5F1006A1E4D /* image_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210231F0CF5F1006A1E4D /* image_3.jpg */; };
+		CBF2104E1F0CF5F1006A1E4D /* image_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210241F0CF5F1006A1E4D /* image_4.jpg */; };
+		CBF2104F1F0CF5F1006A1E4D /* image_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210251F0CF5F1006A1E4D /* image_5.jpg */; };
+		CBF210501F0CF5F1006A1E4D /* image_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210261F0CF5F1006A1E4D /* image_6.jpg */; };
+		CBF210511F0CF5F1006A1E4D /* image_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210271F0CF5F1006A1E4D /* image_7.jpg */; };
+		CBF210521F0CF5F1006A1E4D /* image_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210281F0CF5F1006A1E4D /* image_8.jpg */; };
+		CBF210531F0CF5F1006A1E4D /* image_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210291F0CF5F1006A1E4D /* image_9.jpg */; };
+		CBF210541F0CF5F1006A1E4D /* image_10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF2102A1F0CF5F1006A1E4D /* image_10.jpg */; };
+		CBF210551F0CF5F1006A1E4D /* image_11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF2102B1F0CF5F1006A1E4D /* image_11.jpg */; };
+		CBF210561F0CF5F1006A1E4D /* image_12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF2102C1F0CF5F1006A1E4D /* image_12.jpg */; };
+		CBF210571F0CF5F1006A1E4D /* image_13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF2102D1F0CF5F1006A1E4D /* image_13.jpg */; };
+		CBF210581F0CF5F1006A1E4D /* image_14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF2102E1F0CF5F1006A1E4D /* image_14.jpg */; };
+		CBF210591F0CF5F1006A1E4D /* image_15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF2102F1F0CF5F1006A1E4D /* image_15.jpg */; };
+		CBF2105A1F0CF5F1006A1E4D /* image_16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210301F0CF5F1006A1E4D /* image_16.jpg */; };
+		CBF2105B1F0CF5F1006A1E4D /* image_17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210311F0CF5F1006A1E4D /* image_17.jpg */; };
+		CBF2105C1F0CF5F1006A1E4D /* image_18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210321F0CF5F1006A1E4D /* image_18.jpg */; };
+		CBF2105D1F0CF5F1006A1E4D /* image_19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210331F0CF5F1006A1E4D /* image_19.jpg */; };
+		CBF2105E1F0CF5F1006A1E4D /* image_20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210341F0CF5F1006A1E4D /* image_20.jpg */; };
+		CBF2105F1F0CF5F1006A1E4D /* image_21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210351F0CF5F1006A1E4D /* image_21.jpg */; };
+		CBF210601F0CF5F1006A1E4D /* image_22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210361F0CF5F1006A1E4D /* image_22.jpg */; };
+		CBF210611F0CF5F1006A1E4D /* image_23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210371F0CF5F1006A1E4D /* image_23.jpg */; };
+		CBF210621F0CF5F1006A1E4D /* image_24.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210381F0CF5F1006A1E4D /* image_24.jpg */; };
+		CBF210631F0CF5F1006A1E4D /* image_25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210391F0CF5F1006A1E4D /* image_25.jpg */; };
+		CBF210641F0CF5F1006A1E4D /* image_26.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF2103A1F0CF5F1006A1E4D /* image_26.jpg */; };
+		CBF210651F0CF5F1006A1E4D /* image_27.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF2103B1F0CF5F1006A1E4D /* image_27.jpg */; };
+		CBF210661F0CF5F1006A1E4D /* image_28.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF2103C1F0CF5F1006A1E4D /* image_28.jpg */; };
+		CBF210671F0CF5F1006A1E4D /* image_29.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF2103D1F0CF5F1006A1E4D /* image_29.jpg */; };
+		CBF210681F0CF5F1006A1E4D /* image_30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF2103E1F0CF5F1006A1E4D /* image_30.jpg */; };
+		CBF210691F0CF5F1006A1E4D /* image_31.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF2103F1F0CF5F1006A1E4D /* image_31.jpg */; };
+		CBF2106A1F0CF5F1006A1E4D /* image_32.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210401F0CF5F1006A1E4D /* image_32.jpg */; };
+		CBF2106B1F0CF5F1006A1E4D /* image_33.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210411F0CF5F1006A1E4D /* image_33.jpg */; };
+		CBF2106C1F0CF5F1006A1E4D /* image_34.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210421F0CF5F1006A1E4D /* image_34.jpg */; };
+		CBF2106D1F0CF5F1006A1E4D /* image_35.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210431F0CF5F1006A1E4D /* image_35.jpg */; };
+		CBF2106E1F0CF5F1006A1E4D /* image_36.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210441F0CF5F1006A1E4D /* image_36.jpg */; };
+		CBF2106F1F0CF5F1006A1E4D /* image_37.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210451F0CF5F1006A1E4D /* image_37.jpg */; };
+		CBF210701F0CF5F1006A1E4D /* image_38.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210461F0CF5F1006A1E4D /* image_38.jpg */; };
+		CBF210711F0CF5F1006A1E4D /* image_39.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210471F0CF5F1006A1E4D /* image_39.jpg */; };
+		CBF210721F0CF5F1006A1E4D /* image_40.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210481F0CF5F1006A1E4D /* image_40.jpg */; };
+		CBF210731F0CF5F1006A1E4D /* image_41.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF210491F0CF5F1006A1E4D /* image_41.jpg */; };
+		CBF210741F0CF5F1006A1E4D /* image_42.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBF2104A1F0CF5F1006A1E4D /* image_42.jpg */; };
+		CBF210761F0CF6CA006A1E4D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210751F0CF6CA006A1E4D /* GalleryViewController.swift */; };
+		CBF210781F0CF91E006A1E4D /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210771F0CF91E006A1E4D /* GalleryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +113,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A18E866B817193E3FB73EFF /* Pods_DhyanaMandira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DhyanaMandira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31C1A549EBAD4DE6E1B5C02B /* Pods-DhyanaMandiraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandiraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandiraTests/Pods-DhyanaMandiraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B81C3226A3932520F23FA91 /* Pods_DhyanaMandiraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DhyanaMandiraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6453E7CD1CBACCFB3F79D755 /* Pods-DhyanaMandiraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandiraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandiraUITests/Pods-DhyanaMandiraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		785E0C3A4641A32125E243B4 /* Pods-DhyanaMandiraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandiraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandiraTests/Pods-DhyanaMandiraTests.release.xcconfig"; sourceTree = "<group>"; };
+		8DFE5B9A4738726BE861E201 /* Pods-DhyanaMandira.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandira.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandira/Pods-DhyanaMandira.debug.xcconfig"; sourceTree = "<group>"; };
+		B018C040A9EAA244ED866877 /* Pods_DhyanaMandiraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DhyanaMandiraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9B7578E4E9A221CC964689 /* Pods-DhyanaMandira.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandira.release.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandira/Pods-DhyanaMandira.release.xcconfig"; sourceTree = "<group>"; };
 		CBF20F9A1F04BBC2006A1E4D /* DhyanaMandira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DhyanaMandira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF20F9D1F04BBC2006A1E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBF20F9F1F04BBC2006A1E4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +169,54 @@
 		CBF20FFB1F061E95006A1E4D /* ic_stat_notif_icon_firebase_om.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_stat_notif_icon_firebase_om.png; sourceTree = "<group>"; };
 		CBF20FFC1F061E95006A1E4D /* sir.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sir.9.png; sourceTree = "<group>"; };
 		CBF210141F0A06BA006A1E4D /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		CBF210161F0A4C26006A1E4D /* AshtangaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AshtangaViewController.swift; sourceTree = "<group>"; };
+		CBF210181F0A4DF7006A1E4D /* DhyanaMandiraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DhyanaMandiraViewController.swift; sourceTree = "<group>"; };
+		CBF2101A1F0A522E006A1E4D /* FounderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FounderViewController.swift; sourceTree = "<group>"; };
+		CBF210211F0CF5F1006A1E4D /* image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_1.jpg; sourceTree = "<group>"; };
+		CBF210221F0CF5F1006A1E4D /* image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_2.jpg; sourceTree = "<group>"; };
+		CBF210231F0CF5F1006A1E4D /* image_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_3.jpg; sourceTree = "<group>"; };
+		CBF210241F0CF5F1006A1E4D /* image_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_4.jpg; sourceTree = "<group>"; };
+		CBF210251F0CF5F1006A1E4D /* image_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_5.jpg; sourceTree = "<group>"; };
+		CBF210261F0CF5F1006A1E4D /* image_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_6.jpg; sourceTree = "<group>"; };
+		CBF210271F0CF5F1006A1E4D /* image_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_7.jpg; sourceTree = "<group>"; };
+		CBF210281F0CF5F1006A1E4D /* image_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_8.jpg; sourceTree = "<group>"; };
+		CBF210291F0CF5F1006A1E4D /* image_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_9.jpg; sourceTree = "<group>"; };
+		CBF2102A1F0CF5F1006A1E4D /* image_10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_10.jpg; sourceTree = "<group>"; };
+		CBF2102B1F0CF5F1006A1E4D /* image_11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_11.jpg; sourceTree = "<group>"; };
+		CBF2102C1F0CF5F1006A1E4D /* image_12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_12.jpg; sourceTree = "<group>"; };
+		CBF2102D1F0CF5F1006A1E4D /* image_13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_13.jpg; sourceTree = "<group>"; };
+		CBF2102E1F0CF5F1006A1E4D /* image_14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_14.jpg; sourceTree = "<group>"; };
+		CBF2102F1F0CF5F1006A1E4D /* image_15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_15.jpg; sourceTree = "<group>"; };
+		CBF210301F0CF5F1006A1E4D /* image_16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_16.jpg; sourceTree = "<group>"; };
+		CBF210311F0CF5F1006A1E4D /* image_17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_17.jpg; sourceTree = "<group>"; };
+		CBF210321F0CF5F1006A1E4D /* image_18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_18.jpg; sourceTree = "<group>"; };
+		CBF210331F0CF5F1006A1E4D /* image_19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_19.jpg; sourceTree = "<group>"; };
+		CBF210341F0CF5F1006A1E4D /* image_20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_20.jpg; sourceTree = "<group>"; };
+		CBF210351F0CF5F1006A1E4D /* image_21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_21.jpg; sourceTree = "<group>"; };
+		CBF210361F0CF5F1006A1E4D /* image_22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_22.jpg; sourceTree = "<group>"; };
+		CBF210371F0CF5F1006A1E4D /* image_23.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_23.jpg; sourceTree = "<group>"; };
+		CBF210381F0CF5F1006A1E4D /* image_24.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_24.jpg; sourceTree = "<group>"; };
+		CBF210391F0CF5F1006A1E4D /* image_25.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_25.jpg; sourceTree = "<group>"; };
+		CBF2103A1F0CF5F1006A1E4D /* image_26.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_26.jpg; sourceTree = "<group>"; };
+		CBF2103B1F0CF5F1006A1E4D /* image_27.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_27.jpg; sourceTree = "<group>"; };
+		CBF2103C1F0CF5F1006A1E4D /* image_28.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_28.jpg; sourceTree = "<group>"; };
+		CBF2103D1F0CF5F1006A1E4D /* image_29.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_29.jpg; sourceTree = "<group>"; };
+		CBF2103E1F0CF5F1006A1E4D /* image_30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_30.jpg; sourceTree = "<group>"; };
+		CBF2103F1F0CF5F1006A1E4D /* image_31.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_31.jpg; sourceTree = "<group>"; };
+		CBF210401F0CF5F1006A1E4D /* image_32.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_32.jpg; sourceTree = "<group>"; };
+		CBF210411F0CF5F1006A1E4D /* image_33.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_33.jpg; sourceTree = "<group>"; };
+		CBF210421F0CF5F1006A1E4D /* image_34.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_34.jpg; sourceTree = "<group>"; };
+		CBF210431F0CF5F1006A1E4D /* image_35.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_35.jpg; sourceTree = "<group>"; };
+		CBF210441F0CF5F1006A1E4D /* image_36.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_36.jpg; sourceTree = "<group>"; };
+		CBF210451F0CF5F1006A1E4D /* image_37.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_37.jpg; sourceTree = "<group>"; };
+		CBF210461F0CF5F1006A1E4D /* image_38.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_38.jpg; sourceTree = "<group>"; };
+		CBF210471F0CF5F1006A1E4D /* image_39.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_39.jpg; sourceTree = "<group>"; };
+		CBF210481F0CF5F1006A1E4D /* image_40.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_40.jpg; sourceTree = "<group>"; };
+		CBF210491F0CF5F1006A1E4D /* image_41.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_41.jpg; sourceTree = "<group>"; };
+		CBF2104A1F0CF5F1006A1E4D /* image_42.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_42.jpg; sourceTree = "<group>"; };
+		CBF210751F0CF6CA006A1E4D /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		CBF210771F0CF91E006A1E4D /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE2605940C96C93F50AC9017 /* Pods-DhyanaMandiraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandiraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandiraUITests/Pods-DhyanaMandiraUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +224,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				643AF723BDA75A2160E662CE /* Pods_DhyanaMandira.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BAF780F2E5A529E54DEB0A2 /* Pods_DhyanaMandiraTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B780CDBB182613AD0FF952CD /* Pods_DhyanaMandiraUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +254,8 @@
 				CBF20FB11F04BBC3006A1E4D /* DhyanaMandiraTests */,
 				CBF20FBC1F04BBC3006A1E4D /* DhyanaMandiraUITests */,
 				CBF20F9B1F04BBC2006A1E4D /* Products */,
+				F0688701D8FFA4B8CE93FC2D /* Pods */,
+				EAB415A0F16D46309BB4CB88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +272,7 @@
 		CBF20F9C1F04BBC2006A1E4D /* DhyanaMandira */ = {
 			isa = PBXGroup;
 			children = (
+				CBF210201F0CF5C9006A1E4D /* GalleryImages */,
 				CBF210111F0A001A006A1E4D /* MenuViewControllers */,
 				CBF20FE21F052943006A1E4D /* images */,
 				CBF20FD31F051A64006A1E4D /* MySideMenu */,
@@ -244,8 +356,85 @@
 			isa = PBXGroup;
 			children = (
 				CBF210141F0A06BA006A1E4D /* RegistrationViewController.swift */,
+				CBF210161F0A4C26006A1E4D /* AshtangaViewController.swift */,
+				CBF210181F0A4DF7006A1E4D /* DhyanaMandiraViewController.swift */,
+				CBF2101A1F0A522E006A1E4D /* FounderViewController.swift */,
+				CBF210751F0CF6CA006A1E4D /* GalleryViewController.swift */,
+				CBF210771F0CF91E006A1E4D /* GalleryCollectionViewCell.swift */,
 			);
 			name = MenuViewControllers;
+			sourceTree = "<group>";
+		};
+		CBF210201F0CF5C9006A1E4D /* GalleryImages */ = {
+			isa = PBXGroup;
+			children = (
+				CBF210211F0CF5F1006A1E4D /* image_1.jpg */,
+				CBF210221F0CF5F1006A1E4D /* image_2.jpg */,
+				CBF210231F0CF5F1006A1E4D /* image_3.jpg */,
+				CBF210241F0CF5F1006A1E4D /* image_4.jpg */,
+				CBF210251F0CF5F1006A1E4D /* image_5.jpg */,
+				CBF210261F0CF5F1006A1E4D /* image_6.jpg */,
+				CBF210271F0CF5F1006A1E4D /* image_7.jpg */,
+				CBF210281F0CF5F1006A1E4D /* image_8.jpg */,
+				CBF210291F0CF5F1006A1E4D /* image_9.jpg */,
+				CBF2102A1F0CF5F1006A1E4D /* image_10.jpg */,
+				CBF2102B1F0CF5F1006A1E4D /* image_11.jpg */,
+				CBF2102C1F0CF5F1006A1E4D /* image_12.jpg */,
+				CBF2102D1F0CF5F1006A1E4D /* image_13.jpg */,
+				CBF2102E1F0CF5F1006A1E4D /* image_14.jpg */,
+				CBF2102F1F0CF5F1006A1E4D /* image_15.jpg */,
+				CBF210301F0CF5F1006A1E4D /* image_16.jpg */,
+				CBF210311F0CF5F1006A1E4D /* image_17.jpg */,
+				CBF210321F0CF5F1006A1E4D /* image_18.jpg */,
+				CBF210331F0CF5F1006A1E4D /* image_19.jpg */,
+				CBF210341F0CF5F1006A1E4D /* image_20.jpg */,
+				CBF210351F0CF5F1006A1E4D /* image_21.jpg */,
+				CBF210361F0CF5F1006A1E4D /* image_22.jpg */,
+				CBF210371F0CF5F1006A1E4D /* image_23.jpg */,
+				CBF210381F0CF5F1006A1E4D /* image_24.jpg */,
+				CBF210391F0CF5F1006A1E4D /* image_25.jpg */,
+				CBF2103A1F0CF5F1006A1E4D /* image_26.jpg */,
+				CBF2103B1F0CF5F1006A1E4D /* image_27.jpg */,
+				CBF2103C1F0CF5F1006A1E4D /* image_28.jpg */,
+				CBF2103D1F0CF5F1006A1E4D /* image_29.jpg */,
+				CBF2103E1F0CF5F1006A1E4D /* image_30.jpg */,
+				CBF2103F1F0CF5F1006A1E4D /* image_31.jpg */,
+				CBF210401F0CF5F1006A1E4D /* image_32.jpg */,
+				CBF210411F0CF5F1006A1E4D /* image_33.jpg */,
+				CBF210421F0CF5F1006A1E4D /* image_34.jpg */,
+				CBF210431F0CF5F1006A1E4D /* image_35.jpg */,
+				CBF210441F0CF5F1006A1E4D /* image_36.jpg */,
+				CBF210451F0CF5F1006A1E4D /* image_37.jpg */,
+				CBF210461F0CF5F1006A1E4D /* image_38.jpg */,
+				CBF210471F0CF5F1006A1E4D /* image_39.jpg */,
+				CBF210481F0CF5F1006A1E4D /* image_40.jpg */,
+				CBF210491F0CF5F1006A1E4D /* image_41.jpg */,
+				CBF2104A1F0CF5F1006A1E4D /* image_42.jpg */,
+			);
+			name = GalleryImages;
+			sourceTree = "<group>";
+		};
+		EAB415A0F16D46309BB4CB88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A18E866B817193E3FB73EFF /* Pods_DhyanaMandira.framework */,
+				B018C040A9EAA244ED866877 /* Pods_DhyanaMandiraTests.framework */,
+				3B81C3226A3932520F23FA91 /* Pods_DhyanaMandiraUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0688701D8FFA4B8CE93FC2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DFE5B9A4738726BE861E201 /* Pods-DhyanaMandira.debug.xcconfig */,
+				CB9B7578E4E9A221CC964689 /* Pods-DhyanaMandira.release.xcconfig */,
+				31C1A549EBAD4DE6E1B5C02B /* Pods-DhyanaMandiraTests.debug.xcconfig */,
+				785E0C3A4641A32125E243B4 /* Pods-DhyanaMandiraTests.release.xcconfig */,
+				6453E7CD1CBACCFB3F79D755 /* Pods-DhyanaMandiraUITests.debug.xcconfig */,
+				FE2605940C96C93F50AC9017 /* Pods-DhyanaMandiraUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,9 +444,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBF20FC21F04BBC3006A1E4D /* Build configuration list for PBXNativeTarget "DhyanaMandira" */;
 			buildPhases = (
+				4A77B60C7D0241EA9A7861A5 /* [CP] Check Pods Manifest.lock */,
 				CBF20F961F04BBC2006A1E4D /* Sources */,
 				CBF20F971F04BBC2006A1E4D /* Frameworks */,
 				CBF20F981F04BBC2006A1E4D /* Resources */,
+				DA335D7BD4629EA2A3387EF2 /* [CP] Embed Pods Frameworks */,
+				4FCF663BB2DCB259E8C9FCC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,9 +464,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBF20FC51F04BBC3006A1E4D /* Build configuration list for PBXNativeTarget "DhyanaMandiraTests" */;
 			buildPhases = (
+				4C63C809BE85FEB485B347BF /* [CP] Check Pods Manifest.lock */,
 				CBF20FAA1F04BBC3006A1E4D /* Sources */,
 				CBF20FAB1F04BBC3006A1E4D /* Frameworks */,
 				CBF20FAC1F04BBC3006A1E4D /* Resources */,
+				837093A433845E9F95C3B825 /* [CP] Embed Pods Frameworks */,
+				BB8B6C8DC83E24E7ECB05382 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -290,9 +485,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBF20FC81F04BBC3006A1E4D /* Build configuration list for PBXNativeTarget "DhyanaMandiraUITests" */;
 			buildPhases = (
+				AFD22D5C71597CF6B00688EF /* [CP] Check Pods Manifest.lock */,
 				CBF20FB51F04BBC3006A1E4D /* Sources */,
 				CBF20FB61F04BBC3006A1E4D /* Frameworks */,
 				CBF20FB71F04BBC3006A1E4D /* Resources */,
+				F16B392835C891115A67CDF8 /* [CP] Embed Pods Frameworks */,
+				82921151AB386E2B827F833C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -363,27 +561,69 @@
 				CBF20FFF1F061E95006A1E4D /* ic_action_attach_money.png in Resources */,
 				CBF20FE41F05296D006A1E4D /* header_om.png in Resources */,
 				CBF210041F061E95006A1E4D /* ic_action_contact_phone.png in Resources */,
+				CBF210631F0CF5F1006A1E4D /* image_25.jpg in Resources */,
+				CBF2105E1F0CF5F1006A1E4D /* image_20.jpg in Resources */,
+				CBF210651F0CF5F1006A1E4D /* image_27.jpg in Resources */,
 				CBF210061F061E95006A1E4D /* ic_action_directions_walk.png in Resources */,
 				CBF20FA81F04BBC2006A1E4D /* LaunchScreen.storyboard in Resources */,
+				CBF210621F0CF5F1006A1E4D /* image_24.jpg in Resources */,
 				CBF2100F1F061E95006A1E4D /* ic_stat_notif_icon_firebase_om.png in Resources */,
 				CBF210021F061E95006A1E4D /* ic_action_collections.png in Resources */,
 				CBF20FFD1F061E95006A1E4D /* ic_action_abhyasas.png in Resources */,
+				CBF210531F0CF5F1006A1E4D /* image_9.jpg in Resources */,
+				CBF2106C1F0CF5F1006A1E4D /* image_34.jpg in Resources */,
+				CBF2104E1F0CF5F1006A1E4D /* image_4.jpg in Resources */,
 				CBF210091F061E95006A1E4D /* ic_action_insert_comment.png in Resources */,
+				CBF2104F1F0CF5F1006A1E4D /* image_5.jpg in Resources */,
+				CBF210691F0CF5F1006A1E4D /* image_31.jpg in Resources */,
+				CBF210721F0CF5F1006A1E4D /* image_40.jpg in Resources */,
 				CBF210101F061E95006A1E4D /* sir.9.png in Resources */,
 				CBF20FA51F04BBC2006A1E4D /* Assets.xcassets in Resources */,
+				CBF2105C1F0CF5F1006A1E4D /* image_18.jpg in Resources */,
 				CBF2100A1F061E95006A1E4D /* ic_action_notifications.png in Resources */,
+				CBF210561F0CF5F1006A1E4D /* image_12.jpg in Resources */,
+				CBF2106B1F0CF5F1006A1E4D /* image_33.jpg in Resources */,
 				CBF210031F061E95006A1E4D /* ic_action_contact_mail.png in Resources */,
 				CBF210071F061E95006A1E4D /* ic_action_event_note.png in Resources */,
+				CBF2104D1F0CF5F1006A1E4D /* image_3.jpg in Resources */,
 				CBF20FFE1F061E95006A1E4D /* ic_action_ashtanga_yoga.png in Resources */,
+				CBF210511F0CF5F1006A1E4D /* image_7.jpg in Resources */,
 				CBF210081F061E95006A1E4D /* ic_action_info_outline.png in Resources */,
+				CBF210701F0CF5F1006A1E4D /* image_38.jpg in Resources */,
+				CBF210541F0CF5F1006A1E4D /* image_10.jpg in Resources */,
+				CBF210661F0CF5F1006A1E4D /* image_28.jpg in Resources */,
+				CBF2104B1F0CF5F1006A1E4D /* image_1.jpg in Resources */,
 				CBF2100C1F061E95006A1E4D /* ic_action_person_outline.png in Resources */,
+				CBF2105D1F0CF5F1006A1E4D /* image_19.jpg in Resources */,
+				CBF2106E1F0CF5F1006A1E4D /* image_36.jpg in Resources */,
+				CBF210601F0CF5F1006A1E4D /* image_22.jpg in Resources */,
 				CBF210051F061E95006A1E4D /* ic_action_dhyana.png in Resources */,
+				CBF210591F0CF5F1006A1E4D /* image_15.jpg in Resources */,
+				CBF210711F0CF5F1006A1E4D /* image_39.jpg in Resources */,
+				CBF2106A1F0CF5F1006A1E4D /* image_32.jpg in Resources */,
 				CBF210011F061E95006A1E4D /* ic_action_call.png in Resources */,
+				CBF210641F0CF5F1006A1E4D /* image_26.jpg in Resources */,
+				CBF210731F0CF5F1006A1E4D /* image_41.jpg in Resources */,
+				CBF2105F1F0CF5F1006A1E4D /* image_21.jpg in Resources */,
+				CBF210611F0CF5F1006A1E4D /* image_23.jpg in Resources */,
+				CBF2105B1F0CF5F1006A1E4D /* image_17.jpg in Resources */,
 				CBF210001F061E95006A1E4D /* ic_action_aum_mantra_symbol.png in Resources */,
 				CBF2100E1F061E95006A1E4D /* ic_action_thumb_up.png in Resources */,
+				CBF210741F0CF5F1006A1E4D /* image_42.jpg in Resources */,
+				CBF2104C1F0CF5F1006A1E4D /* image_2.jpg in Resources */,
+				CBF210671F0CF5F1006A1E4D /* image_29.jpg in Resources */,
+				CBF2106D1F0CF5F1006A1E4D /* image_35.jpg in Resources */,
 				CBF2100D1F061E95006A1E4D /* ic_action_share.png in Resources */,
+				CBF210551F0CF5F1006A1E4D /* image_11.jpg in Resources */,
+				CBF2106F1F0CF5F1006A1E4D /* image_37.jpg in Resources */,
 				CBF20FA31F04BBC2006A1E4D /* Main.storyboard in Resources */,
+				CBF210501F0CF5F1006A1E4D /* image_6.jpg in Resources */,
+				CBF210681F0CF5F1006A1E4D /* image_30.jpg in Resources */,
 				CBF2100B1F061E95006A1E4D /* ic_action_ondemand_video.png in Resources */,
+				CBF210521F0CF5F1006A1E4D /* image_8.jpg in Resources */,
+				CBF210571F0CF5F1006A1E4D /* image_13.jpg in Resources */,
+				CBF210581F0CF5F1006A1E4D /* image_14.jpg in Resources */,
+				CBF2105A1F0CF5F1006A1E4D /* image_16.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,13 +643,156 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A77B60C7D0241EA9A7861A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4C63C809BE85FEB485B347BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4FCF663BB2DCB259E8C9FCC8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DhyanaMandira/Pods-DhyanaMandira-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82921151AB386E2B827F833C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DhyanaMandiraUITests/Pods-DhyanaMandiraUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		837093A433845E9F95C3B825 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DhyanaMandiraTests/Pods-DhyanaMandiraTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFD22D5C71597CF6B00688EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB8B6C8DC83E24E7ECB05382 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DhyanaMandiraTests/Pods-DhyanaMandiraTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA335D7BD4629EA2A3387EF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DhyanaMandira/Pods-DhyanaMandira-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F16B392835C891115A67CDF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DhyanaMandiraUITests/Pods-DhyanaMandiraUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CBF20F961F04BBC2006A1E4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF2101B1F0A522E006A1E4D /* FounderViewController.swift in Sources */,
+				CBF210781F0CF91E006A1E4D /* GalleryCollectionViewCell.swift in Sources */,
+				CBF210761F0CF6CA006A1E4D /* GalleryViewController.swift in Sources */,
 				CBF20FDF1F051AC9006A1E4D /* MMDrawerVisualState.m in Sources */,
+				CBF210171F0A4C26006A1E4D /* AshtangaViewController.swift in Sources */,
 				CBF20FA01F04BBC2006A1E4D /* ViewController.swift in Sources */,
+				CBF210191F0A4DF7006A1E4D /* DhyanaMandiraViewController.swift in Sources */,
 				CBF20FE61F06156C006A1E4D /* NavigationDrawerMenuItemTableViewCell.swift in Sources */,
 				CBF210151F0A06BA006A1E4D /* RegistrationViewController.swift in Sources */,
 				CBF20FE01F051AC9006A1E4D /* UIViewController+MMDrawerController.m in Sources */,
@@ -568,6 +951,7 @@
 		};
 		CBF20FC31F04BBC3006A1E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DFE5B9A4738726BE861E201 /* Pods-DhyanaMandira.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -584,6 +968,7 @@
 		};
 		CBF20FC41F04BBC3006A1E4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9B7578E4E9A221CC964689 /* Pods-DhyanaMandira.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -599,6 +984,7 @@
 		};
 		CBF20FC61F04BBC3006A1E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31C1A549EBAD4DE6E1B5C02B /* Pods-DhyanaMandiraTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -614,6 +1000,7 @@
 		};
 		CBF20FC71F04BBC3006A1E4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 785E0C3A4641A32125E243B4 /* Pods-DhyanaMandiraTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -629,6 +1016,7 @@
 		};
 		CBF20FC91F04BBC3006A1E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6453E7CD1CBACCFB3F79D755 /* Pods-DhyanaMandiraUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = HY9VKUPG9A;
@@ -643,6 +1031,7 @@
 		};
 		CBF20FCA1F04BBC3006A1E4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE2605940C96C93F50AC9017 /* Pods-DhyanaMandiraUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = HY9VKUPG9A;

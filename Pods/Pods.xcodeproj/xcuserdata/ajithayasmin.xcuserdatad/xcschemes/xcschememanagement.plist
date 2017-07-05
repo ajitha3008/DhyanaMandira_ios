@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DhyanaMandira.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DhyanaMandiraTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DhyanaMandiraUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Protobuf.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0CC34CDCB5E184D6A54A0B78C5612B2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>46111FD46BAA62C4F3EFE1FCA60B2F2A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7080B4DCF5692B6F8BFB01B85E59B855</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A6590AA6B85536E76956796C808D966C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5B80060FE8C664DF08841000F41D515</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

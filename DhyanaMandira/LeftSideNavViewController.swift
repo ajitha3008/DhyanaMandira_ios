@@ -150,14 +150,39 @@ class LeftSideNavViewController: UIViewController,UITableViewDelegate,UITableVie
 
                 }
             break;
-            /*case 1:
-                
-            var aboutViewController = self.storyboard?.instantiateViewControllerWithIdentifier("RegistrationViewController") as RegistrationViewController
-            var aboutNavController = UINavigationController(rootViewController: aboutViewController)
-            var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-            appDelegate.centerContainer!.centerViewController = aboutNavController
-            appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
-            break;*/
+            case 1:
+                if(indexPath.row == 0) {
+                    var centerViewController = self.storyboard?.instantiateViewController(withIdentifier: "AshtangaViewController") as! AshtangaViewController
+                    var centerNavController = UINavigationController(rootViewController: centerViewController)
+                    var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+                    appDelegate.centerContainer!.centerViewController = centerNavController
+                    appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+                }
+                if(indexPath.row == 1) {
+                    var centerViewController = self.storyboard?.instantiateViewController(withIdentifier: "DhyanaMandiraViewController") as! DhyanaMandiraViewController
+                    var centerNavController = UINavigationController(rootViewController: centerViewController)
+                    var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+                    appDelegate.centerContainer!.centerViewController = centerNavController
+                    appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+                    
+                }
+            break;
+        case 2:
+            if(indexPath.row == 0) {
+                var centerViewController = self.storyboard?.instantiateViewController(withIdentifier: "FounderViewController") as! FounderViewController
+                var centerNavController = UINavigationController(rootViewController: centerViewController)
+                var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+                appDelegate.centerContainer!.centerViewController = centerNavController
+                appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+            }
+            if(indexPath.row == 1) {
+                var centerViewController = self.storyboard?.instantiateViewController(withIdentifier: "GalleryViewController") as! GalleryViewController
+                var centerNavController = UINavigationController(rootViewController: centerViewController)
+                var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+                appDelegate.centerContainer!.centerViewController = centerNavController
+                appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+            }
+            break;
         default:
             break;
         }

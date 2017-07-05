@@ -36,7 +36,7 @@
                                 <rect key="frame" x="16" y="342" width="343" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">"Dhyana Mandira Yoga Kendra" is a center for Yoga &amp; Spiritual activities. It was started in the year 2009. Aimed at well being of individuals and social harmony through yoga. The traditional and ancient method of Astanga Yoga is the kind of yoga being followed here. We provide FREE yoga training to anybody who joins as a beginner. We conduct daily yogasana practice sessions and other associated activities at early morning hours.  New batches will be initiated every 5 weeks. New people(yoga aspirants) can join new batch by taking life time membership with just Rs100/-.  The beginners will be trained with all basic exercises(body, breath &amp; mind). More than 100 Asanas, Surya Namaskara and Pranayama etc., will be taught. Also, with various training methods, the practitioners will be fine tuned and made to perfect practice of asanas. After undergoing the basic training, people can continue regular practice at "Dhyana Mandira" premises as long as they wish to. No monthly fees for life time.  New batches will be initiated every 5 weeks. New people(yoga aspirants) can join new batch by taking life time membership with just Rs100/-.  The beginners will be trained with all basic exercises(body, breath &amp; mind). More than 100 Asanas, Surya Namaskara and Pranayama etc., will be taught. Also, with various training methods, the practitioners will be fine tuned and made to perfect practice of asanas. After undergoing the basic training, people can continue regular practice at "Dhyana Mandira" premises as long as they wish to. No monthly fees for life time.  "Dhyana Mandira" is a divine hall at Sri Someshwara (Shiva) Temple premises in Madiwala, BTM 1st Stage, Bangalore-560 068.  !!!......HARI AUM......!!!</mutableString>
+                                <string key="text">"Dhyana Mandira Yoga Kendra" is a center for Yoga &amp; Spiritual activities. It was started in the year 2009. Aimed at well being of individuals and social harmony through yoga. The traditional and ancient method of Astanga Yoga is the kind of yoga being followed here. We provide FREE yoga training to anybody who joins as a beginner. We conduct daily yogasana practice sessions and other associated activities at early morning hours.  New batches will be initiated every 5 weeks. New people(yoga aspirants) can join new batch by taking life time membership with just Rs100/-.  The beginners will be trained with all basic exercises(body, breath &amp; mind). More than 100 Asanas, Surya Namaskara and Pranayama etc., will be taught. Also, with various training methods, the practitioners will be fine tuned and made to perfect practice of asanas. After undergoing the basic training, people can continue regular practice at "Dhyana Mandira" premises as long as they wish to. No monthly fees for life time.  New batches will be initiated every 5 weeks. New people(yoga aspirants) can join new batch by taking life time membership with just Rs100/-.  The beginners will be trained with all basic exercises(body, breath &amp; mind). More than 100 Asanas, Surya Namaskara and Pranayama etc., will be taught. Also, with various training methods, the practitioners will be fine tuned and made to perfect practice of asanas. After undergoing the basic training, people can continue regular practice at "Dhyana Mandira" premises as long as they wish to. No monthly fees for life time.  "Dhyana Mandira" is a divine hall at Sri Someshwara (Shiva) Temple premises in Madiwala, BTM 1st Stage, Bangalore-560 068.  !!!......HARI AUM......!!!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -147,7 +147,7 @@
                                 <rect key="frame" x="16" y="0.0" width="343" height="647"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">We believe YOGA is a field of service. Hence, we have not commercialized Yoga. Yoga aspirants can take life time membership by paying only Rs.100/-. There is NO monthly fees for providing training &amp; venue for daily practice. You will be provided a continued guidance for life time.  New people can join during new batches. Register for new batches through telephone call, SMS, Whatsapp or Email. Just send your Full name, Whatsapp number(preferably) and Email ID to the contact details provided. We will inform you about the dates for next new batch.  We have enough place for Yoga practice. Any number of people can join. Inform and spread to everyone you know.</mutableString>
+                                <string key="text">We believe YOGA is a field of service. Hence, we have not commercialized Yoga. Yoga aspirants can take life time membership by paying only Rs.100/-. There is NO monthly fees for providing training &amp; venue for daily practice. You will be provided a continued guidance for life time.  New people can join during new batches. Register for new batches through telephone call, SMS, Whatsapp or Email. Just send your Full name, Whatsapp number(preferably) and Email ID to the contact details provided. We will inform you about the dates for next new batch.  We have enough place for Yoga practice. Any number of people can join. Inform and spread to everyone you know.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -171,7 +171,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4NA-0y-dOm" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleAspectFit" misplaced="YES" id="2oW-hk-IA8">
+                    <navigationBar key="navigationBar" contentMode="scaleAspectFit" id="2oW-hk-IA8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.80000000000000004" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -186,13 +186,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbM-Z1-M4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Mfu-cS-BuV">
-            <objects>
-                <viewController id="b2r-07-O2p" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9ZO-jI-AQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dHT-au-hgb">
@@ -212,9 +205,296 @@
             </objects>
             <point key="canvasLocation" x="964" y="779.46026986506752"/>
         </scene>
+        <!--Ashtanga View Controller-->
+        <scene sceneID="MMJ-HR-GbN">
+            <objects>
+                <viewController storyboardIdentifier="AshtangaViewController" id="X47-yP-bde" customClass="AshtangaViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KFk-r3-AQ7"/>
+                        <viewControllerLayoutGuide type="bottom" id="8aD-Ig-XVv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BAG-gZ-5wO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BW-Tv-vcF">
+                                <rect key="frame" x="16" y="0.0" width="343" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">"ASTANGA YOGA" - a path towards "ULTIMATE"  Pathanjali Maharshi's Astanga Yoga Sutras (8 limbs) are simple and most effective guidelines to reach an "Ultimate" state of life. Yama, Niyama, Asana, Pranayama, Pratyahara, Dharana, Dhyana &amp; Samadhi - the path that takes one towards ultimate.These 8 sutras with more sub sutras help the practitioner for total personality development. The Physical, Mental, Emotional, Social, Spiritual wellbeing are the aims. The Yogic Life is much needed for Individual health and social harmony.  How this is being achieved here..?? see the next page on "DHYANA MANDIRA" - a "PLATFORM" to "TRANSFORM".</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ILe-3Y-nsE">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="z9L-xx-XcB">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="X47-yP-bde" id="LcB-ZI-R2E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boe-Jc-rET" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890.4000000000001" y="1445.1274362818592"/>
+        </scene>
+        <!--Dhyana Mandira View Controller-->
+        <scene sceneID="MHV-rj-VUQ">
+            <objects>
+                <viewController storyboardIdentifier="DhyanaMandiraViewController" id="kp1-G7-Tq0" customClass="DhyanaMandiraViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rKg-0a-ftI"/>
+                        <viewControllerLayoutGuide type="bottom" id="CFv-cA-UBp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jWl-OE-h5P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vKz-MU-pBt">
+                                <rect key="frame" x="16" y="0.0" width="343" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">"DHYANA MANDIRA" - a "PLATFORM" to "TRANSFORM"  At Dhyana Mandira Yoga Kendra, The Astanga Yoga Sutras are being delivered to Yoga aspirants through various Yogic activities, Satsanga, Special events, Nature &amp; Spiritual spots visits, etc.  A brief Syllabus during basic course period of 5 weeks:  Briefings on Yoga Shastra Mind control exercises
+Breathing exercises
+Body joints exercises (can be utilized as workplace exercises)
+Yogasanas (more than 100) practice
+Surya Namaskara
+Pranayama sessions
+Yoga Shibhiras (Camps at special places)
+Special sessions on personality development (Stress management, Self-confidence, Communication skills, Art of Public speech, Simplicity etc.)
+Fine tuning Asanas practice through various techniques
+Mantras  Refer next page for the Abhyasas (activities) for daily practice.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rVM-Ln-btc">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="IHg-UN-6Yi">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="kp1-G7-Tq0" id="UEu-r8-rKm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F5G-uf-dqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2690.4000000000001" y="2117.9910044977514"/>
+        </scene>
+        <!--Founder View Controller-->
+        <scene sceneID="gb5-XS-IM7">
+            <objects>
+                <viewController storyboardIdentifier="FounderViewController" id="3dE-rG-Fi2" customClass="FounderViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uZk-Jb-DTq"/>
+                        <viewControllerLayoutGuide type="bottom" id="YVa-vJ-yJS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="APr-aa-XMU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FOUNDER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaA-Mk-kbd">
+                                <rect key="frame" x="16" y="81" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sir.9.png" translatesAutoresizingMaskIntoConstraints="NO" id="PoG-ha-7Oa">
+                                <rect key="frame" x="16" y="118" width="343" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVm-Yg-GjP">
+                                <rect key="frame" x="16" y="297" width="343" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">"Shri Rajkumar Gour" is Mukhya Yoga Shikshaka and Chief Administrator at "Dhyana Mandira". He chose Yoga as a path of service in the year 2009 and has provided yoga coaching to more than 5500 people as of now. He is a Yoga Pracharak and Yoga Shikshaka. His service in the yoga field through this Dhyana Mandira is great inspiration and motivation for the people who get associated with this yoga kendra. Many lives have changed with his way of yoga teachings and thus his service is a noticeable contribution to the society. His selfless and constant efforts have made "Dhyana Mandira" - as an epicenter of Yoga in this region of Bangalore.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SJy-tU-NKH">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="erk-kD-jb0">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="3dE-rG-Fi2" id="lcB-8o-dxh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AJn-9N-nRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5506.3999999999996" y="2897.9010494752624"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tb0-XU-jcO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eaA-Rg-uHG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2LA-lw-fSF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X47-yP-bde" kind="relationship" relationship="rootViewController" id="AxO-tA-k73"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nlg-aR-Dh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951.20000000000005" y="1445.1274362818592"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8dQ-Nd-Pg7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V51-ml-PR0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4QL-mr-065">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kp1-G7-Tq0" kind="relationship" relationship="rootViewController" id="bag-HL-0hw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJX-K1-HUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1749.5999999999999" y="2118.8905547226386"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F4V-9N-jJr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w41-xL-oHE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9xt-z8-fS2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3dE-rG-Fi2" kind="relationship" relationship="rootViewController" id="SPQ-BT-Grs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K2U-5Q-AQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4567.1999999999998" y="2897.9010494752624"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HAe-WS-XRt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M1u-21-Olh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WFb-nY-57L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Oz-jx-U27" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365.60000000000002" y="2853.8230884557724"/>
+        </scene>
+        <!--Gallery View Controller-->
+        <scene sceneID="Dke-hs-Rek">
+            <objects>
+                <viewController storyboardIdentifier="GalleryViewController" id="wn8-aI-Ipc" customClass="GalleryViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FdD-bc-EY2"/>
+                        <viewControllerLayoutGuide type="bottom" id="JoV-q6-5SK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J6P-fb-afx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FDc-Hh-eZn">
+                                <rect key="frame" x="-99" y="81" width="200" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qhX-l9-9h1">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0S4-dh-KQq">
+                                <rect key="frame" x="16" y="76" width="343" height="583"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="y4S-Sa-U9s">
+                                    <size key="itemSize" width="163" height="164"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryCellId" id="DFQ-6C-xBU" customClass="GalleryCollectionViewCell" customModule="DhyanaMandira" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="163" height="164"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o56-69-Nes">
+                                                    <rect key="frame" x="0.0" y="0.0" width="163" height="164"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="ItemImage" destination="o56-69-Nes" id="7uk-TD-Qe3"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="wn8-aI-Ipc" id="dWB-Uw-lWd"/>
+                                    <outlet property="delegate" destination="wn8-aI-Ipc" id="Iob-D7-fD1"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1H5-SL-07M">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="Nh7-yt-rPc">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="wn8-aI-Ipc" id="4hY-Bk-AM6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OjD-xl-J7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304.8" y="3535.6821589205401"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y9r-Fc-1CP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fBT-Qo-WIO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7ui-fg-1IG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wn8-aI-Ipc" kind="relationship" relationship="rootViewController" id="vrp-d1-Kju"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m49-Bf-Rqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365.60000000000002" y="3536.5817091454273"/>
+        </scene>
     </scenes>
     <resources>
         <image name="dhyana_mandira_about.jpg" width="750" height="563"/>
         <image name="header_om.png" width="800" height="800"/>
+        <image name="sir.9.png" width="412" height="518"/>
     </resources>
 </document>
