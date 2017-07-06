@@ -639,6 +639,221 @@ Mantras  Refer next page for the Abhyasas (activities) for daily practice.</
             </objects>
             <point key="canvasLocation" x="309.60000000000002" y="4947.9760119940038"/>
         </scene>
+        <!--Events View Controller-->
+        <scene sceneID="Liu-xo-Ovk">
+            <objects>
+                <viewController storyboardIdentifier="EventsViewController" id="TiT-EW-Fqn" customClass="EventsViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gq6-sw-LLp"/>
+                        <viewControllerLayoutGuide type="bottom" id="aJd-NG-8Kx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Jg-kJ-O6g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tCc-Ob-nF2">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="8Ho-CT-Yka">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="TiT-EW-Fqn" id="PBg-jb-VSh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cQ-tI-svO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="5630.7346326836587"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Py7-Cr-LBa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RaS-SF-q3v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kca-1d-kDx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TiT-EW-Fqn" kind="relationship" relationship="rootViewController" id="tp7-Tm-gQv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oee-hH-UVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="5630.7346326836587"/>
+        </scene>
+        <!--Comments View Controller-->
+        <scene sceneID="x0u-4Q-W9d">
+            <objects>
+                <viewController storyboardIdentifier="CommentsViewController" id="CmA-Da-YPC" customClass="CommentsViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xW6-rr-7w4"/>
+                        <viewControllerLayoutGuide type="bottom" id="7YT-bS-mHU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K66-Op-yqq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mkc-M1-WPB">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="AbY-Ve-exl">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="CmA-Da-YPC" id="gf3-bF-fjb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHD-9K-42M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="6298.2008995502256"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="o8F-IT-bSU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="inQ-Cs-c5Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bus-8d-xK8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CmA-Da-YPC" kind="relationship" relationship="rootViewController" id="KOs-hf-nbb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RFk-Mp-NfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320.80000000000001" y="6298.2008995502256"/>
+        </scene>
+        <!--Abhyasa View Controller-->
+        <scene sceneID="ORX-1g-kDc">
+            <objects>
+                <viewController storyboardIdentifier="AbhyasaViewController" id="27Y-Iy-8i4" customClass="AbhyasaViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YHD-W4-gFp"/>
+                        <viewControllerLayoutGuide type="bottom" id="hRq-Gs-hR5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m5e-jc-Fis">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FmI-l0-wRW">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="inh-wh-JCy">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="27Y-Iy-8i4" id="hmh-t6-e78"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wI-4j-dqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1248.8" y="6973.7631184407801"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZQa-ud-1cN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4l1-Fl-5gC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hbk-NY-ndw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="27Y-Iy-8i4" kind="relationship" relationship="rootViewController" id="6Hf-Nm-HE2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pWz-LS-zZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309.60000000000002" y="6973.7631184407801"/>
+        </scene>
+        <!--Mantras View Controller-->
+        <scene sceneID="t9F-ec-FeZ">
+            <objects>
+                <viewController storyboardIdentifier="MantrasViewController" id="dth-4S-eCK" customClass="MantrasViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qyh-VQ-9tn"/>
+                        <viewControllerLayoutGuide type="bottom" id="5ht-kp-oio"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oPG-Zq-5rR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ax-q6-IwH">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="iph-cU-495">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="dth-4S-eCK" id="K6f-bR-5EQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEO-gS-8if" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1255.2" y="7643.9280359820095"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nFC-ZY-ugb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vfm-zk-FoD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J9c-hj-p2A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dth-4S-eCK" kind="relationship" relationship="rootViewController" id="U07-YK-MhB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Se4-YX-Wur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="7643.9280359820095"/>
+        </scene>
+        <!--Facebook View Controller-->
+        <scene sceneID="JwQ-K7-JWS">
+            <objects>
+                <viewController storyboardIdentifier="FacebookViewController" id="Wwz-yR-Yfh" customClass="FacebookViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8pu-lM-ikW"/>
+                        <viewControllerLayoutGuide type="bottom" id="d0V-Tm-Yo6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bPv-w3-eNN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N2f-Dv-Rs3">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="DoJ-R0-ucs">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="Wwz-yR-Yfh" id="3hX-fT-Ohr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Vb-RZ-mDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1279.2" y="8400.4497751124436"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rgf-64-ZtS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d6B-xX-GQy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QOt-zw-qrQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wwz-yR-Yfh" kind="relationship" relationship="rootViewController" id="6mZ-iR-6fF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSS-XP-Qph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="8400.4497751124436"/>
+        </scene>
     </scenes>
     <resources>
         <image name="dhyana_mandira_about.jpg" width="750" height="563"/>
