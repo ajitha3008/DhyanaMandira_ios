@@ -94,6 +94,7 @@
 		CBF210761F0CF6CA006A1E4D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210751F0CF6CA006A1E4D /* GalleryViewController.swift */; };
 		CBF210781F0CF91E006A1E4D /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210771F0CF91E006A1E4D /* GalleryCollectionViewCell.swift */; };
 		CBF2107A1F0D11A5006A1E4D /* VisitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210791F0D11A5006A1E4D /* VisitViewController.swift */; };
+		CBF2107C1F0E48E9006A1E4D /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2107B1F0E48E9006A1E4D /* CallViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +219,7 @@
 		CBF210751F0CF6CA006A1E4D /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		CBF210771F0CF91E006A1E4D /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		CBF210791F0D11A5006A1E4D /* VisitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitViewController.swift; sourceTree = "<group>"; };
+		CBF2107B1F0E48E9006A1E4D /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 		FE2605940C96C93F50AC9017 /* Pods-DhyanaMandiraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandiraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandiraUITests/Pods-DhyanaMandiraUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -364,6 +366,7 @@
 				CBF210751F0CF6CA006A1E4D /* GalleryViewController.swift */,
 				CBF210771F0CF91E006A1E4D /* GalleryCollectionViewCell.swift */,
 				CBF210791F0D11A5006A1E4D /* VisitViewController.swift */,
+				CBF2107B1F0E48E9006A1E4D /* CallViewController.swift */,
 			);
 			name = MenuViewControllers;
 			sourceTree = "<group>";
@@ -803,6 +806,7 @@
 				CBF20FDE1F051AC9006A1E4D /* MMDrawerController.m in Sources */,
 				CBF20FDD1F051AC9006A1E4D /* MMDrawerBarButtonItem.m in Sources */,
 				CBF20F9E1F04BBC2006A1E4D /* AppDelegate.swift in Sources */,
+				CBF2107C1F0E48E9006A1E4D /* CallViewController.swift in Sources */,
 				CBF20FD21F05193B006A1E4D /* LeftSideNavViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

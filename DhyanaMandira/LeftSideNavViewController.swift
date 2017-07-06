@@ -6,9 +6,12 @@
 //  Copyright © 2017 AjithaYasmin. All rights reserved.
 //
 
-import UIKit
 
-class LeftSideNavViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+import Foundation
+import UIKit
+import MessageUI
+
+class LeftSideNavViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,MFMailComposeViewControllerDelegate {
 
     @IBOutlet weak var headerTextView: UILabel!
     //var menuItems:[String] = ["About","Registration Formality"];
@@ -184,6 +187,21 @@ class LeftSideNavViewController: UIViewController,UITableViewDelegate,UITableVie
             }
             break;
         case 3:
+            if(indexPath.row == 0) {
+                let mailComposeViewController = configuredMailComposeViewController()
+                if MFMailComposeViewController.canSendMail() {
+                    self.present(mailComposeViewController, animated: true, completion: nil)
+                } else {
+                    self.showSendMailErrorAlert()
+                }
+            }
+            if(indexPath.row == 1) {
+                var centerViewController = self.storyboard?.instantiateViewController(withIdentifier: "CallViewController") as! CallViewController
+                var centerNavController = UINavigationController(rootViewController: centerViewController)
+                var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+                appDelegate.centerContainer!.centerViewController = centerNavController
+                appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+            }
             if(indexPath.row == 2) {
                 var centerViewController = self.storyboard?.instantiateViewController(withIdentifier: "VisitViewController") as! VisitViewController
                 var centerNavController = UINavigationController(rootViewController: centerViewController)
@@ -192,9 +210,31 @@ class LeftSideNavViewController: UIViewController,UITableViewDelegate,UITableVie
                 appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
             }
             break;
+            
         default:
             break;
         }
+    }
+
+    func configuredMailComposeViewController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
+        
+        mailComposerVC.setToRecipients(["rajkumargour10@gmail.com"])
+        mailComposerVC.setCcRecipients(["rajayogamadiwala@gmail.com"])
+        mailComposerVC.setSubject("DhyanaMandira :: Contact Us")
+        
+        return mailComposerVC
+    }
+    
+    func showSendMailErrorAlert() {
+        let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
+        sendMailErrorAlert.show()
+    }
+    
+    // MARK: MFMailComposeViewControllerDelegate Method
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
     }
     
     /*
