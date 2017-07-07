@@ -1,5 +1,5 @@
 //
-//  CallViewController.swift
+//  AbhyasaViewController.swift
 //  DhyanaMandira
 //
 //  Created by AjithaYasmin on 06/07/17.
@@ -8,35 +8,17 @@
 
 import UIKit
 
-class CallViewController: UIViewController {
+class AbhyasaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title="Call"
+        self.navigationItem.title="Yogabhyasa Prakriyas"
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    
-    func call(phoneNumber: String) {
-    if let url = URL(string: "tel://\(phoneNumber)") {
-    if #available(iOS 10, *) {
-    UIApplication.shared.open(url, options: [:], completionHandler: nil)
-    } else {
-    UIApplication.shared.openURL(url as URL)
-    }
-    }
-    }
-    
-    @IBAction func Button734Tapped(_ sender: Any) {
-        call(phoneNumber: "+917349782713");
-    }
-    @IBAction func Button812Tapped(_ sender: Any) {
-        call(phoneNumber: "+918123848682");
     }
     
     @IBAction func LeftSideButtonTapped(_ sender: Any) {

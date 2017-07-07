@@ -36,7 +36,6 @@
                                 <rect key="frame" x="16" y="342" width="343" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">"Dhyana Mandira Yoga Kendra" is a center for Yoga &amp; Spiritual activities. It was started in the year 2009. Aimed at well being of individuals and social harmony through yoga. The traditional and ancient method of Astanga Yoga is the kind of yoga being followed here. We provide FREE yoga training to anybody who joins as a beginner. We conduct daily yogasana practice sessions and other associated activities at early morning hours.  New batches will be initiated every 5 weeks. New people(yoga aspirants) can join new batch by taking life time membership with just Rs100/-.  The beginners will be trained with all basic exercises(body, breath &amp; mind). More than 100 Asanas, Surya Namaskara and Pranayama etc., will be taught. Also, with various training methods, the practitioners will be fine tuned and made to perfect practice of asanas. After undergoing the basic training, people can continue regular practice at "Dhyana Mandira" premises as long as they wish to. No monthly fees for life time.  New batches will be initiated every 5 weeks. New people(yoga aspirants) can join new batch by taking life time membership with just Rs100/-.  The beginners will be trained with all basic exercises(body, breath &amp; mind). More than 100 Asanas, Surya Namaskara and Pranayama etc., will be taught. Also, with various training methods, the practitioners will be fine tuned and made to perfect practice of asanas. After undergoing the basic training, people can continue regular practice at "Dhyana Mandira" premises as long as they wish to. No monthly fees for life time.  "Dhyana Mandira" is a divine hall at Sri Someshwara (Shiva) Temple premises in Madiwala, BTM 1st Stage, Bangalore-560 068.  !!!......HARI AUM......!!!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -54,6 +53,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="aboutTextView" destination="h0H-4O-70D" id="8Yl-ZV-JFa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,7 +149,6 @@
                                 <rect key="frame" x="16" y="0.0" width="343" height="647"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">We believe YOGA is a field of service. Hence, we have not commercialized Yoga. Yoga aspirants can take life time membership by paying only Rs.100/-. There is NO monthly fees for providing training &amp; venue for daily practice. You will be provided a continued guidance for life time.  New people can join during new batches. Register for new batches through telephone call, SMS, Whatsapp or Email. Just send your Full name, Whatsapp number(preferably) and Email ID to the contact details provided. We will inform you about the dates for next new batch.  We have enough place for Yoga practice. Any number of people can join. Inform and spread to everyone you know.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -161,6 +162,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="costTextView" destination="ajA-6l-lx8" id="oXa-kq-uT8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUb-T5-5dp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -218,10 +222,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BW-Tv-vcF">
-                                <rect key="frame" x="16" y="0.0" width="343" height="647"/>
+                                <rect key="frame" x="16" y="0.0" width="343" height="633"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">"ASTANGA YOGA" - a path towards "ULTIMATE"  Pathanjali Maharshi's Astanga Yoga Sutras (8 limbs) are simple and most effective guidelines to reach an "Ultimate" state of life. Yama, Niyama, Asana, Pranayama, Pratyahara, Dharana, Dhyana &amp; Samadhi - the path that takes one towards ultimate.These 8 sutras with more sub sutras help the practitioner for total personality development. The Physical, Mental, Emotional, Social, Spiritual wellbeing are the aims. The Yogic Life is much needed for Individual health and social harmony.  How this is being achieved here..?? see the next page on "DHYANA MANDIRA" - a "PLATFORM" to "TRANSFORM".</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -235,6 +238,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="astangaTextView" destination="9BW-Tv-vcF" id="Yu6-R6-qQj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="boe-Jc-rET" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -256,16 +262,6 @@
                                 <rect key="frame" x="16" y="0.0" width="343" height="647"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">"DHYANA MANDIRA" - a "PLATFORM" to "TRANSFORM"  At Dhyana Mandira Yoga Kendra, The Astanga Yoga Sutras are being delivered to Yoga aspirants through various Yogic activities, Satsanga, Special events, Nature &amp; Spiritual spots visits, etc.  A brief Syllabus during basic course period of 5 weeks:  Briefings on Yoga Shastra Mind control exercises
-Breathing exercises
-Body joints exercises (can be utilized as workplace exercises)
-Yogasanas (more than 100) practice
-Surya Namaskara
-Pranayama sessions
-Yoga Shibhiras (Camps at special places)
-Special sessions on personality development (Stress management, Self-confidence, Communication skills, Art of Public speech, Simplicity etc.)
-Fine tuning Asanas practice through various techniques
-Mantras  Refer next page for the Abhyasas (activities) for daily practice.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -279,6 +275,9 @@ Mantras  Refer next page for the Abhyasas (activities) for daily practice.</
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="platformTextView" destination="vKz-MU-pBt" id="5fc-o8-Snw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F5G-uf-dqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -311,7 +310,6 @@ Mantras  Refer next page for the Abhyasas (activities) for daily practice.</
                                 <rect key="frame" x="16" y="297" width="343" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">"Shri Rajkumar Gour" is Mukhya Yoga Shikshaka and Chief Administrator at "Dhyana Mandira". He chose Yoga as a path of service in the year 2009 and has provided yoga coaching to more than 5500 people as of now. He is a Yoga Pracharak and Yoga Shikshaka. His service in the yoga field through this Dhyana Mandira is great inspiration and motivation for the people who get associated with this yoga kendra. Many lives have changed with his way of yoga teachings and thus his service is a noticeable contribution to the society. His selfless and constant efforts have made "Dhyana Mandira" - as an epicenter of Yoga in this region of Bangalore.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -325,6 +323,9 @@ Mantras  Refer next page for the Abhyasas (activities) for daily practice.</
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="founderTextView" destination="KVm-Yg-GjP" id="bmz-uf-Mqa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJn-9N-nRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -411,20 +412,8 @@ Mantras  Refer next page for the Abhyasas (activities) for daily practice.</
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FDc-Hh-eZn">
-                                <rect key="frame" x="-99" y="81" width="200" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qhX-l9-9h1">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0S4-dh-KQq">
-                                <rect key="frame" x="16" y="76" width="343" height="583"/>
+                                <rect key="frame" x="16" y="20" width="343" height="583"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="y4S-Sa-U9s">
@@ -445,11 +434,19 @@ Mantras  Refer next page for the Abhyasas (activities) for daily practice.</
                                                     <rect key="frame" x="0.0" y="0.0" width="163" height="164"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAh-8b-A2m">
+                                                    <rect key="frame" x="20" y="134" width="123" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="ItemImage" destination="o56-69-Nes" id="7uk-TD-Qe3"/>
+                                            <outlet property="ItemLabel" destination="kAh-8b-A2m" id="Qvf-PR-3Hz"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -511,7 +508,6 @@ Mantras  Refer next page for the Abhyasas (activities) for daily practice.</
                                 <rect key="frame" x="16" y="390" width="343" height="257"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Postal Address: Rajkumar G Mukhya Shikshaka Dhyana Mandira Yoga Kendra Shri Someshwara(Shiva) Temple, Madiwala, BTM 1st Stage, Bangalore, 560068</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -527,6 +523,7 @@ Mantras  Refer next page for the Abhyasas (activities) for daily practice.</
                     </navigationItem>
                     <connections>
                         <outlet property="MapView" destination="jCT-GC-BlZ" id="mNV-nV-fNi"/>
+                        <outlet property="visitTextView" destination="uvQ-bI-XYB" id="JNb-38-frR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6G-2a-Y0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -638,6 +635,221 @@ Mantras  Refer next page for the Abhyasas (activities) for daily practice.</
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXI-TQ-kOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="309.60000000000002" y="4947.9760119940038"/>
+        </scene>
+        <!--Events View Controller-->
+        <scene sceneID="Liu-xo-Ovk">
+            <objects>
+                <viewController storyboardIdentifier="EventsViewController" id="TiT-EW-Fqn" customClass="EventsViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gq6-sw-LLp"/>
+                        <viewControllerLayoutGuide type="bottom" id="aJd-NG-8Kx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Jg-kJ-O6g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tCc-Ob-nF2">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="8Ho-CT-Yka">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="TiT-EW-Fqn" id="PBg-jb-VSh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cQ-tI-svO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="5630.7346326836587"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Py7-Cr-LBa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RaS-SF-q3v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kca-1d-kDx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TiT-EW-Fqn" kind="relationship" relationship="rootViewController" id="tp7-Tm-gQv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oee-hH-UVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="5630.7346326836587"/>
+        </scene>
+        <!--Comments View Controller-->
+        <scene sceneID="x0u-4Q-W9d">
+            <objects>
+                <viewController storyboardIdentifier="CommentsViewController" id="CmA-Da-YPC" customClass="CommentsViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xW6-rr-7w4"/>
+                        <viewControllerLayoutGuide type="bottom" id="7YT-bS-mHU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K66-Op-yqq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mkc-M1-WPB">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="AbY-Ve-exl">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="CmA-Da-YPC" id="gf3-bF-fjb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHD-9K-42M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="6298.2008995502256"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="o8F-IT-bSU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="inQ-Cs-c5Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bus-8d-xK8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CmA-Da-YPC" kind="relationship" relationship="rootViewController" id="KOs-hf-nbb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RFk-Mp-NfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320.80000000000001" y="6298.2008995502256"/>
+        </scene>
+        <!--Abhyasa View Controller-->
+        <scene sceneID="ORX-1g-kDc">
+            <objects>
+                <viewController storyboardIdentifier="AbhyasaViewController" id="27Y-Iy-8i4" customClass="AbhyasaViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YHD-W4-gFp"/>
+                        <viewControllerLayoutGuide type="bottom" id="hRq-Gs-hR5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m5e-jc-Fis">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FmI-l0-wRW">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="inh-wh-JCy">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="27Y-Iy-8i4" id="hmh-t6-e78"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wI-4j-dqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1248.8" y="6973.7631184407801"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZQa-ud-1cN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4l1-Fl-5gC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hbk-NY-ndw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="27Y-Iy-8i4" kind="relationship" relationship="rootViewController" id="6Hf-Nm-HE2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pWz-LS-zZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309.60000000000002" y="6973.7631184407801"/>
+        </scene>
+        <!--Mantras View Controller-->
+        <scene sceneID="t9F-ec-FeZ">
+            <objects>
+                <viewController storyboardIdentifier="MantrasViewController" id="dth-4S-eCK" customClass="MantrasViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qyh-VQ-9tn"/>
+                        <viewControllerLayoutGuide type="bottom" id="5ht-kp-oio"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oPG-Zq-5rR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ax-q6-IwH">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="iph-cU-495">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="dth-4S-eCK" id="K6f-bR-5EQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEO-gS-8if" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1255.2" y="7643.9280359820095"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nFC-ZY-ugb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vfm-zk-FoD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J9c-hj-p2A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dth-4S-eCK" kind="relationship" relationship="rootViewController" id="U07-YK-MhB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Se4-YX-Wur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="7643.9280359820095"/>
+        </scene>
+        <!--Facebook View Controller-->
+        <scene sceneID="JwQ-K7-JWS">
+            <objects>
+                <viewController storyboardIdentifier="FacebookViewController" id="Wwz-yR-Yfh" customClass="FacebookViewController" customModule="DhyanaMandira" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8pu-lM-ikW"/>
+                        <viewControllerLayoutGuide type="bottom" id="d0V-Tm-Yo6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bPv-w3-eNN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N2f-Dv-Rs3">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Menu" id="DoJ-R0-ucs">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="Wwz-yR-Yfh" id="3hX-fT-Ohr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Vb-RZ-mDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1279.2" y="8400.4497751124436"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rgf-64-ZtS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d6B-xX-GQy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QOt-zw-qrQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wwz-yR-Yfh" kind="relationship" relationship="rootViewController" id="6mZ-iR-6fF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSS-XP-Qph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="8400.4497751124436"/>
         </scene>
     </scenes>
     <resources>

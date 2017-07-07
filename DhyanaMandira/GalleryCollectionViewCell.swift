@@ -12,5 +12,6 @@ class GalleryCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var ItemImage: UIImageView!
     
+    @IBOutlet weak var ItemLabel: UILabel!
     
 }

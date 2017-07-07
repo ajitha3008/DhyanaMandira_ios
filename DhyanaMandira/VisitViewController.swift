@@ -12,16 +12,26 @@ import CoreLocation
 
 class VisitViewController: UIViewController {
 
+    
+    @IBOutlet weak var visitTextView: UITextView!
     @IBOutlet weak var MapView: MKMapView!
+    
+    let htmlString = "<html><body style=\"text-align:justify\"><p style=\"font-size:18px\"><b>PostalAddress:</b><br>Rajkumar G<br>Mukhya Shikshaka<br>Dhyana Mandira Yoga Kendra<br>Shri Someshwara(Shiva) Temple,<br>Madiwala,<br>BTM 1st Stage,<br>Bangalore,<br>560068</p></body></Html>"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title="Visit"
         let center = CLLocationCoordinate2D(latitude:12.918235, longitude:77.618393)
         let region = MKCoordinateRegion(center: center, span:MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         MapView.setRegion(region, animated: true)
         let annotation=MKPointAnnotation()
         annotation.coordinate=center;
         MapView.addAnnotation(annotation)
+        let htmlData = NSString(string: htmlString).data(using: String.Encoding.unicode.rawValue)
+        
+        let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
+        
+        visitTextView.attributedText = attributedString
         // Do any additional setup after loading the view.
     }
 

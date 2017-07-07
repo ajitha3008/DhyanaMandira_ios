@@ -95,6 +95,11 @@
 		CBF210781F0CF91E006A1E4D /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210771F0CF91E006A1E4D /* GalleryCollectionViewCell.swift */; };
 		CBF2107A1F0D11A5006A1E4D /* VisitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210791F0D11A5006A1E4D /* VisitViewController.swift */; };
 		CBF2107C1F0E48E9006A1E4D /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2107B1F0E48E9006A1E4D /* CallViewController.swift */; };
+		CBF210861F0E6250006A1E4D /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210851F0E6250006A1E4D /* EventsViewController.swift */; };
+		CBF210881F0E6272006A1E4D /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210871F0E6272006A1E4D /* CommentsViewController.swift */; };
+		CBF2108A1F0E6289006A1E4D /* AbhyasaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210891F0E6289006A1E4D /* AbhyasaViewController.swift */; };
+		CBF2108C1F0E629F006A1E4D /* MantrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2108B1F0E629F006A1E4D /* MantrasViewController.swift */; };
+		CBF2108E1F0E65AB006A1E4D /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2108D1F0E65AB006A1E4D /* FacebookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -220,6 +225,11 @@
 		CBF210771F0CF91E006A1E4D /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		CBF210791F0D11A5006A1E4D /* VisitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitViewController.swift; sourceTree = "<group>"; };
 		CBF2107B1F0E48E9006A1E4D /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		CBF210851F0E6250006A1E4D /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		CBF210871F0E6272006A1E4D /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		CBF210891F0E6289006A1E4D /* AbhyasaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbhyasaViewController.swift; sourceTree = "<group>"; };
+		CBF2108B1F0E629F006A1E4D /* MantrasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MantrasViewController.swift; sourceTree = "<group>"; };
+		CBF2108D1F0E65AB006A1E4D /* FacebookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
 		FE2605940C96C93F50AC9017 /* Pods-DhyanaMandiraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandiraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandiraUITests/Pods-DhyanaMandiraUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -367,6 +377,11 @@
 				CBF210771F0CF91E006A1E4D /* GalleryCollectionViewCell.swift */,
 				CBF210791F0D11A5006A1E4D /* VisitViewController.swift */,
 				CBF2107B1F0E48E9006A1E4D /* CallViewController.swift */,
+				CBF210851F0E6250006A1E4D /* EventsViewController.swift */,
+				CBF210871F0E6272006A1E4D /* CommentsViewController.swift */,
+				CBF210891F0E6289006A1E4D /* AbhyasaViewController.swift */,
+				CBF2108B1F0E629F006A1E4D /* MantrasViewController.swift */,
+				CBF2108D1F0E65AB006A1E4D /* FacebookViewController.swift */,
 			);
 			name = MenuViewControllers;
 			sourceTree = "<group>";
@@ -794,16 +809,21 @@
 			files = (
 				CBF2101B1F0A522E006A1E4D /* FounderViewController.swift in Sources */,
 				CBF210781F0CF91E006A1E4D /* GalleryCollectionViewCell.swift in Sources */,
+				CBF2108E1F0E65AB006A1E4D /* FacebookViewController.swift in Sources */,
+				CBF2108A1F0E6289006A1E4D /* AbhyasaViewController.swift in Sources */,
 				CBF210761F0CF6CA006A1E4D /* GalleryViewController.swift in Sources */,
 				CBF20FDF1F051AC9006A1E4D /* MMDrawerVisualState.m in Sources */,
 				CBF210171F0A4C26006A1E4D /* AshtangaViewController.swift in Sources */,
 				CBF20FA01F04BBC2006A1E4D /* ViewController.swift in Sources */,
 				CBF210191F0A4DF7006A1E4D /* DhyanaMandiraViewController.swift in Sources */,
 				CBF20FE61F06156C006A1E4D /* NavigationDrawerMenuItemTableViewCell.swift in Sources */,
+				CBF210881F0E6272006A1E4D /* CommentsViewController.swift in Sources */,
 				CBF210151F0A06BA006A1E4D /* RegistrationViewController.swift in Sources */,
 				CBF20FE01F051AC9006A1E4D /* UIViewController+MMDrawerController.m in Sources */,
+				CBF210861F0E6250006A1E4D /* EventsViewController.swift in Sources */,
 				CBF2107A1F0D11A5006A1E4D /* VisitViewController.swift in Sources */,
 				CBF20FDE1F051AC9006A1E4D /* MMDrawerController.m in Sources */,
+				CBF2108C1F0E629F006A1E4D /* MantrasViewController.swift in Sources */,
 				CBF20FDD1F051AC9006A1E4D /* MMDrawerBarButtonItem.m in Sources */,
 				CBF20F9E1F04BBC2006A1E4D /* AppDelegate.swift in Sources */,
 				CBF2107C1F0E48E9006A1E4D /* CallViewController.swift in Sources */,
