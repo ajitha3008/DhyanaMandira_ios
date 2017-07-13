@@ -100,6 +100,7 @@
 		CBF2108A1F0E6289006A1E4D /* AbhyasaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210891F0E6289006A1E4D /* AbhyasaViewController.swift */; };
 		CBF2108C1F0E629F006A1E4D /* MantrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2108B1F0E629F006A1E4D /* MantrasViewController.swift */; };
 		CBF2108E1F0E65AB006A1E4D /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2108D1F0E65AB006A1E4D /* FacebookViewController.swift */; };
+		CBF210921F0F8EE7006A1E4D /* MantraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF210911F0F8EE7006A1E4D /* MantraTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -230,6 +231,7 @@
 		CBF210891F0E6289006A1E4D /* AbhyasaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbhyasaViewController.swift; sourceTree = "<group>"; };
 		CBF2108B1F0E629F006A1E4D /* MantrasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MantrasViewController.swift; sourceTree = "<group>"; };
 		CBF2108D1F0E65AB006A1E4D /* FacebookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
+		CBF210911F0F8EE7006A1E4D /* MantraTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MantraTableViewCell.swift; sourceTree = "<group>"; };
 		FE2605940C96C93F50AC9017 /* Pods-DhyanaMandiraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandiraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandiraUITests/Pods-DhyanaMandiraUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -382,6 +384,7 @@
 				CBF210891F0E6289006A1E4D /* AbhyasaViewController.swift */,
 				CBF2108B1F0E629F006A1E4D /* MantrasViewController.swift */,
 				CBF2108D1F0E65AB006A1E4D /* FacebookViewController.swift */,
+				CBF210911F0F8EE7006A1E4D /* MantraTableViewCell.swift */,
 			);
 			name = MenuViewControllers;
 			sourceTree = "<group>";
@@ -819,6 +822,7 @@
 				CBF20FE61F06156C006A1E4D /* NavigationDrawerMenuItemTableViewCell.swift in Sources */,
 				CBF210881F0E6272006A1E4D /* CommentsViewController.swift in Sources */,
 				CBF210151F0A06BA006A1E4D /* RegistrationViewController.swift in Sources */,
+				CBF210921F0F8EE7006A1E4D /* MantraTableViewCell.swift in Sources */,
 				CBF20FE01F051AC9006A1E4D /* UIViewController+MMDrawerController.m in Sources */,
 				CBF210861F0E6250006A1E4D /* EventsViewController.swift in Sources */,
 				CBF2107A1F0D11A5006A1E4D /* VisitViewController.swift in Sources */,
