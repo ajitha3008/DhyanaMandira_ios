@@ -31,6 +31,7 @@
 		381DED8B1F1B6D00000E6AAD /* MantraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381DED461F1B6D00000E6AAD /* MantraTableViewCell.swift */; };
 		381DED8C1F1B6D00000E6AAD /* NavigationDrawerMenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381DED471F1B6D00000E6AAD /* NavigationDrawerMenuItemTableViewCell.swift */; };
 		381DED8D1F1B6D00000E6AAD /* RegistrationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381DED4A1F1B6D00000E6AAD /* RegistrationView.xib */; };
+		38EACF4A1F1CB92C000FEC17 /* AbhyasaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EACF491F1CB92C000FEC17 /* AbhyasaTableViewCell.swift */; };
 		643AF723BDA75A2160E662CE /* Pods_DhyanaMandira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A18E866B817193E3FB73EFF /* Pods_DhyanaMandira.framework */; };
 		B780CDBB182613AD0FF952CD /* Pods_DhyanaMandiraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B81C3226A3932520F23FA91 /* Pods_DhyanaMandiraUITests.framework */; };
 		CBF20FA31F04BBC2006A1E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FA11F04BBC2006A1E4D /* Main.storyboard */; };
@@ -89,6 +90,7 @@
 		381DED461F1B6D00000E6AAD /* MantraTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MantraTableViewCell.swift; sourceTree = "<group>"; };
 		381DED471F1B6D00000E6AAD /* NavigationDrawerMenuItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDrawerMenuItemTableViewCell.swift; sourceTree = "<group>"; };
 		381DED4A1F1B6D00000E6AAD /* RegistrationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationView.xib; sourceTree = "<group>"; };
+		38EACF491F1CB92C000FEC17 /* AbhyasaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbhyasaTableViewCell.swift; sourceTree = "<group>"; };
 		3B81C3226A3932520F23FA91 /* Pods_DhyanaMandiraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DhyanaMandiraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6453E7CD1CBACCFB3F79D755 /* Pods-DhyanaMandiraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandiraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandiraUITests/Pods-DhyanaMandiraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		785E0C3A4641A32125E243B4 /* Pods-DhyanaMandiraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandiraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandiraTests/Pods-DhyanaMandiraTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 		381DED441F1B6D00000E6AAD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				38EACF491F1CB92C000FEC17 /* AbhyasaTableViewCell.swift */,
 				381DED451F1B6D00000E6AAD /* GalleryCollectionViewCell.swift */,
 				381DED461F1B6D00000E6AAD /* MantraTableViewCell.swift */,
 				381DED471F1B6D00000E6AAD /* NavigationDrawerMenuItemTableViewCell.swift */,
@@ -650,6 +653,7 @@
 				381DED871F1B6D00000E6AAD /* RegistrationViewController.swift in Sources */,
 				381DED7B1F1B6D00000E6AAD /* UIViewController+MMDrawerController.m in Sources */,
 				381DED7E1F1B6D00000E6AAD /* CallViewController.swift in Sources */,
+				38EACF4A1F1CB92C000FEC17 /* AbhyasaTableViewCell.swift in Sources */,
 				381DED8C1F1B6D00000E6AAD /* NavigationDrawerMenuItemTableViewCell.swift in Sources */,
 				381DED851F1B6D00000E6AAD /* LeftSideNavViewController.swift in Sources */,
 				381DED881F1B6D00000E6AAD /* ViewController.swift in Sources */,

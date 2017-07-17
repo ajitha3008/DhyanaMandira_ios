@@ -17,6 +17,8 @@ class MantrasViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         self.navigationItem.title="Mantras"
         tableView.tableFooterView =  UIView(frame: .zero)
+        tableView.contentInset = UIEdgeInsetsMake(0, 0, 120, 0)//top,left,bottom,right
+        //self.edgesForExtendedLayout = UIRectEdge.init(rawValue: 0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,157 +55,39 @@ class MantrasViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MantraMenuItem", for: indexPath) as! MantraTableViewCell
+        var htmlString = ""
         if(indexPath.section==0) {
-            
-            let htmlString = "<html><body style=\"text-align:justify;font-size:18px\"><b>Mantra:</b><br>Sahanaa Vavatu;<br>Sahanau Bhunakthu;<br>Sahaveeryam Karavavahaihi;<br>Tejasvinava Dheetamastu;<br>Maa Vidvishavahaihi;<br>Aum Shanti Shanti Shanti Hi..!!<br><br><b>Meaning:</b><br>Om, May we all be protected;<br>May we all be nourished;<br>May we work together with<br>great energy;<br>May our intellect be sharpened<br>(may our study be effective);<br>Let there be no Animosity amongst us<br>Om, peace (in me), peace (in nature), peace (in divine forces)</font></body></html>"
-            
-            let htmlData = NSString(string: htmlString).data(using: String.Encoding.unicode.rawValue)
-            
-            let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
-            
-            cell.Content.attributedText = attributedString
+            htmlString = "<html><body style=\"text-align:justify;font-size:18px\"><b>Mantra:</b><br>Sahanaa Vavatu;<br>Sahanau Bhunakthu;<br>Sahaveeryam Karavavahaihi;<br>Tejasvinava Dheetamastu;<br>Maa Vidvishavahaihi;<br>Aum Shanti Shanti Shanti Hi..!!<br><br><b>Meaning:</b><br>Om, May we all be protected;<br>May we all be nourished;<br>May we work together with<br>great energy;<br>May our intellect be sharpened<br>(may our study be effective);<br>Let there be no Animosity amongst us<br>Om, peace (in me), peace (in nature), peace (in divine forces)</font></body></html>"
         }
         if(indexPath.section==1) {
-            let htmlString = "<html><body style=\"text-align:justify;font-size:18px\"><b>Mantra:</b><br>Gururbramha-Gururvishnuhu;<br>Gururdevo Maheshwarah;<br>Gurusakshaat Parabramha;<br>Tasmaishri Gurave Namaha…!!<br><br><b>Meaning:</b><br>The Guru is Brahma,<br>the Guru is Vishnu,<br>the Guru Deva is Maheswara (Shiva),<br>The Guru is Verily the Para-Brahman<br>(Supreme Brahman);<br>Salutations to that Guru.</font></body></html>"
-            
-            let htmlData = NSString(string: htmlString).data(using: String.Encoding.unicode.rawValue)
-            
-            let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
-            
-            cell.Content.attributedText = attributedString
+            htmlString = "<html><body style=\"text-align:justify;font-size:18px\"><b>Mantra:</b><br>Gururbramha-Gururvishnuhu;<br>Gururdevo Maheshwarah;<br>Gurusakshaat Parabramha;<br>Tasmaishri Gurave Namaha…!!<br><br><b>Meaning:</b><br>The Guru is Brahma,<br>the Guru is Vishnu,<br>the Guru Deva is Maheswara (Shiva),<br>The Guru is Verily the Para-Brahman<br>(Supreme Brahman);<br>Salutations to that Guru.</font></body></html>"
         }
         if(indexPath.section==2) {
-            cell.Content.text="Mantra:\n" + "Om. Hiranmayena Paatrena,\n" +
-            "Satyasyapi Hitham Mukham;\n" +
-            "Tatvam Pooshanna Pavrnu;\n" +
-            "Satya Dharmaya Drusthaye;\n\n" + "Meaning:\n" +
-            "“The Truth is concealed by the\n" +
-            "golden vessel.\n" +
-            "O Sun! Open the entrance to\n" +
-            "that cover, so that the Truth\n" +
-            "that is concealed by you is\n" +
-            "visible to me, a truthful devotee,\n" +
-            "by your illuminating Grace.\n\n"+"Mantra:\n" +
-                    "Om dhyeya sada savitra\nmandala madhyavarti |\n" +
-                    "Narayana sarasija\nsanasanni vishtah |\n" +
-                    "Keyuravana makarakundala\nvana kiriti |\n" +
-                    "Hari hiranmaya vapura\ndhritashankha chakrah ||\n" +
-                    "\n" +
-                    "Meaning:\n" +
-                    "One should meditate on the\n" +
-                    "form of Lord Narayana\n" +
-                    "situated in the sun globe.\n" +
-                    "He is seated on a lotus, with\n" +
-                    "golden bracelets, crown,\n" +
-                    "shark earrings; he is\n" +
-                    "golden in complexion,\n" +
-                    "and holds the shankha and\n" +
-                "chakra in his hands.\n\n" + "Mantra & Meaning:\n\n" + "Om Hraam Mitraya Namaha;\n" +
-                    "\tOne who is friendly to all.\n\n" +
-                    "Om Hreem Ravaye Namaha;\n" +
-                    "\tThe shining one, the radiant one.\n\n" +
-                    "Om Hroom Suryaya Namaha;\n" +
-                    "\tThe dispeller of darkness,\n" +
-                    "\tresponsible for generating activity.\n\n" +
-                    "Om Hraim Bhanave Namaha;\n" +
-                    "\tOne who illuminates or the bright one.\n\n" +
-                    "Om Hraum Khagaya Namaha;\n" +
-                    "\tOne who is all pervading, one who moves\n\tthrough the sky.\n\n" +
-                    "Om Hraha Pooshne Namaha;\n" +
-                    "\tGiver of nourishment and fulfillment.\n\n" +
-                    "Om Hraam Hiranya Garbhaaya Namaha;\n" +
-                    "\tOne who has a golden colored brilliance.\n\n" +
-                    "Om Hreem Mareechaye Namaha;\n" +
-                    "\tGiver of light with infinite rays.\n\n" +
-                    "Om Hroom Aadityaya Namaha;\n" +
-                    "\tThe son of Aditi, the cosmic divine mother.\n\n" +
-                    "Om Hraim Savitre Namaha;\n" +
-                    "\tOne who is responsible for life.\n\n" +
-                    "Om Hraum Arkaaya Namaha;\n" +
-                    "\tOne who is worthy of praise and glory.\n\n" +
-                    "Om Hraha Bhaskaraaya Namaha;\n" +
-                "\tGiver of wisdom and cosmic illumination!!!"
+            htmlString = "<html><body style=\"text-align:justify;font-size:18px\"><b>Mantra:</b><br>Om. Hiranmayena Paatrena,<br>Satyasyapi Hitham Mukham;<br>Tatvam Pooshanna Pavrnu;<br>Satya Dharmaya Drusthaye.<br><br><b>Meaning:</b><br>The Truth is concealed by the<br>golden vessel.O Sun! Open the entrance to that cover, so that the Truth that is concealed by you is visible to me, a truthful devotee,by your illuminating Grace.<br><br><b>Mantra:</b><br>Om dhyeya sada savitra\nmandala madhyavarti;<br>Narayana sarasijasana sanni vishtah<br>Keyuravana makarakundala vana kiriti<br>Hari hiranmaya vapura dhritashankha chakrah<br><br><b>Meaning:</b><br>One should meditate on the form of Lord Narayana situated in the sun globe. He is seated on a lotus, with golden bracelets, crown, shark earrings; he is golden in complexion,and holds the shankha and chakra in his hands.<br><br><b>Mantra & Meaning:</b><br><br>Om Hraam Mitraya Namaha;<br>One who is friendly to all.<br><br>Om Hreem Ravaye Namaha;<br>The shining one, the radiant one.<br><br>Om Hroom Suryaya Namaha;<br>The dispeller of darkness responsible for generating activity.<br><br>Om Hraim Bhanave Namaha;<br>One who illuminates or the bright one.<br><br>Om Hraum Khagaya Namaha;<br>One who is all pervading, one who moves through the sky.<br><br>Om Hraha Pooshne Namaha;<br>Giver of nourishment and fulfillment.<br><br>Om Hraam Hiranya Garbhaaya Namaha;<br>One who has a golden colored brilliance.<br><br>Om Hreem Mareechaye Namaha;<br>Giver of light with infinite rays.<br><br>Om Hroom Aadityaya Namaha;<br>The son of Aditi, the cosmic divine mother.<br><br>Om Hraim Savitre Namaha;<br>One who is responsible for life.<br><br>Om Hraum Arkaaya Namaha;<br>One who is worthy of praise and glory.<br><br>Om Hraha Bhaskaraaya Namaha;<br>Giver of wisdom and cosmic illumination!!!</font></body></html>"
         }
         if(indexPath.section==3) {
-            cell.Content.text="Mantra:\n" +
-                "Aadityasya Namaskaraan,\n" +
-                "Ye Kurvanti Dine Dine,\n" +
-                "Aayuh Pragnabalam Veeryam,\n" +
-                "Tejastheshancha Jaayate…!!\n" +
-                "Om Namo Bhagavate Suryanarayanaya;\n" +
-                "Om Namo Bhagavate Suryanarayanaya;\n" +
-                "Om Namo Bhagavate Suryanarayanaya Namaha…!!\n" +
-                "\n" +
-                "Meaning:\n" +
-                "It is said that the person who\n" +
-                "does Surya Namaskar daily is\n" +
-                "untouched by poverty for his\n" +
-            "thousand lifetimes."
+            htmlString = "<html><body style=\"text-align:justify;font-size:18px\"><b>Mantra:</b><br>Aadityasya Namaskaraan,<br>Ye Kurvanti Dine Dine,<br>Aayuh Pragnabalam Veeryam,<br>Tejastheshancha Jaayate…!!<br>Om Namo Bhagavate Suryanarayanaya;<br>Om Namo Bhagavate Suryanarayanaya;<br>Om Namo Bhagavate Suryanarayanaya Namaha…!!<br><br><b>Meaning:</b><br>It is said that the person who does Surya Namaskar daily is untouched by poverty for his thousand lifetimes.</font></body></html>"
+
         }
         if(indexPath.section==4) {
-            cell.Content.text="Mantra:\n" +
-                "Samudra Vasane Devi,\n" +
-                "Parvatasthana Mandele,\n" +
-                "Vishnu Patni Namsthubhyam,\n" +
-                "Paadasparsham Kshamasvame..!!\n" +
-                "\n" +
-                "Meaning:\n" +
-                "(Oh Mother Earth) The Devi Who\n" +
-                "is having Ocean as Her Garments\n" +
-                "and Mountains as Her Bosom,\n" +
-                "Who is the Consort of Sri Vishnu,\n" +
-                "I Bow to You; Please Forgive me\n" +
-            "for Touching You with my Feet."
+            htmlString = "<html><body style=\"text-align:justify;font-size:18px\"><b>Mantra:</b><br>Samudra Vasane Devi,<br>Parvatasthana Mandele,<br>Vishnu Patni Namsthubhyam,<br>Paadasparsham Kshamasvame..!!<br><br><b>Meaning:</b><br>(Oh Mother Earth) The Devi Who is having Ocean as Her Garments and Mountains as Her Bosom, Who is the Consort of Sri Vishnu, I Bow to You; Please Forgive me for Touching You with my Feet.</font></body></html>"
         }
         if(indexPath.section==5) {
-            cell.Content.text="Mantra:\n" +
-                "Praanasyedam Vashessarvam;\n" +
-                "Tridiveyat Pratisthitam; Maateva Putran\n" +
-                "Rakshaswa;\n" +
-                "Shreescha Prajnanscha Videhi Na Itihi..!\n" +
-                "Om Shanti Shanti Shanti Hi…!!\n" +
-                "\n" +
-                "Meaning:\n" +
-                "Whatever is there\n" +
-                "on all the three places\n" +
-                "(earth, space & heaven),\n" +
-                "is all controlled by Prana,\n" +
-                "the Life Force. O Prana, protect us, as the mother\n" +
-                "protects the child. Please give us the wealth\n" +
-            "& the intellect."
+            htmlString = "<html><body style=\"text-align:justify;font-size:18px\"><b>Mantra:</b><br>Praanasyedam Vashessarvam;<br>Tridiveyat Pratisthitam;<br>Maateva Putran Rakshaswa;<br>Shreescha Prajnanscha Videhi Na Itihi..!<br>Om Shanti Shanti Shanti Hi…!<br><br><b>Meaning:</b><br>Whatever is there on all the three places(earth, space & heaven), is all controlled by Prana, the Life Force. O Prana, protect us, as the mother protects the child. Please give us the wealth & the intellect.</font></body></html>"
         }
         if(indexPath.section==6) {
-            cell.Content.text="Mantra:\n" +
-                "Yogena Chithasya Padenavacha\n" +
-                "Malam Shareerasya Cha Vaidyakenam\n" +
-                "Yopakarotham Pravarammuneena\n" +
-                "Pathanjalim Pranjalirana Thosmin\n" +
-                "Abahu Purushakaram\n" +
-                "Shanku Chakra Sidharinum\n" +
-                "Sahasra Shirasum Shwetham\n" +
-                "Pranamami Pathanjali\n" +
-                "\n" +
-                "Meaning:\n" +
-                "I bow with folded hands to Patanjali,\n" +
-                "the greatest of sages, who removed\n" +
-                "the impurity of mind by his work on Yoga,\n" +
-                "the impurity of speech by his work on\n" +
-                "grammar and the impurity of body\n" +
-            "by his work on medicine."
+            htmlString = "<html><body style=\"text-align:justify;font-size:18px\"><b>Mantra:</b><br>Yogena Chithasya, Padenavacha,<br>Malam Shareerasya Cha Vaidyakenam<br>Yopakarotham Pravarammuneena<br>Pathanjalim Pranjalirana Thosmin<br>Abahu Purushakaram<br>Shanku Chakra Sidharinum<br>Sahasra Shirasum Shwetham<br>Pranamami Pathanjali<br><br><b>Meaning:</b><br>I bow with folded hands to Patanjali, the greatest of sages, who removed the impurity of mind by his work on Yoga, the impurity of speech by his work on grammar and the impurity of body by his work on medicine.</font></body></html>"
         }
         if(indexPath.section==7) {
-            cell.Content.text="Mantra:\n" +
-                "Asato ma sadgamaya\n" +
-                "tamasoma jyotir gamaya\n" +
-                "mrityormāamritam gamaya\n" +
-                "Aum shanti shanti shantihi\n" +
-                "\n" +
-                "Meaning:\n" +
-                "From ignorance, lead me to truth;\n" +
-                "From darkness, lead me to light;\n" +
-                "From death, lead me to immortality\n" +
-            "Om peace, peace, peace"
+            htmlString = "<html><body style=\"text-align:justify;font-size:18px\"><b>Mantra:</b><br>Asato ma sadgamaya<br>tamasoma jyotir gamaya<br>mrityormāamritam gamaya<br>Aum shanti shanti shantihi!!<br><br><b>Meaning:</b><br>From ignorance, lead me to truth; From darkness, lead me to light; From death, lead me to immortality, Om peace, peace, peace!</font></body></html>"
         }
+        
+        let htmlData = NSString(string: htmlString).data(using: String.Encoding.unicode.rawValue)
+        
+        let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
+        
+        cell.Content.attributedText = attributedString
+        
         return cell
     }
     
