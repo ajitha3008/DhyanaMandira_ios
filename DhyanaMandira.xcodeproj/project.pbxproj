@@ -34,6 +34,7 @@
 		38EACF4A1F1CB92C000FEC17 /* AbhyasaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EACF491F1CB92C000FEC17 /* AbhyasaTableViewCell.swift */; };
 		643AF723BDA75A2160E662CE /* Pods_DhyanaMandira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A18E866B817193E3FB73EFF /* Pods_DhyanaMandira.framework */; };
 		B780CDBB182613AD0FF952CD /* Pods_DhyanaMandiraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B81C3226A3932520F23FA91 /* Pods_DhyanaMandiraUITests.framework */; };
+		CBBE38C91F1CDD660059A59D /* UserCommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE38C81F1CDD660059A59D /* UserCommentsTableViewCell.swift */; };
 		CBF20FA31F04BBC2006A1E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FA11F04BBC2006A1E4D /* Main.storyboard */; };
 		CBF20FA51F04BBC2006A1E4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FA41F04BBC2006A1E4D /* Assets.xcassets */; };
 		CBF20FA81F04BBC2006A1E4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FA61F04BBC2006A1E4D /* LaunchScreen.storyboard */; };
@@ -97,6 +98,7 @@
 		8DFE5B9A4738726BE861E201 /* Pods-DhyanaMandira.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandira.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandira/Pods-DhyanaMandira.debug.xcconfig"; sourceTree = "<group>"; };
 		B018C040A9EAA244ED866877 /* Pods_DhyanaMandiraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DhyanaMandiraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9B7578E4E9A221CC964689 /* Pods-DhyanaMandira.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandira.release.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandira/Pods-DhyanaMandira.release.xcconfig"; sourceTree = "<group>"; };
+		CBBE38C81F1CDD660059A59D /* UserCommentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCommentsTableViewCell.swift; sourceTree = "<group>"; };
 		CBF20F9A1F04BBC2006A1E4D /* DhyanaMandira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DhyanaMandira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF20FA21F04BBC2006A1E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBF20FA41F04BBC2006A1E4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				381DED451F1B6D00000E6AAD /* GalleryCollectionViewCell.swift */,
 				381DED461F1B6D00000E6AAD /* MantraTableViewCell.swift */,
 				381DED471F1B6D00000E6AAD /* NavigationDrawerMenuItemTableViewCell.swift */,
+				CBBE38C81F1CDD660059A59D /* UserCommentsTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -432,9 +435,9 @@
 				TargetAttributes = {
 					CBF20F991F04BBC2006A1E4D = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = FT6HBCY954;
+						DevelopmentTeam = HY9VKUPG9A;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					CBF20FAD1F04BBC3006A1E4D = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -651,6 +654,7 @@
 				381DED7C1F1B6D00000E6AAD /* AbhyasaViewController.swift in Sources */,
 				381DED791F1B6D00000E6AAD /* MMDrawerController.m in Sources */,
 				381DED871F1B6D00000E6AAD /* RegistrationViewController.swift in Sources */,
+				CBBE38C91F1CDD660059A59D /* UserCommentsTableViewCell.swift in Sources */,
 				381DED7B1F1B6D00000E6AAD /* UIViewController+MMDrawerController.m in Sources */,
 				381DED7E1F1B6D00000E6AAD /* CallViewController.swift in Sources */,
 				38EACF4A1F1CB92C000FEC17 /* AbhyasaTableViewCell.swift in Sources */,
@@ -820,14 +824,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Nagesh Rudrappa (K3P83G5294)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nagesh Rudrappa (K3P83G5294)";
-				DEVELOPMENT_TEAM = FT6HBCY954;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HY9VKUPG9A;
 				INFOPLIST_FILE = DhyanaMandira/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.DhyanaMandira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5e03652d-cf60-49c6-a4d8-749e2141438c";
-				PROVISIONING_PROFILE_SPECIFIER = SMEC_DEV_SREE_PROFILE;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/DhyanaMandira/Classes/Utils/Headers/DhyanaMandira-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -840,7 +844,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HY9VKUPG9A;
 				INFOPLIST_FILE = DhyanaMandira/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = personal.DhyanaMandira;
