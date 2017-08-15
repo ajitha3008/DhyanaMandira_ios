@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FounderViewController: UIViewController {
+class FounderViewController: BaseViewController {
 
     @IBOutlet weak var founderTextView: UITextView!
     
@@ -20,9 +20,10 @@ self.navigationItem.title="Founder"
         let htmlData = NSString(string: htmlString).data(using: String.Encoding.unicode.rawValue)
         
         let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
-        
+     
         founderTextView.attributedText = attributedString
         // Do any additional setup after loading the view.
+        self.setupLeftMenuButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,11 +31,11 @@ self.navigationItem.title="Founder"
         // Dispose of any resources that can be recreated.
     }
     
-
-    @IBAction func LeftSideButtonTapped(_ sender: Any) {
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
-    }
+//
+//    @IBAction func LeftSideButtonTapped(_ sender: Any) {
+//        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+//        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+//    }
     /*
     // MARK: - Navigation
 

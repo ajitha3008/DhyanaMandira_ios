@@ -7,34 +7,84 @@
 //
 
 import UIKit
+import SVProgressHUD
 
-class EventsViewController: UIViewController {
+class EventsViewController: BaseViewController {
 
+    @IBOutlet weak var tableVW: UITableView!
+    var events:NSMutableArray! = NSMutableArray()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title="Events"
-
+        self.setupLeftMenuButton()
         // Do any additional setup after loading the view.
+        self.GetEvents()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func GetEvents()
+    {
+        AppDelegate.init().showLoader()
+            HTTPNetworker.sharedInstance.get_data_from_url(urlStr: Constants.GoogleSheetURL.EventURL) { (JSON, error) in
+                AppDelegate.init().hideLoader()
+                if(error == nil)
+                {
+                    let rows:NSArray! = (JSON as AnyObject).value(forKeyPath: "table.rows") as! NSArray
+                    print(rows)
+                    
+                    for var i in (0..<rows.count)
+                    {
+                        if(i != 0)
+                        {
+                            self.events.add(rows[i]);
+                        }
+                    }
+                    
+                     print(self.events)
+                    DispatchQueue.main.async(execute: {
+                        self.tableVW.reloadData()
+                        return
+                    })
+                }else
+                {
+                    
+                }
+        }
     }
-    
-
-    @IBAction func LeftSideButtonTapped(_ sender: Any) {
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
-    }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+
+extension EventsViewController:UITableViewDataSource,UITableViewDelegate
+{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1;
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.events.count;
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : EventsCell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as! EventsCell
+        let dataAry:NSArray! = (self.events.lastObject as AnyObject).value(forKey: "c") as! NSArray;
+        let name : String! = (dataAry.object(at: 0) as AnyObject).value(forKey: "v") as! String
+        let location : String! = (dataAry.object(at:1) as AnyObject).value(forKey: "v") as! String
+        let date : String! = (dataAry.object(at:2) as AnyObject).value(forKey: "v") as! String
+        let desc : String! = (dataAry.object(at:3) as AnyObject).value(forKey: "v") as! String
+        cell.eventName.text = name;
+        cell.location.text = "Location : \(location!)"
+        cell.dateAndTime.text = "Date : \(date!)"
+        cell.eventDesc.text = "Description : \(desc!)"
+        return cell;
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        tableVW.estimatedRowHeight = 100
+        return UITableViewAutomaticDimension
+    }
+    
+}
+

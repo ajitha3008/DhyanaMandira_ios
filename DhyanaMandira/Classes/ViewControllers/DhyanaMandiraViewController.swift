@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DhyanaMandiraViewController: UIViewController {
+class DhyanaMandiraViewController: BaseViewController {
 
     @IBOutlet weak var platformTextView: UITextView!
     
@@ -23,6 +23,7 @@ class DhyanaMandiraViewController: UIViewController {
         let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
         
         platformTextView.attributedText = attributedString
+        self.setupLeftMenuButton()
         // Do any additional setup after loading the view.
     }
 
@@ -31,10 +32,6 @@ class DhyanaMandiraViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func LeftSideButtonTapped(_ sender: Any) {
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
-    }
     /*
     // MARK: - Navigation
 

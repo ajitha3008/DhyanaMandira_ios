@@ -7,6 +7,12 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import Firebase
+import FirebaseMessaging
+import UserNotifications
+import SVProgressHUD
+
 
 struct AppFontName {
     static let regular = "TimesNewRomanPSMT"
@@ -167,6 +173,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationBar.barTintColor = navBarColour
         navigationBar.tintColor = whiteColour
         navigationBar.titleTextAttributes=[NSForegroundColorAttributeName:UIColor.white]
+        
+        //Firebase configration
+        FirebaseApp.configure()
+        //Adding facebook initiations
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions);
+        
+        self.registerForPushNotifications()
+        
+        
         return true
     }
     
@@ -186,12 +201,99 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        //This will check for daily app users - FB analytics
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation);
+    }
 
+    
+    func registerForPushNotifications()
+    {
+        //Register for push notifications
+        if #available(iOS 10.0, *) {
+            let center = UNUserNotificationCenter.current()
+            center.requestAuthorization(options: []) { _, _ in
+                // For iOS 10 display notification (sent via APNS)
+                UNUserNotificationCenter.current().delegate = self
+                UIApplication.shared.registerForRemoteNotifications()
+                }
+        } else {
+            // Fallback on earlier versions
+            UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil))
+            UIApplication.shared.registerForRemoteNotifications()
+        }
+        
+
+    }
+    
+    func showLoader(){
+        SVProgressHUD.setBackgroundColor(UIColor.black)
+        SVProgressHUD.setBackgroundLayerColor(UIColor.black)
+        SVProgressHUD.setForegroundColor(UIColor(rgb: 0xff9933))
+        SVProgressHUD.show()
+        
+    }
+    
+    func hideLoader(){
+        SVProgressHUD.dismiss()
+    }
+    
+    //Notification delegates
+    // Called when APNs has assigned the device a unique token
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        // Convert token to string
+        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+        print("APNs device token: \(deviceTokenString)")
+    }
+    
+    // Called when APNs failed to register the device for push notifications
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        // Print the error to console (you should alert the user that registration failed)
+        print("APNs registration failed: \(error)")
+    }
+    
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        completionHandler(UIBackgroundFetchResult.noData)
+             print("Notification received \(userInfo)");
+    }
+    
+    private func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+    
+         print("Notification received \(userInfo)");
+    }
+    
 
 }
+
+@available(iOS 10, *)
+extension AppDelegate : UNUserNotificationCenterDelegate {
+    
+    // Receive displayed notifications for iOS 10 devices.
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        let userInfo = notification.request.content.userInfo
+        // Print message ID.
+        print("Message ID: \(userInfo["gcm.message_id"]!)")
+        
+        // Print full message.
+        print("%@", userInfo)
+    }
+    
+    @available(iOS 10, *)
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("Userinfo \(response.notification.request.content.userInfo)")
+        //    print("Userinfo \(response.notification.request.content.userInfo)")
+    }
+}
+
 

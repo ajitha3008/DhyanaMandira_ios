@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class VisitViewController: UIViewController {
+class VisitViewController: BaseViewController {
 
     
     @IBOutlet weak var visitTextView: UITextView!
@@ -30,9 +30,10 @@ class VisitViewController: UIViewController {
         let htmlData = NSString(string: htmlString).data(using: String.Encoding.unicode.rawValue)
         
         let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
-        
+
         visitTextView.attributedText = attributedString
         // Do any additional setup after loading the view.
+        self.setupLeftMenuButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,10 +42,10 @@ class VisitViewController: UIViewController {
     }
     
 
-    @IBAction func LeftSideButtonTapped(_ sender: Any) {
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
-    }
+//    @IBAction func LeftSideButtonTapped(_ sender: Any) {
+//        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+//        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+//    }
     
     /*
     // MARK: - Navigation

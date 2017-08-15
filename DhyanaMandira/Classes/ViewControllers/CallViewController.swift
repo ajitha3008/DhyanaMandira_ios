@@ -8,12 +8,13 @@
 
 import UIKit
 
-class CallViewController: UIViewController {
+class CallViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title="Call"
         // Do any additional setup after loading the view.
+        self.setupLeftMenuButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,10 +40,6 @@ class CallViewController: UIViewController {
         call(phoneNumber: "+918123848682");
     }
     
-    @IBAction func LeftSideButtonTapped(_ sender: Any) {
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
-    }
 
     /*
     // MARK: - Navigation

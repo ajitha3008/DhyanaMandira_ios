@@ -7,33 +7,42 @@
 //
 
 import UIKit
+import FBSDKShareKit
+import FBSDKCoreKit
 
-class FacebookViewController: UIViewController {
-
+class FacebookViewController: BaseViewController {
+    @IBOutlet weak var FBlikeView: UIView!
+    @IBOutlet weak var FBShareView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title="Like & Share"
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.setupLeftMenuButton()
+        self.initilizeFBViews()
     }
     
-
-    @IBAction func LeftSideButtonTapped(_ sender: Any) {
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+    func initilizeFBViews()
+    {
+        self.fbLikeSetup()
+        self.fbShareSetup()
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func fbLikeSetup()
+    {
+        let likeBtn:FBSDKLikeControl! = FBSDKLikeControl(frame: CGRect(x: 0, y: 0, width: self.FBlikeView.frame.size.width, height: self.FBlikeView.frame.size.height))
+        likeBtn.objectID = "https://www.facebook.com/DhyanaMandiraSomeshwaraTemple"
+        likeBtn.likeControlStyle = FBSDKLikeControlStyle.boxCount
+        likeBtn.likeControlHorizontalAlignment = FBSDKLikeControlHorizontalAlignment.right
+        self.FBlikeView.addSubview(likeBtn)
     }
-    */
+    func fbShareSetup()
+    {
+        let content:FBSDKShareLinkContent! = FBSDKShareLinkContent();
+        content.contentURL = URL(string: "https://www.facebook.com/DhyanaMandiraSomeshwaraTemple");
+        let shareBtn:FBSDKShareButton! = FBSDKShareButton(frame: CGRect(x: 0, y: 0, width: self.FBShareView.frame.size.width, height: self.FBShareView.frame.size.height))
+        shareBtn.shareContent = content
+        self.FBShareView.addSubview(shareBtn)
+    }
 
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AbhyasaViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+class AbhyasaViewController: BaseViewController,UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -46,6 +46,7 @@ class AbhyasaViewController: UIViewController,UITableViewDataSource, UITableView
         tableView.tableFooterView =  UIView(frame: .zero)
         tableView.contentInset = UIEdgeInsetsMake(0, 0, 120, 0)//top,left,bottom,right
         tableView.reloadData()
+        self.setupLeftMenuButton()
         // Do any additional setup after loading the view.
     }
 
@@ -54,10 +55,10 @@ class AbhyasaViewController: UIViewController,UITableViewDataSource, UITableView
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func LeftSideButtonTapped(_ sender: Any) {
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
-    }
+//    @IBAction func LeftSideButtonTapped(_ sender: Any) {
+//        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+//        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+//    }
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count

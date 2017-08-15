@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MantrasViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MantrasViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,17 +19,10 @@ class MantrasViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.tableFooterView =  UIView(frame: .zero)
         tableView.contentInset = UIEdgeInsetsMake(0, 0, 120, 0)//top,left,bottom,right
         //self.edgesForExtendedLayout = UIRectEdge.init(rawValue: 0)
+        self.setupLeftMenuButton()
+        self.addShadow(baseView: tableView)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func LeftSideButtonTapped(_ sender: Any) {
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
-    }
     
     var hidden:[Bool] = [true,true,true,true,true,true,true,true]
     
@@ -92,19 +85,27 @@ class MantrasViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let label = UILabel()
-        label.backgroundColor = UIColor(rgb: 0xff9933)
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 50))
+        headerView.backgroundColor = UIColor(rgb: 0xff9933)
+        let label = UILabel(frame: CGRect(x: 70, y: 0, width: tableView.frame.size.width, height: 50))
+        label.backgroundColor = UIColor.clear
         label.textAlignment = .left
         label.textColor = UIColor(rgb: 0x000000)
-        label.text = "< "+sectionHeaders[section]
+        label.text = sectionHeaders[section]
         label.tag = section
-        label.font = UIFont.boldSystemFont(ofSize: label.font.pointSize)
+        label.font = UIFont.boldSystemFont(ofSize: 14)
     
         let tap = UITapGestureRecognizer(target: self, action: #selector(MantrasViewController.tapFunction))
+        headerView.tag = section;
         label.isUserInteractionEnabled = true
-        label.addGestureRecognizer(tap)
+        headerView.addGestureRecognizer(tap)
+        headerView.addSubview(label)
+        let icon = UIImageView(frame: CGRect(x: 10, y: 10, width: 30, height: 30))
+        icon.image = UIImage(named: "ic_action_aum_mantra_symbol");
+        icon.contentMode = UIViewContentMode.scaleAspectFit
         
-        return label
+        headerView.addSubview(icon)
+        return headerView
     }
     
     func tapFunction(sender:UITapGestureRecognizer) {

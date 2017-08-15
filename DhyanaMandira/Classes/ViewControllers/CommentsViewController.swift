@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CommentsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CommentsViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -21,6 +21,7 @@ class CommentsViewController: UIViewController, UITableViewDataSource, UITableVi
         
         get_data_from_url()
         // Do any additional setup after loading the view.
+        self.setupLeftMenuButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,11 +30,6 @@ class CommentsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
 
-    @IBAction func LeftSideButtonTapped(_ sender: Any) {
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
-    }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

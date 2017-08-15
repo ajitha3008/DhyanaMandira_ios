@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegistrationViewController: UIViewController {
+class RegistrationViewController: BaseViewController {
 
     @IBOutlet weak var costTextView: UITextView!
     
@@ -20,9 +20,8 @@ class RegistrationViewController: UIViewController {
         let htmlData = NSString(string: htmlString).data(using: String.Encoding.unicode.rawValue)
         
         let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
-        
         costTextView.attributedText = attributedString
-
+        self.setupLeftMenuButton()
         // Do any additional setup after loading the view.
     }
 
@@ -32,10 +31,10 @@ class RegistrationViewController: UIViewController {
     }
     
 
-    @IBAction func LeftSideButtonTapped(_ sender: Any) {
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
-    }
+//    @IBAction func LeftSideButtonTapped(_ sender: Any) {
+//        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+//        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+//    }
     /*
     // MARK: - Navigation
 

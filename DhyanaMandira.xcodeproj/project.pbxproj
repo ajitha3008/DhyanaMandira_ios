@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BAF780F2E5A529E54DEB0A2 /* Pods_DhyanaMandiraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B018C040A9EAA244ED866877 /* Pods_DhyanaMandiraTests.framework */; };
+		2B7666BD1F41F7DA0065EF3F /* EventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7666BC1F41F7DA0065EF3F /* EventsCell.swift */; };
+		2B7666C11F4213340065EF3F /* HTTPNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7666C01F4213340065EF3F /* HTTPNetworker.swift */; };
+		2B7666C51F4214770065EF3F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7666C41F4214770065EF3F /* Constants.swift */; };
+		2B7666CA1F42FE0F0065EF3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B7666C91F42FE0F0065EF3F /* GoogleService-Info.plist */; };
+		2B8B07641F41466B005E6FBB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B07631F41466B005E6FBB /* BaseViewController.swift */; };
 		381DED771F1B6D00000E6AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381DED221F1B6CFF000E6AAD /* AppDelegate.swift */; };
 		381DED781F1B6D00000E6AAD /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 381DED261F1B6CFF000E6AAD /* MMDrawerBarButtonItem.m */; };
 		381DED791F1B6D00000E6AAD /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 381DED291F1B6CFF000E6AAD /* MMDrawerController.m */; };
@@ -33,7 +37,6 @@
 		381DED8D1F1B6D00000E6AAD /* RegistrationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381DED4A1F1B6D00000E6AAD /* RegistrationView.xib */; };
 		38EACF4A1F1CB92C000FEC17 /* AbhyasaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EACF491F1CB92C000FEC17 /* AbhyasaTableViewCell.swift */; };
 		643AF723BDA75A2160E662CE /* Pods_DhyanaMandira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A18E866B817193E3FB73EFF /* Pods_DhyanaMandira.framework */; };
-		B780CDBB182613AD0FF952CD /* Pods_DhyanaMandiraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B81C3226A3932520F23FA91 /* Pods_DhyanaMandiraUITests.framework */; };
 		CBBE38C91F1CDD660059A59D /* UserCommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE38C81F1CDD660059A59D /* UserCommentsTableViewCell.swift */; };
 		CBF20FA31F04BBC2006A1E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FA11F04BBC2006A1E4D /* Main.storyboard */; };
 		CBF20FA51F04BBC2006A1E4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FA41F04BBC2006A1E4D /* Assets.xcassets */; };
@@ -61,7 +64,12 @@
 
 /* Begin PBXFileReference section */
 		0A18E866B817193E3FB73EFF /* Pods_DhyanaMandira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DhyanaMandira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31C1A549EBAD4DE6E1B5C02B /* Pods-DhyanaMandiraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandiraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandiraTests/Pods-DhyanaMandiraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B7666BC1F41F7DA0065EF3F /* EventsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsCell.swift; sourceTree = "<group>"; };
+		2B7666C01F4213340065EF3F /* HTTPNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPNetworker.swift; path = NetworkIntractor/HTTPNetworker.swift; sourceTree = SOURCE_ROOT; };
+		2B7666C41F4214770065EF3F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = NetworkIntractor/Constants.swift; sourceTree = SOURCE_ROOT; };
+		2B7666C81F42F93A0065EF3F /* DhyanaMandira.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DhyanaMandira.entitlements; sourceTree = "<group>"; };
+		2B7666C91F42FE0F0065EF3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2B8B07631F41466B005E6FBB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		381DED221F1B6CFF000E6AAD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		381DED251F1B6CFF000E6AAD /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		381DED261F1B6CFF000E6AAD /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
@@ -93,8 +101,6 @@
 		381DED4A1F1B6D00000E6AAD /* RegistrationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationView.xib; sourceTree = "<group>"; };
 		38EACF491F1CB92C000FEC17 /* AbhyasaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbhyasaTableViewCell.swift; sourceTree = "<group>"; };
 		3B81C3226A3932520F23FA91 /* Pods_DhyanaMandiraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DhyanaMandiraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6453E7CD1CBACCFB3F79D755 /* Pods-DhyanaMandiraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandiraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandiraUITests/Pods-DhyanaMandiraUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		785E0C3A4641A32125E243B4 /* Pods-DhyanaMandiraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandiraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandiraTests/Pods-DhyanaMandiraTests.release.xcconfig"; sourceTree = "<group>"; };
 		8DFE5B9A4738726BE861E201 /* Pods-DhyanaMandira.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandira.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandira/Pods-DhyanaMandira.debug.xcconfig"; sourceTree = "<group>"; };
 		B018C040A9EAA244ED866877 /* Pods_DhyanaMandiraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DhyanaMandiraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9B7578E4E9A221CC964689 /* Pods-DhyanaMandira.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandira.release.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandira/Pods-DhyanaMandira.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,7 +116,6 @@
 		CBF20FB91F04BBC3006A1E4D /* DhyanaMandiraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DhyanaMandiraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF20FBD1F04BBC3006A1E4D /* DhyanaMandiraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhyanaMandiraUITests.swift; sourceTree = "<group>"; };
 		CBF20FBF1F04BBC3006A1E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE2605940C96C93F50AC9017 /* Pods-DhyanaMandiraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DhyanaMandiraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DhyanaMandiraUITests/Pods-DhyanaMandiraUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +131,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BAF780F2E5A529E54DEB0A2 /* Pods_DhyanaMandiraTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,13 +138,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B780CDBB182613AD0FF952CD /* Pods_DhyanaMandiraUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B7666BE1F41F9C10065EF3F /* Event */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		2B7666BF1F4212DB0065EF3F /* NetworkIntractor */ = {
+			isa = PBXGroup;
+			children = (
+				2B7666C01F4213340065EF3F /* HTTPNetworker.swift */,
+			);
+			path = NetworkIntractor;
+			sourceTree = "<group>";
+		};
+		2B8B07621F41463F005E6FBB /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2B8B07631F41466B005E6FBB /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
 		381DED211F1B6CFF000E6AAD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +207,8 @@
 		381DED2E1F1B6CFF000E6AAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2B7666BF1F4212DB0065EF3F /* NetworkIntractor */,
+				2B7666BE1F41F9C10065EF3F /* Event */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				381DED301F1B6CFF000E6AAD /* Constants */,
-				381DED311F1B6CFF000E6AAD /* Extensions */,
 				381DED321F1B6CFF000E6AAD /* Headers */,
 			);
 			path = Utils;
@@ -198,15 +225,9 @@
 		381DED301F1B6CFF000E6AAD /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				2B7666C41F4214770065EF3F /* Constants.swift */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		381DED311F1B6CFF000E6AAD /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		381DED321F1B6CFF000E6AAD /* Headers */ = {
@@ -220,6 +241,7 @@
 		381DED341F1B6CFF000E6AAD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2B8B07621F41463F005E6FBB /* BaseViewController */,
 				381DED351F1B6CFF000E6AAD /* AbhyasaViewController.swift */,
 				381DED361F1B6D00000E6AAD /* AshtangaViewController.swift */,
 				381DED371F1B6D00000E6AAD /* CallViewController.swift */,
@@ -256,6 +278,7 @@
 				381DED461F1B6D00000E6AAD /* MantraTableViewCell.swift */,
 				381DED471F1B6D00000E6AAD /* NavigationDrawerMenuItemTableViewCell.swift */,
 				CBBE38C81F1CDD660059A59D /* UserCommentsTableViewCell.swift */,
+				2B7666BC1F41F7DA0065EF3F /* EventsCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -278,6 +301,7 @@
 		381DED4B1F1B6D00000E6AAD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2B7666C91F42FE0F0065EF3F /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -307,6 +331,7 @@
 		CBF20F9C1F04BBC2006A1E4D /* DhyanaMandira */ = {
 			isa = PBXGroup;
 			children = (
+				2B7666C81F42F93A0065EF3F /* DhyanaMandira.entitlements */,
 				381DED211F1B6CFF000E6AAD /* Classes */,
 				381DED4B1F1B6D00000E6AAD /* Resources */,
 				CBF20FA11F04BBC2006A1E4D /* Main.storyboard */,
@@ -350,10 +375,6 @@
 			children = (
 				8DFE5B9A4738726BE861E201 /* Pods-DhyanaMandira.debug.xcconfig */,
 				CB9B7578E4E9A221CC964689 /* Pods-DhyanaMandira.release.xcconfig */,
-				31C1A549EBAD4DE6E1B5C02B /* Pods-DhyanaMandiraTests.debug.xcconfig */,
-				785E0C3A4641A32125E243B4 /* Pods-DhyanaMandiraTests.release.xcconfig */,
-				6453E7CD1CBACCFB3F79D755 /* Pods-DhyanaMandiraUITests.debug.xcconfig */,
-				FE2605940C96C93F50AC9017 /* Pods-DhyanaMandiraUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -385,12 +406,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBF20FC51F04BBC3006A1E4D /* Build configuration list for PBXNativeTarget "DhyanaMandiraTests" */;
 			buildPhases = (
-				4C63C809BE85FEB485B347BF /* [CP] Check Pods Manifest.lock */,
 				CBF20FAA1F04BBC3006A1E4D /* Sources */,
 				CBF20FAB1F04BBC3006A1E4D /* Frameworks */,
 				CBF20FAC1F04BBC3006A1E4D /* Resources */,
-				837093A433845E9F95C3B825 /* [CP] Embed Pods Frameworks */,
-				BB8B6C8DC83E24E7ECB05382 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -406,12 +424,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBF20FC81F04BBC3006A1E4D /* Build configuration list for PBXNativeTarget "DhyanaMandiraUITests" */;
 			buildPhases = (
-				AFD22D5C71597CF6B00688EF /* [CP] Check Pods Manifest.lock */,
 				CBF20FB51F04BBC3006A1E4D /* Sources */,
 				CBF20FB61F04BBC3006A1E4D /* Frameworks */,
 				CBF20FB71F04BBC3006A1E4D /* Resources */,
-				F16B392835C891115A67CDF8 /* [CP] Embed Pods Frameworks */,
-				82921151AB386E2B827F833C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -435,9 +450,17 @@
 				TargetAttributes = {
 					CBF20F991F04BBC2006A1E4D = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = HY9VKUPG9A;
+						DevelopmentTeam = 22BC5D5294;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					CBF20FAD1F04BBC3006A1E4D = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -480,6 +503,7 @@
 			files = (
 				CBF20FA81F04BBC2006A1E4D /* LaunchScreen.storyboard in Resources */,
 				CBF20FA51F04BBC2006A1E4D /* Assets.xcassets in Resources */,
+				2B7666CA1F42FE0F0065EF3F /* GoogleService-Info.plist in Resources */,
 				CBF20FA31F04BBC2006A1E4D /* Main.storyboard in Resources */,
 				381DED8D1F1B6D00000E6AAD /* RegistrationView.xib in Resources */,
 			);
@@ -514,22 +538,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4C63C809BE85FEB485B347BF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		4FCF663BB2DCB259E8C9FCC8 /* [CP] Copy Pods Resources */ = {
@@ -547,66 +556,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DhyanaMandira/Pods-DhyanaMandira-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		82921151AB386E2B827F833C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DhyanaMandiraUITests/Pods-DhyanaMandiraUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		837093A433845E9F95C3B825 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DhyanaMandiraTests/Pods-DhyanaMandiraTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AFD22D5C71597CF6B00688EF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BB8B6C8DC83E24E7ECB05382 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DhyanaMandiraTests/Pods-DhyanaMandiraTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DA335D7BD4629EA2A3387EF2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -622,21 +571,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DhyanaMandira/Pods-DhyanaMandira-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F16B392835C891115A67CDF8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DhyanaMandiraUITests/Pods-DhyanaMandiraUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -646,13 +580,16 @@
 			files = (
 				381DED811F1B6D00000E6AAD /* EventsViewController.swift in Sources */,
 				381DED8A1F1B6D00000E6AAD /* GalleryCollectionViewCell.swift in Sources */,
+				2B7666C11F4213340065EF3F /* HTTPNetworker.swift in Sources */,
 				381DED841F1B6D00000E6AAD /* GalleryViewController.swift in Sources */,
 				381DED7D1F1B6D00000E6AAD /* AshtangaViewController.swift in Sources */,
 				381DED7A1F1B6D00000E6AAD /* MMDrawerVisualState.m in Sources */,
 				381DED771F1B6D00000E6AAD /* AppDelegate.swift in Sources */,
 				381DED831F1B6D00000E6AAD /* FounderViewController.swift in Sources */,
 				381DED7C1F1B6D00000E6AAD /* AbhyasaViewController.swift in Sources */,
+				2B7666BD1F41F7DA0065EF3F /* EventsCell.swift in Sources */,
 				381DED791F1B6D00000E6AAD /* MMDrawerController.m in Sources */,
+				2B7666C51F4214770065EF3F /* Constants.swift in Sources */,
 				381DED871F1B6D00000E6AAD /* RegistrationViewController.swift in Sources */,
 				CBBE38C91F1CDD660059A59D /* UserCommentsTableViewCell.swift in Sources */,
 				381DED7B1F1B6D00000E6AAD /* UIViewController+MMDrawerController.m in Sources */,
@@ -664,6 +601,7 @@
 				381DED8B1F1B6D00000E6AAD /* MantraTableViewCell.swift in Sources */,
 				381DED861F1B6D00000E6AAD /* MantrasViewController.swift in Sources */,
 				381DED891F1B6D00000E6AAD /* VisitViewController.swift in Sources */,
+				2B8B07641F41466B005E6FBB /* BaseViewController.swift in Sources */,
 				381DED821F1B6D00000E6AAD /* FacebookViewController.swift in Sources */,
 				381DED781F1B6D00000E6AAD /* MMDrawerBarButtonItem.m in Sources */,
 				381DED801F1B6D00000E6AAD /* DhyanaMandiraViewController.swift in Sources */,
@@ -823,12 +761,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DhyanaMandira/DhyanaMandira.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Nagesh Rudrappa (K3P83G5294)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = HY9VKUPG9A;
+				DEVELOPMENT_TEAM = 22BC5D5294;
 				INFOPLIST_FILE = DhyanaMandira/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = personal.DhyanaMandira;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.DhyanaMandira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -844,11 +784,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DhyanaMandira/DhyanaMandira.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = HY9VKUPG9A;
+				DEVELOPMENT_TEAM = 22BC5D5294;
 				INFOPLIST_FILE = DhyanaMandira/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = personal.DhyanaMandira;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.DhyanaMandira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/DhyanaMandira/Classes/Utils/Headers/DhyanaMandira-Bridging-Header.h";
@@ -858,7 +800,6 @@
 		};
 		CBF20FC61F04BBC3006A1E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31C1A549EBAD4DE6E1B5C02B /* Pods-DhyanaMandiraTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -874,7 +815,6 @@
 		};
 		CBF20FC71F04BBC3006A1E4D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 785E0C3A4641A32125E243B4 /* Pods-DhyanaMandiraTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -890,7 +830,6 @@
 		};
 		CBF20FC91F04BBC3006A1E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6453E7CD1CBACCFB3F79D755 /* Pods-DhyanaMandiraUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = HY9VKUPG9A;
@@ -905,7 +844,6 @@
 		};
 		CBF20FCA1F04BBC3006A1E4D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE2605940C96C93F50AC9017 /* Pods-DhyanaMandiraUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = HY9VKUPG9A;

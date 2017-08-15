@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AshtangaViewController: UIViewController {
+class AshtangaViewController: BaseViewController {
 
     @IBOutlet weak var astangaTextView: UITextView!
     
@@ -21,7 +21,10 @@ class AshtangaViewController: UIViewController {
         
         let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
         
+       
+        
         astangaTextView.attributedText = attributedString
+        self.setupLeftMenuButton()
         // Do any additional setup after loading the view.
     }
 
@@ -29,11 +32,7 @@ class AshtangaViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func LeftSideButtonTapped(_ sender: Any) {
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
-    }
+
 
     /*
     // MARK: - Navigation

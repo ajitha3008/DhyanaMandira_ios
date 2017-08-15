@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
     
     @IBOutlet weak var aboutTextView: UITextView!
     
@@ -20,19 +20,20 @@ class ViewController: UIViewController {
         let htmlData = NSString(string: htmlString).data(using: String.Encoding.unicode.rawValue)
         
         let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
-        
+       
         aboutTextView.attributedText = attributedString
         // Do any additional setup after loading the view, typically from a nib.
+        self.setupLeftMenuButton()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func LeftSideButtonTapped(_ sender: Any) {
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
-    }
+//    @IBAction func LeftSideButtonTapped(_ sender: Any) {
+//        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+//        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+//    }
 
 }
 

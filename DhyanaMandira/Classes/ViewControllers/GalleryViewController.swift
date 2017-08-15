@@ -8,11 +8,12 @@
 
 import UIKit
 
-class GalleryViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+class GalleryViewController: BaseViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
    
     override func viewDidLoad() {
         super.viewDidLoad()
 self.navigationItem.title="Gallery"
+        self.setupLeftMenuButton()
         
     }
 
@@ -21,10 +22,10 @@ self.navigationItem.title="Gallery"
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func LeftSideButtonTapped(_ sender: Any) {
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
-    }
+//    @IBAction func LeftSideButtonTapped(_ sender: Any) {
+//        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+//        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+//    }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
