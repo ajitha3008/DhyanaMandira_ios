@@ -12,23 +12,47 @@ class CommentsViewController: BaseViewController, UITableViewDataSource, UITable
 
     @IBOutlet weak var tableView: UITableView!
     
-    var TableData:Array< String > = Array < String >()
+    var TableData:NSMutableArray! = NSMutableArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title="Comments"
         //get_data_from_url(url: "http://www.kaleidosblog.com/tutorial/tutorial.json")
         
-        get_data_from_url()
+        getComments()
         // Do any additional setup after loading the view.
         self.setupLeftMenuButton()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    func getComments()
+    {
+        AppDelegate.init().showLoader()
+        HTTPNetworker.sharedInstance.get_data_from_url(urlStr: Constants.GoogleSheetURL.CommentsURL) { (JSON, error) in
+            AppDelegate.init().hideLoader()
+            if(error == nil)
+            {
+                let rows:NSArray! = (JSON as AnyObject).value(forKeyPath: "table.rows") as! NSArray
+                print(rows)
+                
+                for var i in (0..<rows.count)
+                {
+                    self.TableData.add(rows[i]);
+                
+                }
+                
+                print(self.TableData)
+                DispatchQueue.main.async(execute: {
+                    self.tableView.reloadData()
+                    return
+                })
+            }else
+            {
+                
+            }
+        }
+
+    }
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -40,78 +64,25 @@ class CommentsViewController: BaseViewController, UITableViewDataSource, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCommentsCell", for: indexPath) as! UserCommentsTableViewCell
-        cell.nameLabel.text = "ajitha"
-        cell.commentsLabel.text = TableData[indexPath.row]
+        let dataAry:NSArray! = (self.TableData.object(at: indexPath.row) as AnyObject).value(forKey: "c") as! NSArray;
+        let name : String! = (dataAry.object(at: 1) as AnyObject).value(forKey: "v") as! String
+        let comment : String! = (dataAry.object(at: 2) as AnyObject).value(forKey: "v") as! String
+        let rating : Float! = (dataAry.object(at: 0) as AnyObject).value(forKey: "v") as! Float
+        cell.nameLabel.text = name
+        cell.commentsLabel.text = comment
+        cell.configureRating(rating: rating);
         return cell
     }
-    
-    func get_data_from_url()
-    {
-   
-        //check network availability
-        let urlRequest = URLRequest(url: URL(string: "https://spreadsheets.google.com/tq?key=1JyIZM8QKG9rBGQBWNydv7472C12ZwoamT2UR6ymiikk")!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 20)
-        
-        let session = URLSession.shared
-        let task = session.dataTask(with: urlRequest as URLRequest) {
-            (
-            data, response, error) in
-            
-            guard let data = data, let _:URLResponse = response, error == nil else {
-                print("error")
-                return
-            }
-            
-            let dataString =  String(data: data, encoding: String.Encoding.utf8)
-            self.extract_json(data: dataString!)
-        }
-        
-        task.resume()
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        tableView.estimatedRowHeight = 100;
+        return UITableViewAutomaticDimension;
     }
     
-    func extract_json(data:String)
-    {
-        guard let updatedStartIndex = data.characters.index(of: "{") else { return }
-        //let updatedStartIndex = data.distance(from: index, to: data.endIndex)
-        let updatedEndIndex = data.index(data.endIndex, offsetBy: -2)
-        let substring = data.substring(with: updatedStartIndex..<updatedEndIndex)
-        
-        do {
-            //converting resonse to NSDictionary
-            /*var teamJSON: NSDictionary!
-            
-            teamJSON =  convertToDictionary(text: substring)! as NSDictionary
-
-            let rowsArray: NSArray?   = teamJSON.object(forKey: "rows") as? NSArray;
-            
-            let text = String(describing: rowsArray?.count)*/
-            //write parser & show progress
-            TableData.append(substring)
-
-        } catch {
-            print(error)
-        }
-        do_table_refresh();
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.01;
     }
     
-    func convertToDictionary(text: String) -> [String: Any]? {
-        if let data = text.data(using: .utf8) {
-            do {
-                return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-            } catch {
-                print(error.localizedDescription)
-            }
-        }
-        return nil
-    }
-    
-    func do_table_refresh()
-    {
-        DispatchQueue.main.async(execute: {
-            self.tableView.reloadData()
-            return
-        })
-    }
-    /*
+        /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

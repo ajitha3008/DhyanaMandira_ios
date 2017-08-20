@@ -12,3 +12,4 @@
 
 #endif /* DhyanaMandira_Bridging_Header_h */
 #import "MMDrawerController.h"
+#import "EDStarRating.h"

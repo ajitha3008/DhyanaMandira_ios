@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5F7F231F49757600E8AFEF /* EDStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F7F201F49757600E8AFEF /* EDStarRating.m */; };
+		2B5F7F241F49757600E8AFEF /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B5F7F211F49757600E8AFEF /* star.png */; };
+		2B5F7F251F49757600E8AFEF /* starhighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B5F7F221F49757600E8AFEF /* starhighlighted.png */; };
 		2B7666BD1F41F7DA0065EF3F /* EventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7666BC1F41F7DA0065EF3F /* EventsCell.swift */; };
 		2B7666C11F4213340065EF3F /* HTTPNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7666C01F4213340065EF3F /* HTTPNetworker.swift */; };
 		2B7666C51F4214770065EF3F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7666C41F4214770065EF3F /* Constants.swift */; };
@@ -64,6 +67,10 @@
 
 /* Begin PBXFileReference section */
 		0A18E866B817193E3FB73EFF /* Pods_DhyanaMandira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DhyanaMandira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B5F7F1F1F49757600E8AFEF /* EDStarRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDStarRating.h; sourceTree = "<group>"; };
+		2B5F7F201F49757600E8AFEF /* EDStarRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDStarRating.m; sourceTree = "<group>"; };
+		2B5F7F211F49757600E8AFEF /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		2B5F7F221F49757600E8AFEF /* starhighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starhighlighted.png; sourceTree = "<group>"; };
 		2B7666BC1F41F7DA0065EF3F /* EventsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsCell.swift; sourceTree = "<group>"; };
 		2B7666C01F4213340065EF3F /* HTTPNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPNetworker.swift; path = NetworkIntractor/HTTPNetworker.swift; sourceTree = SOURCE_ROOT; };
 		2B7666C41F4214770065EF3F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = NetworkIntractor/Constants.swift; sourceTree = SOURCE_ROOT; };
@@ -144,6 +151,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B5F7F1E1F49757600E8AFEF /* EDStarRating */ = {
+			isa = PBXGroup;
+			children = (
+				2B5F7F1F1F49757600E8AFEF /* EDStarRating.h */,
+				2B5F7F201F49757600E8AFEF /* EDStarRating.m */,
+				2B5F7F211F49757600E8AFEF /* star.png */,
+				2B5F7F221F49757600E8AFEF /* starhighlighted.png */,
+			);
+			path = EDStarRating;
+			sourceTree = "<group>";
+		};
 		2B7666BE1F41F9C10065EF3F /* Event */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +201,7 @@
 		381DED231F1B6CFF000E6AAD /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				2B5F7F1E1F49757600E8AFEF /* EDStarRating */,
 				381DED241F1B6CFF000E6AAD /* MMDrawer */,
 			);
 			path = Externals;
@@ -501,11 +520,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5F7F251F49757600E8AFEF /* starhighlighted.png in Resources */,
 				CBF20FA81F04BBC2006A1E4D /* LaunchScreen.storyboard in Resources */,
 				CBF20FA51F04BBC2006A1E4D /* Assets.xcassets in Resources */,
 				2B7666CA1F42FE0F0065EF3F /* GoogleService-Info.plist in Resources */,
 				CBF20FA31F04BBC2006A1E4D /* Main.storyboard in Resources */,
 				381DED8D1F1B6D00000E6AAD /* RegistrationView.xib in Resources */,
+				2B5F7F241F49757600E8AFEF /* star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +606,7 @@
 				381DED7D1F1B6D00000E6AAD /* AshtangaViewController.swift in Sources */,
 				381DED7A1F1B6D00000E6AAD /* MMDrawerVisualState.m in Sources */,
 				381DED771F1B6D00000E6AAD /* AppDelegate.swift in Sources */,
+				2B5F7F231F49757600E8AFEF /* EDStarRating.m in Sources */,
 				381DED831F1B6D00000E6AAD /* FounderViewController.swift in Sources */,
 				381DED7C1F1B6D00000E6AAD /* AbhyasaViewController.swift in Sources */,
 				2B7666BD1F41F7DA0065EF3F /* EventsCell.swift in Sources */,

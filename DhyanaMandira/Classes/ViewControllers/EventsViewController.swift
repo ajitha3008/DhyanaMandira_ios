@@ -65,7 +65,7 @@ extension EventsViewController:UITableViewDataSource,UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : EventsCell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as! EventsCell
-        let dataAry:NSArray! = (self.events.lastObject as AnyObject).value(forKey: "c") as! NSArray;
+        let dataAry:NSArray! = (self.events.object(at: indexPath.row) as AnyObject).value(forKey: "c") as! NSArray;
         let name : String! = (dataAry.object(at: 0) as AnyObject).value(forKey: "v") as! String
         let location : String! = (dataAry.object(at:1) as AnyObject).value(forKey: "v") as! String
         let date : String! = (dataAry.object(at:2) as AnyObject).value(forKey: "v") as! String
@@ -84,6 +84,9 @@ extension EventsViewController:UITableViewDataSource,UITableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         tableVW.estimatedRowHeight = 100
         return UITableViewAutomaticDimension
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.01;
     }
     
 }
