@@ -21,6 +21,7 @@ class RegistrationViewController: BaseViewController {
         
         let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
         costTextView.attributedText = attributedString
+        self.addShadow(baseView: costTextView)
         self.setupLeftMenuButton()
         // Do any additional setup after loading the view.
     }

@@ -23,6 +23,7 @@ class DhyanaMandiraViewController: BaseViewController {
         let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
         
         platformTextView.attributedText = attributedString
+        self.addShadow(baseView: platformTextView)
         self.setupLeftMenuButton()
         // Do any additional setup after loading the view.
     }

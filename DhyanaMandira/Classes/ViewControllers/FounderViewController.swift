@@ -12,13 +12,15 @@ class FounderViewController: BaseViewController {
 
     @IBOutlet weak var founderTextView: UITextView!
     
+    @IBOutlet weak var BaseView: UIView!
+    
     let htmlString = "<html><body style=\"text-align:justify\"><p style=\"font-size:18px\">\"Shri Rajkumar Gour\" is Mukhya Yoga Shikshaka and Chief Administrator at \"Dhyana Mandira\". He chose Yoga as a path of service in the year 2009 and has provided yoga coaching to more than 5500 people as of now. He is a Yoga Pracharak and Yoga Shikshaka. His service in the yoga field through this Dhyana Mandira is great inspiration and motivation for the people who get associated with this yoga kendra. Many lives have changed with his way of yoga teachings and thus his service is a noticeable contribution to the society. His selfless and constant efforts have made \"Dhyana Mandira\" - as an epicenter of Yoga in this region of Bangalore.</p></body></Html>"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 self.navigationItem.title="Founder"
         let htmlData = NSString(string: htmlString).data(using: String.Encoding.unicode.rawValue)
-        
+        self.addShadow(baseView: BaseView)
         let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
      
         founderTextView.attributedText = attributedString

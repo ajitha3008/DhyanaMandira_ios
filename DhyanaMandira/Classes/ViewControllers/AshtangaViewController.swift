@@ -24,6 +24,7 @@ class AshtangaViewController: BaseViewController {
        
         
         astangaTextView.attributedText = attributedString
+        self.addShadow(baseView: astangaTextView)
         self.setupLeftMenuButton()
         // Do any additional setup after loading the view.
     }

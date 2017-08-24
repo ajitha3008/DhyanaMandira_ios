@@ -10,13 +10,29 @@ import UIKit
 
 class GalleryViewController: BaseViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
    
+    @IBOutlet weak var hyperlink: UILabel!
+    @IBOutlet weak var BaseView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 self.navigationItem.title="Gallery"
-        self.setupLeftMenuButton()
         
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapResponse))
+        tapGesture.numberOfTapsRequired = 1
+        hyperlink.isUserInteractionEnabled =  true
+        hyperlink.addGestureRecognizer(tapGesture)
+        
+        self.setupLeftMenuButton()
+        self.addShadow(baseView: BaseView)
     }
 
+    func tapResponse(recognizer: UITapGestureRecognizer) {
+        let url = URL(string: "https://plus.google.com/104001892080880835190/posts")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -1,45 +1,28 @@
 //
-//  CallViewController.swift
+//  YouTubeViewController.swift
 //  DhyanaMandira
 //
-//  Created by AjithaYasmin on 06/07/17.
+//  Created by Ajitha Yasmin on 25/08/17.
 //  Copyright © 2017 AjithaYasmin. All rights reserved.
 //
 
 import UIKit
 
-class CallViewController: BaseViewController {
+class YouTubeViewController: BaseViewController {
 
     @IBOutlet weak var BAseView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title="Videos"
         self.addShadow(baseView: BAseView)
-        self.navigationItem.title="Call"
-        // Do any additional setup after loading the view.
         self.setupLeftMenuButton()
+        // mPlayer.cueVideo("E-F6h6yAdjs");
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    
-    func call(phoneNumber: String) {
-    if let url = URL(string: "tel://\(phoneNumber)") {
-    if #available(iOS 10, *) {
-    UIApplication.shared.open(url, options: [:], completionHandler: nil)
-    } else {
-    UIApplication.shared.openURL(url as URL)
-    }
-    }
-    }
-    
-    @IBAction func Button734Tapped(_ sender: Any) {
-        call(phoneNumber: "+917349782713");
-    }
-    @IBAction func Button812Tapped(_ sender: Any) {
-        call(phoneNumber: "+918123848682");
     }
     
 

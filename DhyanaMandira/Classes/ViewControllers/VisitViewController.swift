@@ -13,6 +13,7 @@ import CoreLocation
 class VisitViewController: BaseViewController {
 
     
+    @IBOutlet weak var BaseView: UIView!
     @IBOutlet weak var visitTextView: UITextView!
     @IBOutlet weak var MapView: MKMapView!
     
@@ -32,6 +33,7 @@ class VisitViewController: BaseViewController {
         let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
 
         visitTextView.attributedText = attributedString
+        self.addShadow(baseView: BaseView)
         // Do any additional setup after loading the view.
         self.setupLeftMenuButton()
     }

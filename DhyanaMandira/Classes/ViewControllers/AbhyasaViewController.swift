@@ -84,6 +84,14 @@ class AbhyasaViewController: BaseViewController,UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "AbhyasaTableViewCell", for: indexPath) as! AbhyasaTableViewCell
         
         cell.Label.text = sections[indexPath.section].items[indexPath.row]
+        let stringValue = String(describing: sections[indexPath.section].items[indexPath.row].characters.first!)
+        cell.avatarInitials.text = stringValue
+        cell.avatarImageView.backgroundColor = UIColor(rgb: 0xff9933)
+        //cell.avatarImageView.layer.borderWidth = 1
+        cell.avatarImageView.layer.masksToBounds = false
+        //cell.avatarImageView.layer.borderColor = UIColor(rgb: 0x000000).cgColor
+        cell.avatarImageView.layer.cornerRadius = cell.avatarImageView.frame.height/2
+        cell.avatarImageView.clipsToBounds = true
         
         return cell
     }

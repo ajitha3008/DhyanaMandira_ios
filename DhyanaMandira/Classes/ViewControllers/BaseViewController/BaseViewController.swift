@@ -33,7 +33,7 @@ class BaseViewController: UIViewController {
         baseView.layer.shadowRadius = 5;
         baseView.layer.shadowOpacity = 0.5;
         baseView.layer.borderColor = UIColor.darkGray.cgColor;
-        baseView.layer.borderWidth = 0.5;
+        //baseView.layer.borderWidth = 0.5;
     }
     /*
     // MARK: - Navigation
