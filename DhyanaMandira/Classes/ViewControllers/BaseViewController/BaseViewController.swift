@@ -16,7 +16,8 @@ class BaseViewController: UIViewController {
     }
 
     func setupLeftMenuButton() {
-        let leftBar:UIBarButtonItem! = UIBarButtonItem(image: UIImage(named: "menu"), style: UIBarButtonItemStyle.plain, target: self, action:#selector(self.LeftSideButtonTapped(_:)));
+        let leftBar:UIBarButtonItem! = UIBarButtonItem(title: "<Menu", style: UIBarButtonItemStyle.plain, target: self, action:#selector(self.LeftSideButtonTapped(_:)));
+        //let leftBar:UIBarButtonItem! = UIBarButtonItem(image: UIImage(named: "ic_action_call.png"),         leftBar.title = "
         self.navigationItem.leftBarButtonItem = leftBar;
     }
     

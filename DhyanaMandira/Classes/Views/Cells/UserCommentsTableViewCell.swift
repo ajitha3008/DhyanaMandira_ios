@@ -28,8 +28,8 @@ class UserCommentsTableViewCell: UITableViewCell {
         baseView.layer.shadowOffset = CGSize(width: 0.5, height: 0.5)
         baseView.layer.shadowRadius = 5;
         baseView.layer.shadowOpacity = 0.5;
-        baseView.layer.borderColor = UIColor.darkGray.cgColor;
-        baseView.layer.borderWidth = 0.5;
+        //baseView.layer.borderColor = UIColor.darkGray.cgColor;
+        //baseView.layer.borderWidth = 0.5;
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
