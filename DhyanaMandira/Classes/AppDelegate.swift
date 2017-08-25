@@ -239,7 +239,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SVProgressHUD.setBackgroundLayerColor(UIColor.black)
         SVProgressHUD.setForegroundColor(UIColor(rgb: 0xff9933))
         SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.gradient)
-        SVProgressHUD.show()
+        SVProgressHUD.show(withStatus: "Loading...")
         
     }
     
