@@ -16,7 +16,8 @@ class BaseViewController: UIViewController {
     }
 
     func setupLeftMenuButton() {
-        let leftBar:UIBarButtonItem! = UIBarButtonItem(image: UIImage(named: "menu"), style: UIBarButtonItemStyle.plain, target: self, action:#selector(self.LeftSideButtonTapped(_:)));
+        let leftBar:UIBarButtonItem! = UIBarButtonItem(title: "<Menu", style: UIBarButtonItemStyle.plain, target: self, action:#selector(self.LeftSideButtonTapped(_:)));
+        //let leftBar:UIBarButtonItem! = UIBarButtonItem(image: UIImage(named: "ic_action_call.png"),         leftBar.title = "
         self.navigationItem.leftBarButtonItem = leftBar;
     }
     
@@ -33,7 +34,7 @@ class BaseViewController: UIViewController {
         baseView.layer.shadowRadius = 5;
         baseView.layer.shadowOpacity = 0.5;
         baseView.layer.borderColor = UIColor.darkGray.cgColor;
-        baseView.layer.borderWidth = 0.5;
+        //baseView.layer.borderWidth = 0.5;
     }
     /*
     // MARK: - Navigation

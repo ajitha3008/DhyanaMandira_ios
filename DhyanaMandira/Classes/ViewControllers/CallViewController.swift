@@ -10,8 +10,10 @@ import UIKit
 
 class CallViewController: BaseViewController {
 
+    @IBOutlet weak var BAseView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addShadow(baseView: BAseView)
         self.navigationItem.title="Call"
         // Do any additional setup after loading the view.
         self.setupLeftMenuButton()

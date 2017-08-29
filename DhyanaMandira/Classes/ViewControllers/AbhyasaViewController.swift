@@ -46,6 +46,7 @@ class AbhyasaViewController: BaseViewController,UITableViewDataSource, UITableVi
         tableView.tableFooterView =  UIView(frame: .zero)
         tableView.contentInset = UIEdgeInsetsMake(0, 0, 120, 0)//top,left,bottom,right
         tableView.reloadData()
+        self.addShadow(baseView: tableView)
         self.setupLeftMenuButton()
         // Do any additional setup after loading the view.
     }
@@ -84,12 +85,44 @@ class AbhyasaViewController: BaseViewController,UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "AbhyasaTableViewCell", for: indexPath) as! AbhyasaTableViewCell
         
         cell.Label.text = sections[indexPath.section].items[indexPath.row]
+        let stringValue = String(describing: sections[indexPath.section].items[indexPath.row].characters.first!)
+        cell.avatarInitials.text = stringValue
+        cell.avatarImageView.backgroundColor = UIColor(rgb: 0xff9933)
+        //cell.avatarImageView.layer.borderWidth = 1
+        cell.avatarImageView.layer.masksToBounds = false
+        //cell.avatarImageView.layer.borderColor = UIColor(rgb: 0x000000).cgColor
+        cell.avatarImageView.layer.cornerRadius = cell.avatarImageView.frame.height/2
+        cell.avatarImageView.clipsToBounds = true
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let label = UILabel()
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 50))
+        headerView.backgroundColor = UIColor(rgb: 0xff9933)
+        let label = UILabel(frame: CGRect(x: 70, y: 0, width: tableView.frame.size.width, height: 50))
+        label.backgroundColor = UIColor.clear
+        label.textAlignment = .left
+        label.textColor = UIColor(rgb: 0x000000)
+        label.text = sections[section].name
+        label.tag = section
+        label.font = UIFont.boldSystemFont(ofSize: label.font.pointSize)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(MantrasViewController.tapFunction))
+        headerView.tag = section;
+        label.isUserInteractionEnabled = true
+        headerView.addGestureRecognizer(tap)
+        headerView.addSubview(label)
+        let icon = UIImageView(frame: CGRect(x: 10, y: 10, width: 30, height: 30))
+        icon.image = UIImage(named: "ic_stat_keyboard_arrow_down");
+        icon.contentMode = UIViewContentMode.scaleAspectFit
+        
+        headerView.addSubview(icon)
+        return headerView
+
+        
+        
+        /*let label = UILabel()
         label.backgroundColor = UIColor(rgb: 0xff9933)
         label.textAlignment = .left
         label.textColor = UIColor(rgb: 0x000000)
@@ -101,7 +134,7 @@ class AbhyasaViewController: BaseViewController,UITableViewDataSource, UITableVi
         label.isUserInteractionEnabled = true
         label.addGestureRecognizer(tap)
         
-        return label
+        return label*/
     }
     
     func tapFunction(sender:UITapGestureRecognizer) {

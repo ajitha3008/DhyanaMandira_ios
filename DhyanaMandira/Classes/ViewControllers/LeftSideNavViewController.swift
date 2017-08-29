@@ -19,7 +19,7 @@ class LeftSideNavViewController: UIViewController,UITableViewDelegate,UITableVie
     var sectionHeaders:[String] = ["General","Yoga","Highlights","Contact Us"/*,"Share"*/]
     var generalArray:[String]=["About","Registration Formality","Upcoming Batches/Events"]
     var yogaArray:[String]=["Ashtanga Yoga-a path towards ultimate","Dhyana Mandira-a platform to transform","Yogabhyasa Prakriyas","Mantras"]
-    var highlightsArray:[String]=["Founder","Gallery","Comments received"]
+    var highlightsArray:[String]=["Founder","Gallery","Videos","Comments received"]
     var contactUsArray:[String]=["E-Mail","Call","Visit","Like us in facebook"]
     //var shareArray:[String]=["Share this app"]
     
@@ -106,6 +106,9 @@ class LeftSideNavViewController: UIViewController,UITableViewDelegate,UITableVie
                 menuItem.MenuImageView.image = #imageLiteral(resourceName: "ic_action_collections.png")
             }
             else if indexPath.row == 2 {
+                menuItem.MenuImageView.image = #imageLiteral(resourceName: "ic_action_ondemand_video")
+            }
+            else if indexPath.row == 3 {
                 menuItem.MenuImageView.image = #imageLiteral(resourceName: "ic_action_insert_comment.png")
             }
         } else if indexPath.section==3 {
@@ -228,13 +231,13 @@ class LeftSideNavViewController: UIViewController,UITableViewDelegate,UITableVie
                 appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
             }
             if(indexPath.row == 2) {
-                let centerViewController = self.storyboard?.instantiateViewController(withIdentifier: "CommentsViewController") as! CommentsViewController
+                let centerViewController = self.storyboard?.instantiateViewController(withIdentifier: "YouTubeViewController") as! YouTubeViewController
                 let centerNavController = UINavigationController(rootViewController: centerViewController)
                 let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
                 appDelegate.centerContainer!.centerViewController = centerNavController
                 appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
             }
-            if(indexPath.row == 2) {
+            if(indexPath.row == 3) {
                 let centerViewController = self.storyboard?.instantiateViewController(withIdentifier: "CommentsViewController") as! CommentsViewController
                 let centerNavController = UINavigationController(rootViewController: centerViewController)
                 let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate

@@ -46,6 +46,7 @@
 		CBF20FA81F04BBC2006A1E4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF20FA61F04BBC2006A1E4D /* LaunchScreen.storyboard */; };
 		CBF20FB31F04BBC3006A1E4D /* DhyanaMandiraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF20FB21F04BBC3006A1E4D /* DhyanaMandiraTests.swift */; };
 		CBF20FBE1F04BBC3006A1E4D /* DhyanaMandiraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF20FBD1F04BBC3006A1E4D /* DhyanaMandiraUITests.swift */; };
+		D6705DFB1F4F5CC000FD3DA4 /* YouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6705DFA1F4F5CC000FD3DA4 /* YouTubeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		CBF20FB91F04BBC3006A1E4D /* DhyanaMandiraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DhyanaMandiraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF20FBD1F04BBC3006A1E4D /* DhyanaMandiraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhyanaMandiraUITests.swift; sourceTree = "<group>"; };
 		CBF20FBF1F04BBC3006A1E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6705DFA1F4F5CC000FD3DA4 /* YouTubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +277,7 @@
 				381DED401F1B6D00000E6AAD /* RegistrationViewController.swift */,
 				381DED411F1B6D00000E6AAD /* ViewController.swift */,
 				381DED421F1B6D00000E6AAD /* VisitViewController.swift */,
+				D6705DFA1F4F5CC000FD3DA4 /* YouTubeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -469,15 +472,15 @@
 				TargetAttributes = {
 					CBF20F991F04BBC2006A1E4D = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 22BC5D5294;
+						DevelopmentTeam = HY9VKUPG9A;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -553,9 +556,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DhyanaMandira-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -583,9 +589,26 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DhyanaMandira/Pods-DhyanaMandira-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -611,6 +634,7 @@
 				381DED7C1F1B6D00000E6AAD /* AbhyasaViewController.swift in Sources */,
 				2B7666BD1F41F7DA0065EF3F /* EventsCell.swift in Sources */,
 				381DED791F1B6D00000E6AAD /* MMDrawerController.m in Sources */,
+				D6705DFB1F4F5CC000FD3DA4 /* YouTubeViewController.swift in Sources */,
 				2B7666C51F4214770065EF3F /* Constants.swift in Sources */,
 				381DED871F1B6D00000E6AAD /* RegistrationViewController.swift in Sources */,
 				CBBE38C91F1CDD660059A59D /* UserCommentsTableViewCell.swift in Sources */,
@@ -783,14 +807,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = DhyanaMandira/DhyanaMandira.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Nagesh Rudrappa (K3P83G5294)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 22BC5D5294;
+				DEVELOPMENT_TEAM = HY9VKUPG9A;
 				INFOPLIST_FILE = DhyanaMandira/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.personal.DhyanaMandira;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.DhyanaMandira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -806,13 +829,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = DhyanaMandira/DhyanaMandira.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 22BC5D5294;
+				DEVELOPMENT_TEAM = HY9VKUPG9A;
 				INFOPLIST_FILE = DhyanaMandira/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.personal.DhyanaMandira;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.DhyanaMandira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/DhyanaMandira/Classes/Utils/Headers/DhyanaMandira-Bridging-Header.h";

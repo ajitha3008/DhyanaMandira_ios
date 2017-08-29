@@ -10,13 +10,29 @@ import UIKit
 
 class GalleryViewController: BaseViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
    
+    @IBOutlet weak var hyperlink: UILabel!
+    @IBOutlet weak var BaseView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 self.navigationItem.title="Gallery"
-        self.setupLeftMenuButton()
         
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapResponse))
+        tapGesture.numberOfTapsRequired = 1
+        hyperlink.isUserInteractionEnabled =  true
+        hyperlink.addGestureRecognizer(tapGesture)
+        
+        self.setupLeftMenuButton()
+        self.addShadow(baseView: BaseView)
     }
 
+    func tapResponse(recognizer: UITapGestureRecognizer) {
+        let url = URL(string: "https://plus.google.com/104001892080880835190/posts")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -36,6 +52,30 @@ self.navigationItem.title="Gallery"
         cell.ItemImage.image = UIImage(named: String(format: "image_%i.jpg",indexLoc))
         cell.ItemLabel.text = getName(name: String(format: "image_%i",indexLoc))
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let indexLoc = indexPath.item + 1
+        
+        let imageView = UIImageView(image: UIImage(named: String(format: "image_%i.jpg",indexLoc)))
+        //imageView.frame = self.view.frame
+        imageView.center = self.view.center
+        imageView.frame = CGRect(x : 0, y : 0,width : (self.view.frame.size.width), height : (self.view.frame.size.height));
+        imageView.backgroundColor = .white
+        imageView.contentMode = .top
+        imageView.isUserInteractionEnabled = true
+        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+        imageView.addGestureRecognizer(tap)
+        self.navigationItem.title=getName(name: String(format: "image_%i",indexLoc))
+        self.view.addSubview(imageView)
+    }
+    
+    // Use to back from full mode
+    func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
+        sender.view?.removeFromSuperview()
+        self.navigationItem.title="Gallery"
     }
     
     func getName(name: String) -> String {
