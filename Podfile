@@ -10,5 +10,6 @@ target 'DhyanaMandira' do
  pod 'FBSDKShareKit'
  pod 'FBSDKLoginKit'
  pod 'SVProgressHUD'
+ pod 'youtube-ios-player-helper', '~> 0.1.4'
 
 end

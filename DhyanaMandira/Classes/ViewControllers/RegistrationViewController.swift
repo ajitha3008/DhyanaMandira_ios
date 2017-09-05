@@ -24,6 +24,8 @@ class RegistrationViewController: BaseViewController {
         self.addShadow(baseView: costTextView)
         self.setupLeftMenuButton()
         // Do any additional setup after loading the view.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -25,7 +25,7 @@ class DhyanaMandiraViewController: BaseViewController {
         platformTextView.attributedText = attributedString
         self.addShadow(baseView: platformTextView)
         self.setupLeftMenuButton()
-        // Do any additional setup after loading the view.
+        platformTextView.clipsToBounds = true;
     }
 
     override func didReceiveMemoryWarning() {

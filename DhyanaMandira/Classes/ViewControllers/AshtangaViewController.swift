@@ -11,6 +11,7 @@ import UIKit
 class AshtangaViewController: BaseViewController {
 
     @IBOutlet weak var astangaTextView: UITextView!
+    @IBOutlet weak var baseView: UIView!
     
     let htmlString = "<html><body style=\"text-align:justify\"><p style=\"font-size:18px\"><font color=\"#ff9933\"><b>\"ASTANGA YOGA\" - a path towards \"ULTIMATE\"</b></font><br><br>Pathanjali Maharshi\'s Astanga Yoga Sutras (8 limbs) are simple and most effective guidelines to reach an \"Ultimate\" state of life. Yama, Niyama, Asana, Pranayama, Pratyahara, Dharana, Dhyana & Samadhi - the path that takes one towards ultimate.<br><br>These 8 sutras with more sub sutras help the practitioner for total personality development. The Physical, Mental, Emotional, Social, Spiritual wellbeing are the aims. The Yogic Life is much needed for Individual health and social harmony.<br><br><i><font color=\"#ff9933\">How this is being achieved here..?? see the next page on \"DHYANA MANDIRA\" - a \"PLATFORM\" to \"TRANSFORM\".</font></i></p></body></Html>"
     
@@ -24,9 +25,11 @@ class AshtangaViewController: BaseViewController {
        
         
         astangaTextView.attributedText = attributedString
-        self.addShadow(baseView: astangaTextView)
+        self.addShadow(baseView: baseView)
         self.setupLeftMenuButton()
         // Do any additional setup after loading the view.
+        
+        astangaTextView.clipsToBounds = true;
     }
 
     override func didReceiveMemoryWarning() {

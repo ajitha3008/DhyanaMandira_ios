@@ -11,23 +11,23 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.26.0):
     - FBSDKCoreKit
-  - Firebase/Core (4.1.0):
+  - Firebase/Core (4.1.1):
     - FirebaseAnalytics (= 4.0.3)
-    - FirebaseCore (= 4.0.5)
-  - Firebase/Messaging (4.1.0):
+    - FirebaseCore (= 4.0.6)
+  - Firebase/Messaging (4.1.1):
     - Firebase/Core
-    - FirebaseMessaging (= 2.0.1)
+    - FirebaseMessaging (= 2.0.2)
   - FirebaseAnalytics (4.0.3):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - nanopb (~> 0.3)
-  - FirebaseCore (4.0.5):
+  - FirebaseCore (4.0.6):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - nanopb (~> 0.3)
-  - FirebaseInstanceID (2.0.1):
+  - FirebaseInstanceID (2.0.2):
     - FirebaseCore (~> 4.0)
-  - FirebaseMessaging (2.0.1):
+  - FirebaseMessaging (2.0.2):
     - FirebaseAnalytics (~> 4.0)
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -45,6 +45,7 @@ PODS:
   - nanopb/encode (0.3.8)
   - Protobuf (3.4.0)
   - SVProgressHUD (2.1.2)
+  - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
   - FBSDKCoreKit
@@ -53,22 +54,24 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Messaging
   - SVProgressHUD
+  - youtube-ios-player-helper (~> 0.1.4)
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FBSDKCoreKit: c8b8582311ec11b145451d8b9717dc6cc2ae5a76
   FBSDKLoginKit: f3f03b94c21eb834af243c0a881d48641f47ca60
   FBSDKShareKit: 320712d8293fde6392872c91eb80ef0da5d73cc3
-  Firebase: ebebf41db7f10e0c7668b6eaaa857fbe599aa478
+  Firebase: 052c0de688fc87b414996eea13e223dd9fee3fa2
   FirebaseAnalytics: 76f754d37ca5b04f36856729b6af3ca0152d1069
-  FirebaseCore: 7d876ea97a830cbe62ba7fbbe7670c833a324ba0
-  FirebaseInstanceID: 0500e3cb54a1a4e01a8cffcc09323b8bb8fc7e1e
-  FirebaseMessaging: b45ff9ef5d932600d3f78ff43168e7c5707aa7dc
+  FirebaseCore: 28def3c643989c97ea5a69ea5000f5fa9902b9fd
+  FirebaseInstanceID: c4c7fca62c7b7330caee5da04f19a37ea37bb1c1
+  FirebaseMessaging: 85af6c27188538b3a6f7dfd0b3b0596358cb0c39
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 03eef2ee0b674770735cf79d9c4d3659cf6908e8
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: ee1b204b975bdcfc8262125f2ddf204aac0092ae
+PODFILE CHECKSUM: 7234a0bbb1af964afc6899c24d940645bc8a09c9
 
 COCOAPODS: 1.2.0

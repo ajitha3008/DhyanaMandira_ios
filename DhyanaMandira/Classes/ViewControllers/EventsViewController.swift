@@ -46,7 +46,18 @@ class EventsViewController: BaseViewController {
                     })
                 }else
                 {
+                    let code = (error! as NSError).code
+                    var message = error?.localizedDescription;
+                   // print("error === %@",error?.localizedDescription ?? "Please check your internet");
+                   if(code == -1009)
+                   {
+                    message = String(format:"\(message!) Please connect to internet and try again later.");
                     
+                }
+                    DispatchQueue.main.async(execute: {
+                    let alert : UIAlertView! = UIAlertView(title:nil, message: message, delegate: nil, cancelButtonTitle: "Ok");
+                    alert.show()
+                          })
                 }
         }
     }

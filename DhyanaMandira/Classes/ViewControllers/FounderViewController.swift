@@ -26,6 +26,8 @@ self.navigationItem.title="Founder"
         founderTextView.attributedText = attributedString
         // Do any additional setup after loading the view.
         self.setupLeftMenuButton()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
