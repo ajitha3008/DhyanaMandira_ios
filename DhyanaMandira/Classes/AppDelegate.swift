@@ -183,6 +183,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.registerForPushNotifications(application: application)
         
+        if let notification = launchOptions?[UIApplicationLaunchOptionsKey.remoteNotification] as? [String: AnyObject] {
+            displayNotificationView(userInfo: notification as NSDictionary)
+        }
         
         return true
     }
@@ -252,6 +255,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SVProgressHUD.dismiss()
     }
     
+    
+    func displayNotificationView(userInfo:NSDictionary)
+    {
+        self.notificationView = DMNotificationView(userInfo as NSDictionary);
+        self.notificationView.center = (UIApplication.shared.keyWindow?.center)!;
+        self.notificationView.loadDatas(userInfo as NSDictionary)
+        UIApplication.shared.keyWindow?.addSubview(self.notificationView);
+    }
+    
     //Notification delegates
     // Called when APNs has assigned the device a unique token
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
@@ -267,15 +279,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("APNs registration failed: \(error)")
     }
     
+
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         completionHandler(UIBackgroundFetchResult.noData)
              print("Notification received \(userInfo)");
+       displayNotificationView(userInfo: userInfo as NSDictionary)
     }
     
     private func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
     
          print("Notification received \(userInfo)");
+        displayNotificationView(userInfo: userInfo as NSDictionary)
         
         
     }
@@ -298,10 +313,7 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         print("%@", userInfo)
 
         
-        self.notificationView = DMNotificationView(userInfo as NSDictionary);
-        self.notificationView.center = (UIApplication.shared.keyWindow?.center)!;
-        self.notificationView.loadDatas(userInfo as NSDictionary)
-        UIApplication.shared.keyWindow?.addSubview(self.notificationView);
+       displayNotificationView(userInfo: userInfo as NSDictionary)
         
     }
     
@@ -309,11 +321,10 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         print("Userinfo \(response.notification.request.content.userInfo)")
         //    print("Userinfo \(response.notification.request.content.userInfo)")
+        displayNotificationView(userInfo: response.notification.request.content.userInfo as NSDictionary)
     }
-    
-//    func messaging(_ messaging: Messaging, didRefreshRegistrationToken fcmToken: String) {
-//        print("Firebase registration token: \(fcmToken)")
-//    }
+
+
 }
 
 
