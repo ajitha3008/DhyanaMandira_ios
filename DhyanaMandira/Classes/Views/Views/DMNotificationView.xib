@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,19 +27,19 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uib-7i-EgE">
-                            <rect key="frame" x="60" y="13.5" width="268" height="24.5"/>
-                            <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="22"/>
+                            <rect key="frame" x="60" y="14" width="268" height="22.5"/>
+                            <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqO-vX-Egc">
-                            <rect key="frame" x="15" y="60" width="313" height="20"/>
-                            <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="18"/>
+                            <rect key="frame" x="15" y="60" width="313" height="18"/>
+                            <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0L-zO-ICO">
-                            <rect key="frame" x="298" y="95" width="30" height="30"/>
+                            <rect key="frame" x="298" y="127" width="30" height="30"/>
                             <state key="normal" title="OK">
                                 <color key="titleColor" red="0.72156862749999995" green="0.51764705879999995" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
@@ -51,10 +51,10 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="sfS-Kv-Mwk" firstAttribute="top" secondItem="jLg-4A-bcD" secondAttribute="top" constant="10" id="BVM-10-qcN"/>
+                        <constraint firstAttribute="bottom" secondItem="n0L-zO-ICO" secondAttribute="bottom" constant="30" id="F32-dx-qLf"/>
                         <constraint firstItem="uib-7i-EgE" firstAttribute="centerY" secondItem="sfS-Kv-Mwk" secondAttribute="centerY" id="JQ5-pJ-Zxi"/>
                         <constraint firstItem="oqO-vX-Egc" firstAttribute="leading" secondItem="sfS-Kv-Mwk" secondAttribute="leading" id="OzN-1H-Jyn"/>
                         <constraint firstItem="oqO-vX-Egc" firstAttribute="trailing" secondItem="uib-7i-EgE" secondAttribute="trailing" id="PnK-yI-YR2"/>
-                        <constraint firstItem="n0L-zO-ICO" firstAttribute="top" secondItem="oqO-vX-Egc" secondAttribute="bottom" constant="15" id="Vxs-46-wZ3"/>
                         <constraint firstItem="n0L-zO-ICO" firstAttribute="trailing" secondItem="oqO-vX-Egc" secondAttribute="trailing" id="Yhy-cY-sS3"/>
                         <constraint firstItem="uib-7i-EgE" firstAttribute="leading" secondItem="sfS-Kv-Mwk" secondAttribute="trailing" constant="15" id="cU2-2Q-A0N"/>
                         <constraint firstItem="oqO-vX-Egc" firstAttribute="top" secondItem="sfS-Kv-Mwk" secondAttribute="bottom" constant="20" id="oXS-6x-AzU"/>
@@ -72,7 +72,6 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="baseVw" destination="jLg-4A-bcD" id="yZb-vV-Yey"/>
                 <outlet property="messageFromNotificatiom" destination="oqO-vX-Egc" id="MjM-ac-ePY"/>
                 <outlet property="titleForNotification" destination="uib-7i-EgE" id="cio-g2-lmh"/>
             </connections>

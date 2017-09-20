@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>EasyTipView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,17 +62,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1B114C6F7F6E89B3C2C2FDA7C63F331C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>44CAD6CE523055ED339E87154473A254</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>51A5B825B330D692505B8405EE472DE2</key>
+		<key>4A51587AAF59ECE158703E1F9724ADF1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8B4C8DE0A6D5B22ECBA359452BF406E1</key>
+		<key>90B4956B5DA8CFE54B547D232BF3136A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A17CA61A581C24D80BA3BB1B3B68621B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,22 +102,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>D13C602E49A973B1740FC5E3DFAA1B9E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E396A93E4C79B22B7816E9F02F62ECED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E4DD95323C54A78F879DAB0F1508B8E7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E6292B6E26AA82B5F3769CA4CA54A3EA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EF2D3F66FBCE2CE5D5A1415FE111041C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

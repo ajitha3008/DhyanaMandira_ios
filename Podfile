@@ -11,5 +11,6 @@ target 'DhyanaMandira' do
  pod 'FBSDKLoginKit'
  pod 'SVProgressHUD'
  pod 'youtube-ios-player-helper', '~> 0.1.4'
+ pod 'EasyTipView', '~> 1.0.2'
 
 end

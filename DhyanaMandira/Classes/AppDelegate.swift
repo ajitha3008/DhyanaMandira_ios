@@ -141,6 +141,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var centerContainer: MMDrawerController?
     
+    var notificationView:DMNotificationView!
+    
     var navigationBar = UINavigationBar.appearance()
     
     //let color = UIColor(red: 0xFF, green: 0xFF, blue: 0xFF)
@@ -179,7 +181,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Adding facebook initiations
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions);
         
-        self.registerForPushNotifications()
+        self.registerForPushNotifications(application: application)
         
         
         return true
@@ -215,22 +217,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     
-    func registerForPushNotifications()
+    func registerForPushNotifications(application:UIApplication)
     {
-        //Register for push notifications
+//        //Register for push notifications
+
         if #available(iOS 10.0, *) {
-            let center = UNUserNotificationCenter.current()
-            center.requestAuthorization(options: []) { _, _ in
-                // For iOS 10 display notification (sent via APNS)
-                UNUserNotificationCenter.current().delegate = self
-                UIApplication.shared.registerForRemoteNotifications()
-                }
+            // For iOS 10 display notification (sent via APNS)
+            UNUserNotificationCenter.current().delegate = self
+            
+            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+            UNUserNotificationCenter.current().requestAuthorization(
+                options: authOptions,
+                completionHandler: {_, _ in })
         } else {
-            // Fallback on earlier versions
-            UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil))
-            UIApplication.shared.registerForRemoteNotifications()
+            let settings: UIUserNotificationSettings =
+                UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+            application.registerUserNotificationSettings(settings)
         }
         
+        application.registerForRemoteNotifications()
 
     }
     
@@ -253,6 +258,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Convert token to string
         let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
         print("APNs device token: \(deviceTokenString)")
+        
     }
     
     // Called when APNs failed to register the device for push notifications
@@ -270,6 +276,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
     
          print("Notification received \(userInfo)");
+        
+        
     }
     
 
@@ -288,6 +296,13 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         
         // Print full message.
         print("%@", userInfo)
+
+        
+        self.notificationView = DMNotificationView(userInfo as NSDictionary);
+        self.notificationView.center = (UIApplication.shared.keyWindow?.center)!;
+        self.notificationView.loadDatas(userInfo as NSDictionary)
+        UIApplication.shared.keyWindow?.addSubview(self.notificationView);
+        
     }
     
     @available(iOS 10, *)
@@ -295,6 +310,10 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         print("Userinfo \(response.notification.request.content.userInfo)")
         //    print("Userinfo \(response.notification.request.content.userInfo)")
     }
+    
+//    func messaging(_ messaging: Messaging, didRefreshRegistrationToken fcmToken: String) {
+//        print("Firebase registration token: \(fcmToken)")
+//    }
 }
 
 

@@ -10,6 +10,7 @@ import UIKit
 
 class RegistrationViewController: BaseViewController {
 
+    @IBOutlet weak var baseView: UIView!
     @IBOutlet weak var costTextView: UITextView!
     
     let htmlString = "<html><body style=\"text-align:justify\"><p style=\"font-size:18px\">We believe YOGA is a field of service. Hence, we have not commercialized Yoga. Yoga aspirants can take life time membership by paying only Rs.100/-. There is NO monthly fees for providing training & venue for daily practice. You will be provided a continued guidance for life time.<br><br>New people can join during new batches. Register for new batches through telephone call, SMS, Whatsapp or Email. Just send your Full name, Whatsapp number(preferably) and Email ID to the contact details provided. We will inform you about the dates for next new batch.<br><br>We have enough place for Yoga practice. Any number of people can join. Inform and spread to everyone you know.</p></body></Html>"
@@ -21,7 +22,7 @@ class RegistrationViewController: BaseViewController {
         
         let attributedString = try! NSAttributedString(data: htmlData!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
         costTextView.attributedText = attributedString
-        self.addShadow(baseView: costTextView)
+        self.addShadow(baseView: baseView)
         self.setupLeftMenuButton()
         // Do any additional setup after loading the view.
         

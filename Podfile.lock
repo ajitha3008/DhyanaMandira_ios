@@ -5,6 +5,7 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
+  - EasyTipView (1.0.2)
   - FBSDKCoreKit (4.26.0):
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.26.0):
@@ -44,10 +45,11 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - Protobuf (3.4.0)
-  - SVProgressHUD (2.1.2)
+  - SVProgressHUD (2.2.1)
   - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
+  - EasyTipView (~> 1.0.2)
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
@@ -58,6 +60,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  EasyTipView: b93a19be981cc2221d6d7191d49872f547e0bebf
   FBSDKCoreKit: c8b8582311ec11b145451d8b9717dc6cc2ae5a76
   FBSDKLoginKit: f3f03b94c21eb834af243c0a881d48641f47ca60
   FBSDKShareKit: 320712d8293fde6392872c91eb80ef0da5d73cc3
@@ -69,9 +72,9 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 03eef2ee0b674770735cf79d9c4d3659cf6908e8
-  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  SVProgressHUD: db27c54e6e18bc903341661fc9feb55e04905cc4
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: 7234a0bbb1af964afc6899c24d940645bc8a09c9
+PODFILE CHECKSUM: 197fe233ea359b38ba4a661ee2176a5dc9f97a85
 
 COCOAPODS: 1.2.0

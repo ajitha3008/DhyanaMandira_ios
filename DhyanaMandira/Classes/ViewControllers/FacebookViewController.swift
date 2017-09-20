@@ -13,6 +13,7 @@ import FBSDKCoreKit
 class FacebookViewController: BaseViewController {
     @IBOutlet weak var FBlikeView: UIView!
     @IBOutlet weak var FBShareView: UIView!
+    @IBOutlet weak var baseView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class FacebookViewController: BaseViewController {
     {
         self.fbLikeSetup()
         self.fbShareSetup()
+        addShadow(baseView: baseView)
     }
     
     func fbLikeSetup()

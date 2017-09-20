@@ -13,58 +13,74 @@ class DMNotificationView: UIView {
     @IBOutlet weak var titleForNotification: UILabel!
     @IBOutlet weak var baseVw: UIView!
     @IBOutlet weak var messageFromNotificatiom: UILabel!
-    var view: UIView!
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-    
+    var view: DMNotificationView!
     override init(frame: CGRect) {
+
         super.init(frame: frame)
-        nibSetup()
+        
+        xibSetup()
     }
     
     required init?(coder aDecoder: NSCoder) {
+
         super.init(coder: aDecoder)
-        nibSetup()
+
     }
-    
-    private func nibSetup() {
-        backgroundColor = .clear
-        
+    func xibSetup() {
         view = loadViewFromNib()
+
         view.frame = bounds
-        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.translatesAutoresizingMaskIntoConstraints = true
-        
+
+        view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
+
         addSubview(view)
+        
     }
     
-    private func loadViewFromNib() -> UIView {
-        let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
-        let nibView = nib.instantiate(withOwner: self, options: nil).first as! UIView
+    func loadViewFromNib() -> DMNotificationView {
+
+        let view = Bundle.main.loadNibNamed("DMNotificationView", owner: self, options: nil)?[0] as! DMNotificationView
         
-        return nibView
+        return view
+    }
+    
+    convenience init(_ dictionary:NSDictionary) {
+        let rect:CGRect = CGRect(x: 0, y: 0, width: (UIApplication.shared.keyWindow?.frame.size.width)! - 40,height: 220);
+        self.init(frame:rect)
+
+    }
+    
+    func loadDatas(_ dictionary:NSDictionary)
+    {
+        view.titleForNotification.text = dictionary["google.c.a.c_l"] as? String;
+        let message = dictionary.value(forKeyPath: "aps.alert") as? String
+        view.messageFromNotificatiom.text = message;
+        UserDefaults.standard.set(message, forKey: "notification")
+        UserDefaults.standard.synchronize()
+        view.layer.cornerRadius = 10;
+        addShadow(baseView: view)
+        
     }
 
-    func notificationViewSetup(data:NSDictionary)-> UIView
+    func addShadow(baseView:UIView)
     {
-        nibSetup()
-        
-        self.titleForNotification.text = data.value(forKey: "") as! String;
-        self.messageFromNotificatiom.text = data.value(forKey: "") as! String;
-        
-        return view;
+        baseView.layer.masksToBounds = false;
+        baseView.layer.shadowOffset = CGSize(width: 0.5, height: 0.5)
+        baseView.layer.shadowRadius = 5;
+        baseView.layer.shadowOpacity = 0.5;
+        baseView.layer.borderColor = UIColor.darkGray.cgColor;
+        //baseView.layer.borderWidth = 0.5;
     }
+   
     
     @IBAction func didClickOnOKButton(_ sender: UIButton)
     {
-        view.removeFromSuperview()
-        self.removeFromSuperview()
+        for view in (UIApplication.shared.keyWindow?.subviews)! {
+            if view is DMNotificationView {
+                 view.removeFromSuperview()
+            }
+        }
     }
     
 }
+
