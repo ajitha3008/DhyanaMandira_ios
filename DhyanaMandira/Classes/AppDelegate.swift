@@ -176,8 +176,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationBar.tintColor = whiteColour
         navigationBar.titleTextAttributes=[NSForegroundColorAttributeName:UIColor.white]
         
-        //Firebase configration
+        /*
+         NSString *filePath = [[NSBundle mainBundle] pathForResource:filename ofType:@"plist"];
+         NSLog(@"file path: %@\n", filePath);
+         FIROptions *options = [[FIROptions alloc] initWithContentsOfFile:filePath];
+         
+         options.deepLinkURLScheme = [[NSBundle mainBundle] bundleIdentifier];
+         [FIRApp configureWithOptions:options];
+ */
+//        let filePath:String! = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist")
+//        print(filePath )
+//        let options:FirebaseOptions! = FirebaseOptions(contentsOfFile: filePath);
+//        options.deepLinkURLScheme = Bundle.main.bundleIdentifier;
+//
+//        //Firebase configration
         FirebaseApp.configure()
+        let files = Bundle.main.paths(forResourcesOfType: "plist", inDirectory: nil)
+        print(files )
         //Adding facebook initiations
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions);
         
@@ -270,6 +285,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Convert token to string
         let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
         print("APNs device token: \(deviceTokenString)")
+        Messaging.messaging().apnsToken = deviceToken
         
     }
     

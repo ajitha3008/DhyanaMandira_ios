@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>824680639536-5gpmig0c6ov91bbsbp7mk56a87gorv3a.apps.googleusercontent.com</string>
+	<string>824680639536-ejmp938kl37jb28qdjq2lmbj9q05unav.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.824680639536-5gpmig0c6ov91bbsbp7mk56a87gorv3a</string>
+	<string>com.googleusercontent.apps.824680639536-ejmp938kl37jb28qdjq2lmbj9q05unav</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAJf9GOoZhH0O_P_V7PP4T6Ligdhb9DQPA</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.personal.Dhyanamandir</string>
+	<string>com.personal.yogaAtDhyanamandira</string>
 	<key>PROJECT_ID</key>
 	<string>dhyanamandiraios</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:824680639536:ios:013edabaca56cf3e</string>
+	<string>1:824680639536:ios:838f22723e269f10</string>
 	<key>DATABASE_URL</key>
 	<string>https://dhyanamandiraios.firebaseio.com</string>
 </dict>

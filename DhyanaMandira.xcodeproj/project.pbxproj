@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B16ABC61F768B32000D8539 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B16ABC51F768AD6000D8539 /* GoogleService-Info.plist */; };
 		2B3EA9BE1F763427008D2E69 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3EA9BC1F763427008D2E69 /* Constants.swift */; };
 		2B3EA9BF1F763427008D2E69 /* HTTPNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3EA9BD1F763427008D2E69 /* HTTPNetworker.swift */; };
 		2B5F7F231F49757600E8AFEF /* EDStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F7F201F49757600E8AFEF /* EDStarRating.m */; };
@@ -16,7 +17,6 @@
 		2B670F3C1F55CA48009A5F09 /* DMNotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B670F3B1F55CA48009A5F09 /* DMNotificationView.xib */; };
 		2B7666BD1F41F7DA0065EF3F /* EventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7666BC1F41F7DA0065EF3F /* EventsCell.swift */; };
 		2B8B07641F41466B005E6FBB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B07631F41466B005E6FBB /* BaseViewController.swift */; };
-		2BC1FAF51F66F5F400F54B28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BC1FAF41F66F5F400F54B28 /* GoogleService-Info.plist */; };
 		2BDCC3021F5BB57400A91A2B /* YoutubeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDCC3011F5BB57400A91A2B /* YoutubeCell.swift */; };
 		2BDCC3041F5BBA6E00A91A2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BDCC3031F5BBA6E00A91A2B /* CoreGraphics.framework */; };
 		2BDCC3061F5BC51900A91A2B /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BDCC3051F5BC51900A91A2B /* Assets.bundle */; };
@@ -73,6 +73,7 @@
 
 /* Begin PBXFileReference section */
 		0A18E866B817193E3FB73EFF /* Pods_DhyanaMandira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DhyanaMandira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B16ABC51F768AD6000D8539 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2B3EA9BC1F763427008D2E69 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2B3EA9BD1F763427008D2E69 /* HTTPNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPNetworker.swift; sourceTree = "<group>"; };
 		2B593DEE1F65024B0002D7CC /* DhyanaMandira.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = DhyanaMandira.entitlements; sourceTree = "<group>"; };
@@ -84,7 +85,6 @@
 		2B670F3B1F55CA48009A5F09 /* DMNotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMNotificationView.xib; sourceTree = "<group>"; };
 		2B7666BC1F41F7DA0065EF3F /* EventsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsCell.swift; sourceTree = "<group>"; };
 		2B8B07631F41466B005E6FBB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		2BC1FAF41F66F5F400F54B28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2BDCC3011F5BB57400A91A2B /* YoutubeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeCell.swift; sourceTree = "<group>"; };
 		2BDCC3031F5BBA6E00A91A2B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2BDCC3051F5BC51900A91A2B /* Assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Assets.bundle; sourceTree = "<group>"; };
@@ -330,7 +330,7 @@
 		381DED4B1F1B6D00000E6AAD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2BC1FAF41F66F5F400F54B28 /* GoogleService-Info.plist */,
+				2B16ABC51F768AD6000D8539 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -475,7 +475,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = AjithaYasmin;
 				TargetAttributes = {
 					CBF20F991F04BBC2006A1E4D = {
@@ -531,8 +531,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B16ABC61F768B32000D8539 /* GoogleService-Info.plist in Resources */,
 				2B5F7F251F49757600E8AFEF /* starhighlighted.png in Resources */,
-				2BC1FAF51F66F5F400F54B28 /* GoogleService-Info.plist in Resources */,
 				CBF20FA81F04BBC2006A1E4D /* LaunchScreen.storyboard in Resources */,
 				2B670F3C1F55CA48009A5F09 /* DMNotificationView.xib in Resources */,
 				CBF20FA51F04BBC2006A1E4D /* Assets.xcassets in Resources */,
@@ -728,7 +728,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -736,7 +738,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -779,7 +785,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -787,7 +795,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -826,7 +838,7 @@
 				INFOPLIST_FILE = DhyanaMandira/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.personal.Dhyanamandir;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.yogaAtDhyanamandira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -849,7 +861,7 @@
 				INFOPLIST_FILE = DhyanaMandira/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.personal.Dhyanamandir;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.yogaAtDhyanamandira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/DhyanaMandira/Classes/Utils/Headers/DhyanaMandira-Bridging-Header.h";
