@@ -459,7 +459,7 @@
                                 <rect key="frame" x="32" y="35" width="327" height="612"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0S4-dh-KQq">
-                                        <rect key="frame" x="0.0" y="0.0" width="327" height="487"/>
+                                        <rect key="frame" x="5" y="5" width="317" height="526"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="y4S-Sa-U9s">
                                             <size key="itemSize" width="163" height="164"/>
@@ -469,7 +469,7 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryCellId" id="DFQ-6C-xBU" customClass="GalleryCollectionViewCell" customModule="DhyanaMandira" customModuleProvider="target">
-                                                <rect key="frame" x="82" y="0.0" width="163" height="164"/>
+                                                <rect key="frame" x="77" y="0.0" width="163" height="164"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                     <rect key="frame" x="0.0" y="0.0" width="163" height="164"/>
@@ -511,7 +511,7 @@
                                         </connections>
                                     </collectionView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufc-J5-Bsi">
-                                        <rect key="frame" x="0.0" y="541" width="327" height="41"/>
+                                        <rect key="frame" x="5" y="541" width="317" height="41"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Click here to view more images in Google+ &gt;&gt;&gt;">
                                                 <attributes>
@@ -527,12 +527,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="0S4-dh-KQq" firstAttribute="top" secondItem="VSo-cz-531" secondAttribute="top" id="9dQ-g7-TJi"/>
+                                    <constraint firstItem="0S4-dh-KQq" firstAttribute="top" secondItem="VSo-cz-531" secondAttribute="top" constant="5" id="9dQ-g7-TJi"/>
                                     <constraint firstItem="ufc-J5-Bsi" firstAttribute="leading" secondItem="0S4-dh-KQq" secondAttribute="leading" id="9y1-Pt-Eud"/>
                                     <constraint firstAttribute="bottom" secondItem="ufc-J5-Bsi" secondAttribute="bottom" constant="30" id="EYM-mj-ttM"/>
-                                    <constraint firstAttribute="trailing" secondItem="0S4-dh-KQq" secondAttribute="trailing" id="Ilt-bx-Mnc"/>
-                                    <constraint firstItem="0S4-dh-KQq" firstAttribute="leading" secondItem="VSo-cz-531" secondAttribute="leading" id="Mn9-du-iT5"/>
-                                    <constraint firstItem="ufc-J5-Bsi" firstAttribute="top" secondItem="0S4-dh-KQq" secondAttribute="bottom" constant="54" id="O0r-9r-nrP"/>
+                                    <constraint firstAttribute="trailing" secondItem="0S4-dh-KQq" secondAttribute="trailing" constant="5" id="Ilt-bx-Mnc"/>
+                                    <constraint firstItem="0S4-dh-KQq" firstAttribute="leading" secondItem="VSo-cz-531" secondAttribute="leading" constant="5" id="Mn9-du-iT5"/>
+                                    <constraint firstItem="ufc-J5-Bsi" firstAttribute="top" secondItem="0S4-dh-KQq" secondAttribute="bottom" constant="10" id="O0r-9r-nrP"/>
                                     <constraint firstItem="ufc-J5-Bsi" firstAttribute="trailing" secondItem="0S4-dh-KQq" secondAttribute="trailing" id="OcY-f9-aRL"/>
                                 </constraints>
                             </view>

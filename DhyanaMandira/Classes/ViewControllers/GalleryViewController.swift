@@ -178,6 +178,8 @@ self.navigationItem.title="Gallery"
         
     }
    
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: BaseView.frame.size.width/2-10, height: BaseView.frame.size.width/2-10)
+    }
 
 }
