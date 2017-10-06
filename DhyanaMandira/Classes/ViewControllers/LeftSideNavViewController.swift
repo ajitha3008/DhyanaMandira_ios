@@ -18,7 +18,7 @@ class LeftSideNavViewController: UIViewController,UITableViewDelegate,UITableVie
     
     var sectionHeaders:[String] = ["General","Yoga","Highlights","Contact Us"/*,"Share"*/]
     var generalArray:[String]=["About","Registration Formality","Upcoming Batches/Events"]
-    var yogaArray:[String]=["Ashtanga Yoga-a path towards ultimate","Dhyana Mandira-a platform to transform","Yogabhyasa Prakriyas","Mantras"]
+    var yogaArray:[String]=["Ashtanga Yoga-a path towards ultimate","Yoga Mandira-a platform to transform","Yogabhyasa Prakriyas","Mantras"]
     var highlightsArray:[String]=["Founder","Gallery","Videos","Comments received"]
     var contactUsArray:[String]=["E-Mail","Call","Visit","Like us in facebook"]
     //var shareArray:[String]=["Share this app"]
@@ -295,7 +295,7 @@ class LeftSideNavViewController: UIViewController,UITableViewDelegate,UITableVie
         
         mailComposerVC.setToRecipients(["rajkumargour10@gmail.com"])
         mailComposerVC.setCcRecipients(["rajayogamadiwala@gmail.com"])
-        mailComposerVC.setSubject("DhyanaMandira :: Contact Us")
+        mailComposerVC.setSubject("YogaMandira :: Contact Us")
         
         return mailComposerVC
     }

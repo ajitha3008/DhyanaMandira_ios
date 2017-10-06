@@ -17,7 +17,7 @@ class VisitViewController: BaseViewController, MKMapViewDelegate{
     @IBOutlet weak var visitTextView: UITextView!
     @IBOutlet weak var MapView: MKMapView!
     
-    let htmlString = "<html><body style=\"text-align:justify\"><p style=\"font-size:18px\"><b>PostalAddress:</b><br>Rajkumar G<br>Mukhya Shikshaka<br>Dhyana Mandira Yoga Kendra<br>Shri Someshwara(Shiva) Temple,<br>Madiwala,<br>BTM 1st Stage,<br>Bangalore,<br>560068</p></body></Html>"
+    let htmlString = "<html><body style=\"text-align:justify\"><p style=\"font-size:18px\"><b>PostalAddress:</b><br>Rajkumar G<br>Mukhya Shikshaka<br>Yoga Mandira<br>Shri Someshwara(Shiva) Temple,<br>Madiwala,<br>BTM 1st Stage,<br>Bangalore,<br>560068</p></body></Html>"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class VisitViewController: BaseViewController, MKMapViewDelegate{
         let center = CLLocationCoordinate2D(latitude:12.918235, longitude:77.618393)
         let region = MKCoordinateRegion(center: center, span:MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         MapView.setRegion(region, animated: true)
-        let maptitle = "Dhyana Mandira Yoga Kendra"
+        let maptitle = "Yoga Mandira"
         let mapSubTitle = "Shri Someshwara(Shiva) Temple"
         let annotation=MKPointAnnotation()
         annotation.coordinate=center;
@@ -56,7 +56,7 @@ class VisitViewController: BaseViewController, MKMapViewDelegate{
         }*/
             let center = CLLocationCoordinate2D(latitude:12.918235, longitude:77.618393)
             let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: center, addressDictionary:nil))
-            mapItem.name = "Dhyana Mandira Yoga Kendra"
+            mapItem.name = "Yoga Mandira"
             mapItem.openInMaps(launchOptions: [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving])
         }
     }
