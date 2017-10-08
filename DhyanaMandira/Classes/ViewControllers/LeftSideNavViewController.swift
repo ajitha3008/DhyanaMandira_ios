@@ -16,12 +16,12 @@ class LeftSideNavViewController: UIViewController,UITableViewDelegate,UITableVie
     @IBOutlet weak var headerTextView: UILabel!
     //var menuItems:[String] = ["About","Registration Formality"];
     
-    var sectionHeaders:[String] = ["General","Yoga","Highlights","Contact Us"/*,"Share"*/]
+    var sectionHeaders:[String] = ["General","Yoga","Highlights","Contact Us","Share"]
     var generalArray:[String]=["About","Registration Formality","Upcoming Batches/Events"]
     var yogaArray:[String]=["Ashtanga Yoga-a path towards ultimate","Yoga Mandira-a platform to transform","Yogabhyasa Prakriyas","Mantras"]
     var highlightsArray:[String]=["Founder","Gallery","Videos","Comments received"]
     var contactUsArray:[String]=["E-Mail","Call","Visit","Like us in facebook"]
-    //var shareArray:[String]=["Share this app"]
+    var shareArray:[String]=["Share this app"]
     
     /*var names=["General":["About","Registration Formality","Upcoming Batches/Events"],"Yoga":["Ashtanga Yoga-a path towards ultimate","Dhyana Mandira-a platform to transform","Yogabhyasa Prakriyas","Mantras"],"Highlights":["Founder","Gallery","Comments received"],"Contact Us":["E-Mail","Call","Visit","Like us in facebook"],"Share":["Share this app"]]*/
     
@@ -38,7 +38,7 @@ class LeftSideNavViewController: UIViewController,UITableViewDelegate,UITableVie
         objectArray.append(Objects(sectionName: sectionHeaders[1],sectionObjects: yogaArray))
         objectArray.append(Objects(sectionName: sectionHeaders[2],sectionObjects: highlightsArray))
         objectArray.append(Objects(sectionName: sectionHeaders[3],sectionObjects: contactUsArray))
-        //objectArray.append(Objects(sectionName: sectionHeaders[4],sectionObjects: shareArray))
+        objectArray.append(Objects(sectionName: sectionHeaders[4],sectionObjects: shareArray))
         /*for(key,value) in names {
             objectArray.append(Objects(sectionName: key,sectionObjects:value))
         }*/
@@ -283,10 +283,25 @@ class LeftSideNavViewController: UIViewController,UITableViewDelegate,UITableVie
                 appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
             }
             break;
-            
+        case 4:
+                shareAppToOthers()
+            break;
         default:
             break;
         }
+    }
+    
+    func shareAppToOthers()
+    {
+            let textToShare = "Share Yoga @ Yoga Mandira on the App store"
+            
+            if let myWebsite = NSURL(string: "https://itunes.apple.com/in/app/yoga-dhyana-mandira/id1288947507?mt=8") {
+                let objectsToShare = [textToShare, myWebsite] as? NSArray
+                let activityVC = UIActivityViewController(activityItems: objectsToShare as! [Any], applicationActivities: nil)
+                
+                activityVC.popoverPresentationController?.sourceView = self.view
+                self.present(activityVC, animated: true, completion: nil)
+            }
     }
 
     func configuredMailComposeViewController() -> MFMailComposeViewController {

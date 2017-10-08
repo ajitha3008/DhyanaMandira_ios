@@ -45,9 +45,21 @@ class DMNotificationView: UIView {
     }
     
     convenience init(_ dictionary:NSDictionary) {
+        
         let rect:CGRect = CGRect(x: 0, y: 0, width: (UIApplication.shared.keyWindow?.frame.size.width)! - 40,height: 220);
         self.init(frame:rect)
 
+    }
+    
+    func heightForView(text:String, font:UIFont, width:CGFloat) -> CGFloat{
+        let label:UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: width, height: CGFloat.greatestFiniteMagnitude))
+        label.numberOfLines = 0
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        label.font = font
+        label.text = text
+        
+        label.sizeToFit()
+        return label.frame.height + 50
     }
     
     func loadDatas(_ dictionary:NSDictionary)
@@ -59,6 +71,10 @@ class DMNotificationView: UIView {
         UserDefaults.standard.synchronize()
         view.layer.cornerRadius = 10;
         addShadow(baseView: view)
+        let heightForView = self.heightForView(text: message!, font: view.messageFromNotificatiom.font, width: view.frame.size.width)  + 120
+        
+        let rect:CGRect = CGRect(x: 0, y: 0, width: (UIApplication.shared.keyWindow?.frame.size.width)! - 40,height: heightForView);
+        view.frame = rect;
         
     }
 

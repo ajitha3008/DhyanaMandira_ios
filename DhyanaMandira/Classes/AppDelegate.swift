@@ -198,9 +198,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.registerForPushNotifications(application: application)
         
-        if let notification = launchOptions?[UIApplicationLaunchOptionsKey.remoteNotification] as? [String: AnyObject] {
+       if let notification = launchOptions?[UIApplicationLaunchOptionsKey.remoteNotification] as? [String: AnyObject] {
+//        let message =  "Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state. Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state";
+//        let dict = ["google.c.a.c_l" : "","aps":["alert":message]] as [String : Any]
             displayNotificationView(userInfo: notification as NSDictionary)
-        }
+       }
         
         return true
     }
